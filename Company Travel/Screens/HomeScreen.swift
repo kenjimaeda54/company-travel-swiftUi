@@ -10,6 +10,7 @@ import SwiftUI
 
 struct HomeScreen: View {
   @StateObject var storeHome = StoreHome(httpClient: HttpClientFactory.create())
+  @State private var isFavorite = false
 
   var body: some View {
     ScrollView(showsIndicators: false) {
@@ -33,17 +34,18 @@ struct HomeScreen: View {
           }
         }
       }
-			.padding(EdgeInsets.init(top: 0, leading: 0, bottom: 20, trailing: 0))
+      .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
       Text("Destinos")
         .font(.custom(FontsApp.openRegular, size: 20))
         .foregroundColor(ColorsApp.black)
-				.frame(maxWidth: .infinity,alignment: .leading)
+        .frame(maxWidth: .infinity, alignment: .leading)
 
       if storeHome.stateLoading == .sucess {
-        LazyVGrid(columns: gridItemDestionation) {
+        LazyVGrid(columns: gridItemDestionation, spacing: 30) {
           ForEach(storeHome.destinations, id: \.location) { destination in
-            RowDestionation(destionation: destination)
+            RowDestionation(destionation: destination, isFavorite: $isFavorite)
           }
+          .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
         }
       }
     }

@@ -15,7 +15,7 @@ class HttpClientGeneric {
       throw fatalError("Url invalid")
     }
 
-    let (data, response) = await try URLSession.shared.data(from: url)
+    let (data, response) = try await URLSession.shared.data(from: url)
 
     guard (response as? HTTPURLResponse)?.statusCode == 200 else {
       throw fatalError("No data")

@@ -9,33 +9,66 @@ import SwiftUI
 
 struct RowDestionation: View {
   var destionation: DestinationModel
-  var body: some View {
-    VStack {
-      AsyncImage(url: URL(string: destionation.poster), scale: 20) { phase in
+  @Binding var isFavorite: Bool
 
-        if let image = phase.image {
-          image
-            .resizable()
-            .cornerRadius(20, corners: [.topLeft, .topRight])
-            .frame(width: 170, height: 230)
+  var body: some View {
+    ZStack {
+      Image(systemName: "heart.fill")
+        .font(.system(size: 25))
+        .foregroundColor(isFavorite ? ColorsApp.red : ColorsApp.gray)
+        .background(
+          Circle()
+            .foregroundColor(ColorsApp.background)
+            .frame(width: 60, height: 60)
+        )
+        .offset(x: 70, y: -140)
+        .zIndex(2)
+        .gesture(
+          TapGesture()
+            .onEnded { _ in
+              isFavorite.toggle()
+            }
+        )
+
+      VStack {
+        AsyncImage(url: URL(string: destionation.poster), scale: 20) { phase in
+
+          if let image = phase.image {
+            image
+              .resizable()
+              .frame(width: 165, height: 230)
+          }
+          VStack(alignment: .leading) {
+            Text(destionation.title)
+              .font(.custom(FontsApp.openRegular, size: 15))
+              .foregroundColor(ColorsApp.black)
+              .lineLimit(1)
+              .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+            HStack {
+              Image(systemName: "mappin.and.ellipse")
+                .font(.system(size: 20))
+                .foregroundColor(ColorsApp.gray)
+              Text(destionation.location)
+                .font(.custom(FontsApp.openLight, size: 13))
+                .foregroundColor(ColorsApp.black)
+                .lineLimit(1)
+            }
+            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+            .frame(width: 165, alignment: .leading)
+          }
+
+          .frame(width: 165, alignment: .top)
         }
-        VStack {
-          Text(destionation.title)
-            .foregroundColor(ColorsApp.black)
-          Text(destionation.location)
-            .foregroundColor(ColorsApp.black)
-        }
-        .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
       }
+      .background(ColorsApp.white)
+      .cornerRadius(5)
     }
-    .background(ColorsApp.white)
-    .cornerRadius(20)
   }
 }
 
 struct RowDestionation_Previews: PreviewProvider {
   static var previews: some View {
-    RowDestionation(destionation: destionationMock[0])
+    RowDestionation(destionation: destionationMock[0], isFavorite: .constant(false))
       .previewLayout(.sizeThatFits)
   }
 }

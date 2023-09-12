@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-let rowSpacing: CGFloat = 13
 var gridItemDestionation: [GridItem] {
-  return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
+  return Array(repeating: GridItem(.flexible(), spacing: 17), count: 2)
 }
