@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		812E8D4A2AAE3DBE0043648D /* Company_TravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E8D492AAE3DBE0043648D /* Company_TravelApp.swift */; };
-		812E8D4C2AAE3DBE0043648D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E8D4B2AAE3DBE0043648D /* ContentView.swift */; };
+		812E8D4C2AAE3DBE0043648D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E8D4B2AAE3DBE0043648D /* HomeScreen.swift */; };
 		812E8D4E2AAE3DBF0043648D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812E8D4D2AAE3DBF0043648D /* Assets.xcassets */; };
 		812E8D512AAE3DBF0043648D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812E8D502AAE3DBF0043648D /* Preview Assets.xcassets */; };
 		81E024D02AAF327600E4D00A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81E024CF2AAF327500E4D00A /* GoogleService-Info.plist */; };
 		81E024D32AAF32C700E4D00A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 81E024D22AAF32C700E4D00A /* FirebaseAuth */; };
 		81E024D52AAF32C700E4D00A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 81E024D42AAF32C700E4D00A /* FirebaseFirestore */; };
-		81E024DA2AAF39A700E4D00A /* FirestoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E024D92AAF39A700E4D00A /* FirestoreFunctions.swift */; };
 		81E024DD2AAF39EB00E4D00A /* DestinationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E024DC2AAF39EB00E4D00A /* DestinationModel.swift */; };
 		81E024E02AAF440100E4D00A /* MainViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E024DF2AAF440100E4D00A /* MainViewScreen.swift */; };
 		81E025072AAF456700E4D00A /* OpenSans_Condensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81E024E32AAF456500E4D00A /* OpenSans_Condensed-Bold.ttf */; };
@@ -56,16 +55,24 @@
 		81E0252D2AAF471500E4D00A /* FontsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0252C2AAF471500E4D00A /* FontsApp.swift */; };
 		81E0252F2AAF47FD00E4D00A /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81E0252E2AAF47FC00E4D00A /* Pacifico-Regular.ttf */; };
 		81E025312AAF4A6B00E4D00A /* ColorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E025302AAF4A6B00E4D00A /* ColorsApp.swift */; };
+		81FBE4A52AAFCC79004E9790 /* HttpClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4A42AAFCC79004E9790 /* HttpClientProtocol.swift */; };
+		81FBE4A72AAFCEE0004E9790 /* HttpClientGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4A62AAFCEE0004E9790 /* HttpClientGeneric.swift */; };
+		81FBE4AD2AAFD14B004E9790 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4AC2AAFD14B004E9790 /* HttpClient.swift */; };
+		81FBE4AF2AAFD6D8004E9790 /* StoreHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4AE2AAFD6D8004E9790 /* StoreHome.swift */; };
+		81FBE4B22AAFD786004E9790 /* HttpClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4B12AAFD786004E9790 /* HttpClientFactory.swift */; };
+		81FBE4B52AAFDA52004E9790 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4B42AAFDA52004E9790 /* constants.swift */; };
+		81FBE4BB2AAFDB53004E9790 /* destionationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4BA2AAFDB53004E9790 /* destionationMock.swift */; };
+		81FBE4BF2AAFDBBF004E9790 /* RowDestionation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4BE2AAFDBBF004E9790 /* RowDestionation.swift */; };
+		81FBE4C22AAFE6B6004E9790 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4C12AAFE6B6004E9790 /* CornerRadius.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		812E8D462AAE3DBE0043648D /* Company Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Company Travel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		812E8D492AAE3DBE0043648D /* Company_TravelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company_TravelApp.swift; sourceTree = "<group>"; };
-		812E8D4B2AAE3DBE0043648D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		812E8D4B2AAE3DBE0043648D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		812E8D4D2AAE3DBF0043648D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		812E8D502AAE3DBF0043648D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81E024CF2AAF327500E4D00A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		81E024D92AAF39A700E4D00A /* FirestoreFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreFunctions.swift; sourceTree = "<group>"; };
 		81E024DC2AAF39EB00E4D00A /* DestinationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationModel.swift; sourceTree = "<group>"; };
 		81E024DF2AAF440100E4D00A /* MainViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewScreen.swift; sourceTree = "<group>"; };
 		81E024E32AAF456500E4D00A /* OpenSans_Condensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-Bold.ttf"; sourceTree = "<group>"; };
@@ -108,6 +115,15 @@
 		81E0252C2AAF471500E4D00A /* FontsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsApp.swift; sourceTree = "<group>"; };
 		81E0252E2AAF47FC00E4D00A /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		81E025302AAF4A6B00E4D00A /* ColorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsApp.swift; sourceTree = "<group>"; };
+		81FBE4A42AAFCC79004E9790 /* HttpClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientProtocol.swift; sourceTree = "<group>"; };
+		81FBE4A62AAFCEE0004E9790 /* HttpClientGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientGeneric.swift; sourceTree = "<group>"; };
+		81FBE4AC2AAFD14B004E9790 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		81FBE4AE2AAFD6D8004E9790 /* StoreHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHome.swift; sourceTree = "<group>"; };
+		81FBE4B12AAFD786004E9790 /* HttpClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientFactory.swift; sourceTree = "<group>"; };
+		81FBE4B42AAFDA52004E9790 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		81FBE4BA2AAFDB53004E9790 /* destionationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = destionationMock.swift; sourceTree = "<group>"; };
+		81FBE4BE2AAFDBBF004E9790 /* RowDestionation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowDestionation.swift; sourceTree = "<group>"; };
+		81FBE4C12AAFE6B6004E9790 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,13 +159,17 @@
 		812E8D482AAE3DBE0043648D /* Company Travel */ = {
 			isa = PBXGroup;
 			children = (
-				81E0252B2AAF468500E4D00A /* Company-Travel-Info.plist */,
+				81FBE4C02AAFE69E004E9790 /* Modifier */,
+				81FBE4B92AAFDB37004E9790 /* Mock */,
+				81FBE4B62AAFDB1C004E9790 /* Views */,
+				81FBE4B32AAFDA37004E9790 /* Utility */,
+				81FBE4B02AAFD767004E9790 /* Factories */,
+				81FBE4A32AAFCC5A004E9790 /* Services */,
 				81E024E12AAF454800E4D00A /* Theme */,
 				81E024DE2AAF436900E4D00A /* Screens */,
 				81E024DB2AAF39D500E4D00A /* Models */,
-				81E024D82AAF397100E4D00A /* FirebaseHelpers */,
-				81E024D72AAF396800E4D00A /* HttpClient */,
 				81E024D62AAF395F00E4D00A /* Store */,
+				81E0252B2AAF468500E4D00A /* Company-Travel-Info.plist */,
 				812E8D492AAE3DBE0043648D /* Company_TravelApp.swift */,
 				812E8D4D2AAE3DBF0043648D /* Assets.xcassets */,
 				812E8D4F2AAE3DBF0043648D /* Preview Content */,
@@ -168,23 +188,9 @@
 		81E024D62AAF395F00E4D00A /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				81FBE4AE2AAFD6D8004E9790 /* StoreHome.swift */,
 			);
 			path = Store;
-			sourceTree = "<group>";
-		};
-		81E024D72AAF396800E4D00A /* HttpClient */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HttpClient;
-			sourceTree = "<group>";
-		};
-		81E024D82AAF397100E4D00A /* FirebaseHelpers */ = {
-			isa = PBXGroup;
-			children = (
-				81E024D92AAF39A700E4D00A /* FirestoreFunctions.swift */,
-			);
-			path = FirebaseHelpers;
 			sourceTree = "<group>";
 		};
 		81E024DB2AAF39D500E4D00A /* Models */ = {
@@ -198,7 +204,7 @@
 		81E024DE2AAF436900E4D00A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				812E8D4B2AAE3DBE0043648D /* ContentView.swift */,
+				812E8D4B2AAE3DBE0043648D /* HomeScreen.swift */,
 				81E024DF2AAF440100E4D00A /* MainViewScreen.swift */,
 			);
 			path = Screens;
@@ -256,6 +262,56 @@
 				81E025002AAF456600E4D00A /* OpenSans-SemiBoldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		81FBE4A32AAFCC5A004E9790 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				81FBE4A42AAFCC79004E9790 /* HttpClientProtocol.swift */,
+				81FBE4A62AAFCEE0004E9790 /* HttpClientGeneric.swift */,
+				81FBE4AC2AAFD14B004E9790 /* HttpClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		81FBE4B02AAFD767004E9790 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				81FBE4B12AAFD786004E9790 /* HttpClientFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		81FBE4B32AAFDA37004E9790 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				81FBE4B42AAFDA52004E9790 /* constants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		81FBE4B62AAFDB1C004E9790 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81FBE4BE2AAFDBBF004E9790 /* RowDestionation.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81FBE4B92AAFDB37004E9790 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				81FBE4BA2AAFDB53004E9790 /* destionationMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		81FBE4C02AAFE69E004E9790 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				81FBE4C12AAFE6B6004E9790 /* CornerRadius.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,13 +470,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				812E8D4C2AAE3DBE0043648D /* ContentView.swift in Sources */,
+				812E8D4C2AAE3DBE0043648D /* HomeScreen.swift in Sources */,
 				81E025312AAF4A6B00E4D00A /* ColorsApp.swift in Sources */,
+				81FBE4C22AAFE6B6004E9790 /* CornerRadius.swift in Sources */,
 				812E8D4A2AAE3DBE0043648D /* Company_TravelApp.swift in Sources */,
 				81E0252D2AAF471500E4D00A /* FontsApp.swift in Sources */,
+				81FBE4AD2AAFD14B004E9790 /* HttpClient.swift in Sources */,
+				81FBE4A52AAFCC79004E9790 /* HttpClientProtocol.swift in Sources */,
+				81FBE4AF2AAFD6D8004E9790 /* StoreHome.swift in Sources */,
 				81E024DD2AAF39EB00E4D00A /* DestinationModel.swift in Sources */,
+				81FBE4A72AAFCEE0004E9790 /* HttpClientGeneric.swift in Sources */,
+				81FBE4BB2AAFDB53004E9790 /* destionationMock.swift in Sources */,
 				81E024E02AAF440100E4D00A /* MainViewScreen.swift in Sources */,
-				81E024DA2AAF39A700E4D00A /* FirestoreFunctions.swift in Sources */,
+				81FBE4B22AAFD786004E9790 /* HttpClientFactory.swift in Sources */,
+				81FBE4B52AAFDA52004E9790 /* constants.swift in Sources */,
+				81FBE4BF2AAFDBBF004E9790 /* RowDestionation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import Foundation
 struct DestinationModel {
   let location: String
   let overview: String
-  let pointsActivies: [Int]
+  let pointsActivies: [Double]
   let poster: String
   let price: String
   let title: String
