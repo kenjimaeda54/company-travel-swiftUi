@@ -14,7 +14,7 @@ struct Company_TravelApp: App {
 
   var body: some Scene {
     WindowGroup {
-      HomeScreen()
+      RootView()
     }
   }
 }

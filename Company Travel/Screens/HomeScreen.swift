@@ -14,47 +14,48 @@ struct HomeScreen: View {
 
   var body: some View {
     ScrollView(showsIndicators: false) {
-      HStack {
-        VStack(alignment: .leading) {
-          Text("Hi Bella,")
-            .font(.custom(FontsApp.openLight, size: 17))
-            .foregroundColor(ColorsApp.gray)
-          Text("Viajando hoje?")
-            .font(.custom(FontsApp.openBold, size: 23))
-            .foregroundColor(ColorsApp.black)
-        }
-        Spacer()
-        AsyncImage(url: URL(string: "https://github.com/kenjimaeda54.png")) { phase in
-          if let image = phase.image {
-            image
-              .resizable()
-              .aspectRatio(contentMode: .fit)
-              .frame(width: 50, height: 50)
-              .clipShape(Circle())
+      Group {
+        HStack {
+          VStack(alignment: .leading) {
+            Text("Hi Bella,")
+              .font(.custom(FontsApp.openLight, size: 17))
+              .foregroundColor(ColorsApp.gray)
+            Text("Viajando hoje?")
+              .font(.custom(FontsApp.openBold, size: 23))
+              .foregroundColor(ColorsApp.black)
+          }
+          Spacer()
+          AsyncImage(url: URL(string: "https://github.com/kenjimaeda54.png")) { phase in
+            if let image = phase.image {
+              image
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 50, height: 50)
+                .clipShape(Circle())
+            }
           }
         }
-      }
-      .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
-      Text("Destinos")
-        .font(.custom(FontsApp.openRegular, size: 20))
-        .foregroundColor(ColorsApp.black)
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
+        Text("Destinos")
+          .font(.custom(FontsApp.openRegular, size: 20))
+          .foregroundColor(ColorsApp.black)
+          .frame(maxWidth: .infinity, alignment: .leading)
 
-      if storeHome.stateLoading == .sucess {
-        LazyVGrid(columns: gridItemDestionation, spacing: 30) {
-          ForEach(storeHome.destinations, id: \.location) { destination in
-            RowDestionation(destionation: destination, isFavorite: $isFavorite)
+        if storeHome.stateLoading == .sucess {
+          LazyVGrid(columns: gridItemDestionation, spacing: 30) {
+            ForEach(storeHome.destinations, id: \.location) { destination in
+              RowDestionation(destionation: destination, isFavorite: $isFavorite)
+            }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
           }
-          .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
         }
       }
+      .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
     }
-    .padding(EdgeInsets(top: 10, leading: 17, bottom: 0, trailing: 17))
-    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-    .background(ColorsApp.background)
     .onAppear {
       storeHome.getDestionations()
     }
+    .background(ColorsApp.background, ignoresSafeAreaEdges: .all)
   }
 }
 

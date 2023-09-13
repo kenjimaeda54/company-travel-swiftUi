@@ -38,22 +38,22 @@ struct RowDestionation: View {
               .resizable()
               .frame(width: 165, height: 230)
           }
-          VStack(alignment: .leading) {
+          VStack(alignment: .leading, spacing: 3) {
             Text(destionation.title)
               .font(.custom(FontsApp.openRegular, size: 15))
               .foregroundColor(ColorsApp.black)
               .lineLimit(1)
               .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
             HStack {
-              Image(systemName: "mappin.and.ellipse")
-                .font(.system(size: 20))
-                .foregroundColor(ColorsApp.gray)
+              Image("markMap")
+                .resizable()
+                .frame(width: 20, height: 20)
               Text(destionation.location)
                 .font(.custom(FontsApp.openLight, size: 13))
                 .foregroundColor(ColorsApp.black)
                 .lineLimit(1)
             }
-            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+            .padding(EdgeInsets(top: 3, leading: 10, bottom: 5, trailing: 10))
             .frame(width: 165, alignment: .leading)
           }
 
