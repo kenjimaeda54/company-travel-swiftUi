@@ -12,6 +12,10 @@ class HttpClient: HttpClientProtocol {
   static var destination: [DestinationModel] = []
   static let db = Firestore.firestore()
 
+  init() {
+    HttpClient.destination = []
+  }
+
   func fetchDestination(completion: @escaping (Result<[DestinationModel], HttpError>) -> Void) {
     HttpClient.db.collection("Destination").getDocuments { snapshot, error in
       if error != nil {
@@ -24,6 +28,7 @@ class HttpClient: HttpClientProtocol {
 
       for it in document {
         let destionation = DestinationModel(
+          id: it["id"] as? String ?? "",
           location: it["location"] as? String ?? "",
           overview: it["overview"] as? String ?? "",
           pointsActivies: it["pointsActivies"] as? [Double] ?? [],

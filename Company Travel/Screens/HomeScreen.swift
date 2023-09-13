@@ -43,7 +43,7 @@ struct HomeScreen: View {
 
         if storeHome.stateLoading == .sucess {
           LazyVGrid(columns: gridItemDestionation, spacing: 30) {
-            ForEach(storeHome.destinations, id: \.location) { destination in
+            ForEach(storeHome.destinations) { destination in
               RowDestionation(destionation: destination, isFavorite: $isFavorite)
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)

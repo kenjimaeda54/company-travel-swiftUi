@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct DestinationModel {
+struct DestinationModel: Identifiable {
+  let id: String
   let location: String
   let overview: String
   let pointsActivies: [Double]
