@@ -37,7 +37,10 @@ struct RowDestionation: View {
             image
               .resizable()
               .frame(width: 165, height: 230)
+          } else {
+            PlaceHolderImageDestionation()
           }
+
           VStack(alignment: .leading, spacing: 3) {
             Text(destionation.title)
               .font(.custom(FontsApp.openRegular, size: 15))
