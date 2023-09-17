@@ -1,73 +1,79 @@
 //
-//  TextFieldCommonWithIcon.swift
+//  TextFieldSecurity.swift
 //  Company Travel
 //
-//  Created by kenjimaeda on 14/09/23.
+//  Created by kenjimaeda on 16/09/23.
 //
 
 import SwiftUI
 
-struct TextFieldSecurity: View {
-  @Binding var value: String
-  var iconName: String
-  var placeHolderText: String
+struct TextFieldSecurity<Content: View>: View {
   var isSecure: Bool
-  var handleClickIcon: () -> Void
+  @Binding var value: String
+  let icon: () -> Content
+  var action: () -> Void
+  var fieldValidate: ValidateTextField?
 
-  // segredo e fazer hstack e todo estilo do input fica no hstack nao no input
-  // input deixa puro
   var body: some View {
-    HStack {
-      if isSecure {
-        SecureField(
-          "",
-          text: $value.max(15),
-          prompt:
-          Text(placeHolderText)
-            .font(.custom(FontsApp.openLight, size: 17))
-            .foregroundColor(ColorsApp.gray)
-        )
-        Button(action: handleClickIcon) {
-          Image(systemName: iconName)
-            .font(.system(size: 20))
-            .foregroundColor(ColorsApp.gray)
-        }
+    VStack(alignment: .leading, spacing: 5) {
+      HStack {
+        if isSecure {
+          SecureField(
+            "",
+            text: $value.max(15),
+            prompt:
+            Text("Insira uma senha")
+              .font(.custom(FontsApp.openLight, size: 14))
+              .foregroundColor(ColorsApp.gray)
+          )
+          .font(.custom(FontsApp.openRegular, size: 16))
+          .foregroundColor(ColorsApp.black)
 
-      } else {
-        TextField(
-          "",
-          text: $value.max(15),
-          prompt:
-          Text(placeHolderText)
-            .font(.custom(FontsApp.openLight, size: 17))
-            .foregroundColor(ColorsApp.gray),
-          axis: .vertical
-        )
-        Button(action: handleClickIcon) {
-          Image(systemName: iconName)
-            .font(.system(size: 20))
-            .foregroundColor(ColorsApp.gray)
+          Button(action: action) {
+            icon()
+              .foregroundColor(ColorsApp.gray)
+              .frame(width: 30, height: 30)
+          }
+        } else {
+          TextField(
+            "",
+            text: $value.max(15),
+            prompt: Text("Insira uma senha")
+              .font(.custom(FontsApp.openLight, size: 14))
+              .foregroundColor(ColorsApp.gray)
+          )
+          .font(.custom(FontsApp.openRegular, size: 16))
+          .foregroundColor(ColorsApp.black)
+          Button(action: action) {
+            icon()
+              .foregroundColor(ColorsApp.gray)
+              .frame(width: 30, height: 30)
+          }
         }
       }
+      .padding(EdgeInsets(top: 2, leading: 15, bottom: 2, trailing: 15))
+      .frame(maxWidth: .infinity)
+      .foregroundColor(ColorsApp.black)
+      .background(
+        RoundedRectangle(cornerRadius: 5)
+          .stroke(ColorsApp.black.opacity(0.5), lineWidth: 1)
+      )
+      if fieldValidate != nil {
+        Text(fieldValidate!.feedBackWrong)
+          .font(.custom(FontsApp.openLight, size: 12))
+          .foregroundColor(ColorsApp.red)
+      }
     }
-    .padding(EdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 15))
-    .font(.custom(FontsApp.openRegular, size: 17))
-    .foregroundColor(ColorsApp.gray)
-    .background(
-      RoundedRectangle(cornerRadius: 5)
-        .stroke(ColorsApp.gray.opacity(0.5), lineWidth: 1)
-    )
+    // maneira mais simples de criar um text field com icone
+    // e fazer um hstack e o estilo todo do text field deixo no hstack
+    // text field fica sem nenhum estilo visual
   }
 }
 
-struct TextFieldCommonWithIcon_Previews: PreviewProvider {
+struct TextFieldSecurity_Previews: PreviewProvider {
   static var previews: some View {
-    TextFieldSecurity(
-      value: .constant(""),
-      iconName: "eye",
-      placeHolderText: "Coloque email",
-      isSecure: true,
-      handleClickIcon: {}
-    )
+    TextFieldSecurity(isSecure: false, value: .constant(""), icon: {
+      Text("ola")
+    }, action: {}, fieldValidate: ValidateTextField(feedBackWrong: "Password wrong"))
   }
 }

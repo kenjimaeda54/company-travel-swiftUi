@@ -13,4 +13,5 @@ struct FontsApp {
   static let openMedium = "OpenSans-Medium"
   static let openLight = "OpenSans-Light"
   static let openSemiBold = "OpenSans-SemiBold"
+  static let pacifico = "Pacifico-Regular"
 }

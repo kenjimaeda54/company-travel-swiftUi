@@ -5,12 +5,15 @@
 //  Created by kenjimaeda on 11/09/23.
 //
 
+import FirebaseAuth
+import FirebaseCore
 import FirebaseFirestore
 import Foundation
 
 class HttpClient: HttpClientProtocol {
   static var destination: [DestinationModel] = []
   static let db = Firestore.firestore()
+  static let auth = Auth.auth()
 
   init() {
     HttpClient.destination = []
@@ -40,6 +43,18 @@ class HttpClient: HttpClientProtocol {
         HttpClient.destination.append(destionation)
       }
       completion(.success(HttpClient.destination))
+    }
+  }
+
+  func createUser(email: String, password: String, completion: @escaping (Result<User, HttpError>) -> Void) {
+    Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+      if let error = error {
+        completion(.failure(.badResponse))
+      }
+
+      if let user = authResult?.user {
+        completion(.success(user))
+      }
     }
   }
 }

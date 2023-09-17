@@ -5,6 +5,7 @@
 //  Created by kenjimaeda on 11/09/23.
 //
 
+import FirebaseAuth
 import Foundation
 
 enum HttpError: Error {
