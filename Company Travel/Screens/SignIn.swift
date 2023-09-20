@@ -19,7 +19,6 @@ enum FocusField: Int, Hashable {
 
 struct SigIn: View {
   @State private var user = UserData(name: "", email: "", password: "")
-  @ObservedObject private var keyboard = KeyboardResponder()
   @State private var showSheetCamera = false
   @State private var showSheetGallery = false
   @State private var showSheetSelectGaleryOrCamera = false
@@ -27,6 +26,9 @@ struct SigIn: View {
   @State private var isPresented = false
   @State private var isSecure = true
   @FocusState var focusedField: FocusField?
+  @State private var storeSigIn = StoreSigIn(httpClient: HttpClientFactory.create())
+  @State private var openSheet = ""
+  @State private var validateFieldEmail: ValidateTextField? = nil
 
   var validateEmail: Bool {
     let pattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -41,12 +43,8 @@ struct SigIn: View {
   }
 
   var isDisabledButton: Bool {
-    var isDisabledButton = !validateEmail || !validatePassword || user.name.isEmpty || !image.hasContent
+    let isDisabledButton = !validateEmail || !validatePassword || user.name.isEmpty || !image.hasContent
     return isDisabledButton
-  }
-
-  var validateTextFieldEmail: ValidateTextField? {
-    validateEmail ? nil : ValidateTextField(feedBackWrong: "Precisa ser um email valido")
   }
 
   var validateTextFieldPassword: ValidateTextField? {
@@ -54,8 +52,20 @@ struct SigIn: View {
       ValidateTextField(feedBackWrong: "Senha precisa ser no mínimo 8 palavras, um maiúsculo, um dígito é um especial")
   }
 
+  var imageForFirebase: Data? {
+    return image.jpegData(compressionQuality: 0.5)
+  }
+
   func handleActionIcon() {
     isSecure.toggle()
+  }
+
+  func validateAllConditionsEmail(_ value: String) {
+    if value.count > 4 && !validateEmail {
+      validateFieldEmail = ValidateTextField(feedBackWrong: "Precisa ser um email valido")
+    } else {
+      validateFieldEmail = nil
+    }
   }
 
   var body: some View {
@@ -115,8 +125,11 @@ struct SigIn: View {
 
             ),
             placeHolderText: "Insira seu email",
-            fieldValidate: user.email.count > 4 ? validateTextFieldEmail : nil
+            fieldValidate: validateFieldEmail
           )
+          .onChange(of: user.email, perform: { newValue in
+            validateAllConditionsEmail(newValue)
+          })
           .submitLabel(.next)
           .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
           .focused($focusedField, equals: .email)
@@ -144,7 +157,15 @@ struct SigIn: View {
         .formStyle(.columns)
         Spacer()
         ButtonCommon(action: {
-          print(user)
+          storeSigIn
+            .createUser(email: user.email, password: user.password, name: user.name, data: imageForFirebase) { user in
+              if user != nil {
+                print(user?.displayName)
+              } else {
+                validateFieldEmail = ValidateTextField(feedBackWrong: "Ops! Alguem ja registrou este email")
+              }
+            }
+
         }, title: "Cadastrar")
           .disabled(isDisabledButton)
           .opacity(isDisabledButton ? 0.5 : 1)
@@ -153,39 +174,49 @@ struct SigIn: View {
       .padding(EdgeInsets(top: 5, leading: 20, bottom: 20, trailing: 20))
       .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
       .background(ColorsApp.background)
-      .sheet(isPresented: $showSheetSelectGaleryOrCamera) {
+      .sheet(isPresented: $showSheetSelectGaleryOrCamera, onDismiss: {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
+          openSheet == "camera" ? showSheetCamera.toggle() : showSheetGallery.toggle()
+        }
+      }) {
         VStack(alignment: .leading) {
-          if UIDevice.current.isSimulator {
+          if !UIDevice.current.isSimulator {
             Text("Identificamos que esta em um emulador 🥲")
               .font(.custom(FontsApp.openLight, size: 16))
               .foregroundColor(ColorsApp.gray)
-            ButtonCommon(action: {
-              image = UIImage()
-              showSheetSelectGaleryOrCamera.toggle()
-              showSheetGallery = true
-            }, title: "Pegar foto da galeria")
+            ButtonCommon(
+              action: { openSheet = storeSigIn.handleApresentedSheetGalleryAndPhoto(
+                sheetSelectedGaleryOrCamera: &showSheetSelectGaleryOrCamera,
+                openSheet: "gallery"
+              ) },
+              title: "Pegar foto da galeria"
+            )
 
           } else {
-            ButtonCommon(action: {
-              image = UIImage()
-              showSheetSelectGaleryOrCamera.toggle()
-              showSheetGallery = true
-            }, title: "Pegar foto da galeria")
-            ButtonCommon(action: {
-              image = UIImage()
-              showSheetSelectGaleryOrCamera.toggle()
-              showSheetCamera = true
-            }, title: "Tirar foto")
+            ButtonCommon(
+              action: {
+                openSheet = storeSigIn.handleApresentedSheetGalleryAndPhoto(
+                  sheetSelectedGaleryOrCamera: &showSheetSelectGaleryOrCamera,
+                  openSheet: "gallery"
+                )
+              },
+              title: "Pegar foto da galeria"
+            )
+            ButtonCommon(
+              action: {
+                openSheet = storeSigIn.handleApresentedSheetGalleryAndPhoto(
+                  sheetSelectedGaleryOrCamera: &showSheetSelectGaleryOrCamera,
+                  openSheet: "camera"
+                )
+              },
+              title: "Tirar foto"
+            )
           }
         }
         .presentationDetents([.small])
         .presentationBackground(ColorsApp.white)
         .frame(alignment: .center)
         .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
-
-        .onAppear {
-          focusedField = .name
-        }
       }
     }
     .sheet(isPresented: $showSheetCamera) {

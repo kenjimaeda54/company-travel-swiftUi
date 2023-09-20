@@ -27,6 +27,7 @@ struct TextFieldSecurity<Content: View>: View {
               .foregroundColor(ColorsApp.gray)
           )
           .font(.custom(FontsApp.openRegular, size: 16))
+          .autocorrectionDisabled(true)
           .foregroundColor(ColorsApp.black)
 
           Button(action: action) {
@@ -43,6 +44,7 @@ struct TextFieldSecurity<Content: View>: View {
               .foregroundColor(ColorsApp.gray)
           )
           .font(.custom(FontsApp.openRegular, size: 16))
+          .autocorrectionDisabled(true)
           .foregroundColor(ColorsApp.black)
           Button(action: action) {
             icon()

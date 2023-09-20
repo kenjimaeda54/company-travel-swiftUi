@@ -9,7 +9,7 @@ import FirebaseAuth
 import Foundation
 
 enum HttpError: Error {
-  case badURL, badResponse, errorEncodingData, noData, invalidURL, invalidRequest
+  case badURL, badResponse, errorEncodingData, noData, invalidURL, invalidRequest, errorUploadPhoto, errorUpdateUser
 }
 
 enum StateLoading {
@@ -18,4 +18,11 @@ enum StateLoading {
 
 protocol HttpClientProtocol {
   func fetchDestination(completion: @escaping (Result<[DestinationModel], HttpError>) -> Void)
+  func createUser(
+    email: String,
+    password: String,
+    name: String,
+    data: Data?,
+    completion: @escaping (Result<User, HttpError>) -> Void
+  )
 }
