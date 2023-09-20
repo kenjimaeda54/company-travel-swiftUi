@@ -9,6 +9,8 @@ import FirebaseAuth
 import FirebaseFirestore
 import SwiftUI
 
+// MARK: - Precisamos implementar apos os tests a foto do usuario e o nome conforme faz o create user
+
 struct HomeScreen: View {
   @StateObject var storeHome = StoreHome(httpClient: HttpClientFactory.create())
   @State private var isFavorite = false

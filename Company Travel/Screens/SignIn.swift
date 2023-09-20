@@ -27,8 +27,8 @@ struct SigIn: View {
   @State private var isSecure = true
   @FocusState var focusedField: FocusField?
   @State private var storeSigIn = StoreSigIn(httpClient: HttpClientFactory.create())
-  @State private var openSheet = ""
-  @State private var validateFieldEmail: ValidateTextField? = nil
+  @State private var validateFieldEmail: ValidateTextField?
+  @State private var isLoading = false
 
   var validateEmail: Bool {
     let pattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -68,12 +68,32 @@ struct SigIn: View {
     }
   }
 
+  func handleToogleCamera() {
+    showSheetSelectGaleryOrCamera.toggle()
+  }
+
+  func handleGetPhotoGallery() {
+    storeSigIn.handleApresentedSheetGalleryAndPhoto(
+      sheetSelectedGaleryOrCamera: &showSheetSelectGaleryOrCamera
+    )
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+      showSheetGallery.toggle()
+    }
+  }
+
+  func handleGetPhotoCamera() {
+    storeSigIn.handleApresentedSheetGalleryAndPhoto(
+      sheetSelectedGaleryOrCamera: &showSheetSelectGaleryOrCamera
+    )
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+      showSheetCamera.toggle()
+    }
+  }
+
   var body: some View {
     NavigationStack {
       VStack {
-        Button(action: {
-          showSheetSelectGaleryOrCamera.toggle()
-        }) {
+        Button(action: handleToogleCamera) {
           if image.hasContent {
             Image(uiImage: image)
               .resizable()
@@ -99,9 +119,9 @@ struct SigIn: View {
             value: Binding(
               get: { user.name }, set: { newValue, _ in
 
-                if let _ = newValue.lastIndex(of: "\n") {
+                if (newValue.lastIndex(of: "\n")) != nil {
                   focusedField = .email
-                } else {
+                } else if newValue.count < 18 {
                   user.name = newValue
                 }
               }
@@ -116,9 +136,9 @@ struct SigIn: View {
             value: Binding(
               get: { user.email }, set: { newValue, _ in
 
-                if let _ = newValue.lastIndex(of: "\n") {
+                if (newValue.lastIndex(of: "\n")) != nil {
                   focusedField = .password
-                } else {
+                } else if newValue.count < 40 {
                   user.email = newValue
                 }
               }
@@ -138,7 +158,7 @@ struct SigIn: View {
             value: Binding(
               get: { user.password }, set: { newValue, _ in
 
-                if let _ = newValue.lastIndex(of: "\n") {
+                if (newValue.lastIndex(of: "\n")) != nil {
                   focusedField = Optional.none
                 } else {
                   user.password = newValue
@@ -157,6 +177,7 @@ struct SigIn: View {
         .formStyle(.columns)
         Spacer()
         ButtonCommon(action: {
+          isLoading.toggle()
           storeSigIn
             .createUser(
               email: user.email,
@@ -167,53 +188,38 @@ struct SigIn: View {
 
               if user != nil {
                 isPresented = true
+                isLoading.toggle()
               } else {
                 validateFieldEmail = ValidateTextField(feedBackWrong: "Ops! Este email ja foi registrado")
+                isLoading.toggle()
               }
             }
 
-        }, title: "Cadastrar")
-          .disabled(isDisabledButton)
+        }, title: "Cadastrar", isLoading: isLoading)
+          .disabled(isDisabledButton || isLoading)
           .opacity(isDisabledButton ? 0.5 : 1)
       }
       .padding(EdgeInsets(top: 5, leading: 20, bottom: 20, trailing: 20))
       .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
       .background(ColorsApp.background)
-      .sheet(isPresented: $showSheetSelectGaleryOrCamera, onDismiss: {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
-          openSheet == "camera" ? showSheetCamera.toggle() : showSheetGallery.toggle()
-        }
-      }) {
+      .sheet(isPresented: $showSheetSelectGaleryOrCamera) {
         VStack(alignment: .leading) {
-          if !UIDevice.current.isSimulator {
+          if UIDevice.current.isSimulator {
             Text("Identificamos que esta em um emulador 🥲")
               .font(.custom(FontsApp.openLight, size: 16))
               .foregroundColor(ColorsApp.gray)
             ButtonCommon(
-              action: { openSheet = storeSigIn.handleApresentedSheetGalleryAndPhoto(
-                sheetSelectedGaleryOrCamera: &showSheetSelectGaleryOrCamera,
-                openSheet: "gallery"
-              ) },
+              action: handleGetPhotoGallery,
               title: "Pegar foto da galeria"
             )
 
           } else {
             ButtonCommon(
-              action: {
-                openSheet = storeSigIn.handleApresentedSheetGalleryAndPhoto(
-                  sheetSelectedGaleryOrCamera: &showSheetSelectGaleryOrCamera,
-                  openSheet: "gallery"
-                )
-              },
+              action: handleGetPhotoGallery,
               title: "Pegar foto da galeria"
             )
             ButtonCommon(
-              action: {
-                openSheet = storeSigIn.handleApresentedSheetGalleryAndPhoto(
-                  sheetSelectedGaleryOrCamera: &showSheetSelectGaleryOrCamera,
-                  openSheet: "camera"
-                )
-              },
+              action: handleGetPhotoCamera,
               title: "Tirar foto"
             )
           }

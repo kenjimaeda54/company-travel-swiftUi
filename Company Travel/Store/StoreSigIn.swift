@@ -37,9 +37,7 @@ class StoreSigIn: ObservableObject {
     }
   }
 
-  func handleApresentedSheetGalleryAndPhoto(sheetSelectedGaleryOrCamera: inout Bool, openSheet: String) -> String {
+  func handleApresentedSheetGalleryAndPhoto(sheetSelectedGaleryOrCamera: inout Bool) {
     sheetSelectedGaleryOrCamera = false
-
-    return openSheet
   }
 }
