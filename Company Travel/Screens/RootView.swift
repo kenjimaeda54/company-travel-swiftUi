@@ -14,22 +14,24 @@ struct RootView: View {
   }
 
   var body: some View {
-    switch currentTag {
-    case .home:
-      HomeScreen()
-        .safeAreaInset(edge: .bottom) {
-          TabBarNavigation(handleCurrentTag: handleCurrentTag, currentTag: currentTag)
-        }
-    case .favorite:
-      FavoriteScreen()
-        .safeAreaInset(edge: .bottom) {
-          TabBarNavigation(handleCurrentTag: handleCurrentTag, currentTag: currentTag)
-        }
-    case .profille:
-      ProfileScreen()
-        .safeAreaInset(edge: .bottom) {
-          TabBarNavigation(handleCurrentTag: handleCurrentTag, currentTag: currentTag)
-        }
+    NavigationStack {
+      switch currentTag {
+      case .home:
+        HomeScreen()
+          .safeAreaInset(edge: .bottom) {
+            TabBarNavigation(handleCurrentTag: handleCurrentTag, currentTag: currentTag)
+          }
+      case .favorite:
+        FavoriteScreen()
+          .safeAreaInset(edge: .bottom) {
+            TabBarNavigation(handleCurrentTag: handleCurrentTag, currentTag: currentTag)
+          }
+      case .profille:
+        ProfileScreen()
+          .safeAreaInset(edge: .bottom) {
+            TabBarNavigation(handleCurrentTag: handleCurrentTag, currentTag: currentTag)
+          }
+      }
     }
   }
 }

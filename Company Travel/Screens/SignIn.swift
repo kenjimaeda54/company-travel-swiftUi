@@ -158,18 +158,23 @@ struct SigIn: View {
         Spacer()
         ButtonCommon(action: {
           storeSigIn
-            .createUser(email: user.email, password: user.password, name: user.name, data: imageForFirebase) { user in
+            .createUser(
+              email: user.email,
+              password: user.password,
+              name: user.name,
+              data: imageForFirebase
+            ) { user in
+
               if user != nil {
-                print(user?.displayName)
+                isPresented = true
               } else {
-                validateFieldEmail = ValidateTextField(feedBackWrong: "Ops! Alguem ja registrou este email")
+                validateFieldEmail = ValidateTextField(feedBackWrong: "Ops! Este email ja foi registrado")
               }
             }
 
         }, title: "Cadastrar")
           .disabled(isDisabledButton)
           .opacity(isDisabledButton ? 0.5 : 1)
-          .navigationDestination(isPresented: $isPresented) {}
       }
       .padding(EdgeInsets(top: 5, leading: 20, bottom: 20, trailing: 20))
       .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
@@ -217,6 +222,10 @@ struct SigIn: View {
         .presentationBackground(ColorsApp.white)
         .frame(alignment: .center)
         .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
+      }
+      .navigationDestination(isPresented: $isPresented) {
+        RootView()
+          .navigationBarBackButtonHidden(true)
       }
     }
     .sheet(isPresented: $showSheetCamera) {

@@ -52,13 +52,9 @@ class HttpClient: HttpClientProtocol {
   // https://gist.github.com/rphlfc/13cdd3019e4fdae1ca37d34247a185e0
   // https://firebase.google.com/docs/storage/ios/download-files?hl=pt-br
   func createUser(
-    email: String,
-    password: String,
-    name: String,
-    data: Data?,
-    completion: @escaping (Result<User, HttpError>) -> Void
+    email: String, password: String, name: String, data: Data?, completion: @escaping (Result<User, HttpError>) -> Void
   ) {
-    Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+    HttpClient.auth.createUser(withEmail: email, password: password) { authResult, error in
       if let error = error {
         print(error.localizedDescription)
         completion(.failure(.badResponse))
@@ -74,11 +70,44 @@ class HttpClient: HttpClientProtocol {
               guard url != nil else {
                 return completion(.failure(.badURL))
               }
+
+              self.sigIn(email: email, password: password) { result in
+
+                switch result {
+                case .failure:
+                  completion(.failure(.badResponse))
+
+                case .success:
+                  self.updateUser(name: name, photoUrl: url!)
+                  completion(.success(user))
+                }
+              }
             }
           }
         }
+      }
+    }
+  }
+
+  func sigIn(email: String, password: String, completion: @escaping (Result<User, HttpError>) -> Void) {
+    HttpClient.auth.signIn(withEmail: email, password: password) { [weak self] authReult, error in
+      if let error = error {
+        print(error.localizedDescription)
+        completion(.failure(.badResponse))
+      }
+
+      if let user = authReult?.user {
         completion(.success(user))
       }
+    }
+  }
+
+  func updateUser(name: String, photoUrl: URL) {
+    let changeRequest = HttpClient.auth.currentUser?.createProfileChangeRequest()
+    changeRequest?.displayName = name
+    changeRequest?.photoURL = photoUrl
+    changeRequest?.commitChanges { error in
+      print(error?.localizedDescription)
     }
   }
 }
