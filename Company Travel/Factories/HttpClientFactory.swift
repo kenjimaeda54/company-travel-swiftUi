@@ -9,6 +9,8 @@ import Foundation
 
 class HttpClientFactory {
   static func create() -> HttpClientProtocol {
-    return HttpClient()
+    let arguments = ProcessInfo.processInfo.environment["ENV"]
+
+    return arguments == "TEST" ? MockHttpClient() : HttpClient()
   }
 }

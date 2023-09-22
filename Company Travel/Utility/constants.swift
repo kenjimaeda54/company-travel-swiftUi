@@ -15,3 +15,8 @@ var gridItemDestionation: [GridItem] {
 enum ConstantsAppStorage: String {
   case verficationIdAuth
 }
+
+enum ConstantsTestApp: String {
+  case homeGridDestination
+  case rowGridDestination
+}

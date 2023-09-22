@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RowDestionation: View {
+struct RowDestination: View {
   var destionation: DestinationModel
   @Binding var isFavorite: Bool
 
@@ -65,13 +65,14 @@ struct RowDestionation: View {
       }
       .background(ColorsApp.white)
       .cornerRadius(5)
+      .accessibilityIdentifier("RowDestination")
     }
   }
 }
 
 struct RowDestionation_Previews: PreviewProvider {
   static var previews: some View {
-    RowDestionation(destionation: destionationMock[0], isFavorite: .constant(false))
+    RowDestination(destionation: destionationMock[0], isFavorite: .constant(false))
       .previewLayout(.sizeThatFits)
   }
 }

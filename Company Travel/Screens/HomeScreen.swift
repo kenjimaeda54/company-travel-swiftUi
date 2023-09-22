@@ -47,10 +47,11 @@ struct HomeScreen: View {
         if storeHome.stateLoading == .sucess {
           LazyVGrid(columns: gridItemDestionation, spacing: 30) {
             ForEach(storeHome.destinations) { destination in
-              RowDestionation(destionation: destination, isFavorite: $isFavorite)
+              RowDestination(destionation: destination, isFavorite: $isFavorite)
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
           }
+          .accessibilityIdentifier("GridHomeDestination")
         }
       }
       .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))

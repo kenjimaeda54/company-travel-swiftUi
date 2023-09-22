@@ -1,0 +1,39 @@
+
+[
+  {
+     "id": "fsfsfsf343434",
+     "location": "Texas, E.U.A",
+     "overview": "Dallas, uma moderna metrópole no norte do Texas, é um centro comercial e cultural da região. O Sixth Floor Museum na Dealey Plaza, no centro, assinala o local do assassinato do Presidente John F. Kennedy, em 1963. No bairro artístico, o Dallas Museum of Art e o Crow Collection of Asian Art abrangem milhares de anos de arte. O elegante Nasher Sculpture Center exibe esculturas contemporâneas. ",
+     "pointsActivies": [
+		   32.806993,
+		   -96.836857 
+     ],
+     "poster": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=800",
+     "price": "R$ 2350,70",
+		 "title": "Dallas"
+  },
+  {
+     "id": "43434dsdsdsdwewe",
+     "location": "New York, E.U.A",
+     "overview": " A cidade de Nova York compreende 5 distritos situados no encontro do rio Hudson com o Oceano Atlântico. No centro da cidade fica Manhattan, um distrito com alta densidade demográfica que está entre os principais centros comerciais, financeiros e culturais do mundo. Entre seus pontos emblemáticos, destacam-se arranha-céus, como o Empire State Building, e o enorme Central Park. O teatro da Broadway fica em meio às luzes de neon da Times Square",
+     "pointsActivies": [
+		   40.792927,
+		   -74.058204 
+     ],
+     "poster": "https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80",
+     "price": "R$ 1450,70",
+		 "title": "New York"
+  },
+  {
+     "id": "sfsfsfserr3434343",
+     "location": "Kamataka, India",
+     "overview": "Bangalore (também chamada de Bengaluru) é a capital do estado de Karnataka, no sul da Índia. Operando como o centro de tecnologia da ponta da Índia, a cidade também é conhecida por seus parques e sua vida noturna. Perto do Parque Cubbon, há o Vidhana Soudha, um prédio legislativo no estilo neodravídico. Entre as antigas residências reais, destacam-se o Palácio de Bangalore, do século XIX, inspirado no Castelo de Windsor, na Inglaterra, e o Palácio de Verão do Sultão Tipu, uma estrutura de teca do século XVIII.",
+     "pointsActivies": [
+		   13.023577,
+		   77.536856 
+     ],
+     "poster": "https://images.unsplash.com/photo-1624461752922-38195fcfa740?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2835&q=80",
+     "price": "R$ 1300,50",
+		 "title": "Bangalore"
+  }
+]
