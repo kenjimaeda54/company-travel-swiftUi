@@ -25,7 +25,6 @@ final class HomeScreen_UiTests: XCTestCase {
     app = nil
   }
 
-  
   func testExistsGridDestionationAndCorrectRenderItens() {
     let grid = app.otherElements["GridHomeDestination"]
     XCTAssertTrue(grid.waitForExistence(timeout: 5))
@@ -38,12 +37,10 @@ final class HomeScreen_UiTests: XCTestCase {
     XCTAssertTrue(newYorkText.exists)
     XCTAssertTrue(kamatakaText.exists)
   }
-	
-	func testRenderNameUser()  {
-		let nameText = app.staticTexts["Hi Bella,"]
-		
-		XCTAssertTrue(nameText.exists)
-	}
-	
-	
+
+  func testRenderNameUser() {
+    let nameText = app.staticTexts["Hi Bella,"]
+
+    XCTAssertTrue(nameText.exists)
+  }
 }

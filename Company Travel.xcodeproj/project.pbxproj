@@ -41,6 +41,7 @@
 		818C24BC2AB68D1F0074A721 /* KeyBoardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818C24BB2AB68D1F0074A721 /* KeyBoardResponder.swift */; };
 		81A2D3222AB388A40005DD73 /* MaxLengthCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2D3212AB388A40005DD73 /* MaxLengthCharacter.swift */; };
 		81AAB49E2AB135CF0037C3F2 /* FavoriteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AAB49D2AB135CF0037C3F2 /* FavoriteScreen.swift */; };
+		81D70B9B2ABDA39900C69190 /* ScreensFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D70B9A2ABDA39900C69190 /* ScreensFactory.swift */; };
 		81DC31822AB248F400025335 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC31812AB248F400025335 /* RootView.swift */; };
 		81DC31882AB25CDC00025335 /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC31872AB25CDC00025335 /* Shimmer.swift */; };
 		81DC318A2AB25CE900025335 /* RedactShimmerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC31892AB25CE900025335 /* RedactShimmerViewModifier.swift */; };
@@ -135,6 +136,7 @@
 		819BBDEC2AB1D544005A6957 /* ContentButtonTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentButtonTabBar.swift; sourceTree = "<group>"; };
 		81A2D3212AB388A40005DD73 /* MaxLengthCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthCharacter.swift; sourceTree = "<group>"; };
 		81AAB49D2AB135CF0037C3F2 /* FavoriteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreen.swift; sourceTree = "<group>"; };
+		81D70B9A2ABDA39900C69190 /* ScreensFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensFactory.swift; sourceTree = "<group>"; };
 		81DC31812AB248F400025335 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		81DC31832AB257DC00025335 /* TabBarNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarNavigation.swift; sourceTree = "<group>"; };
 		81DC31872AB25CDC00025335 /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
@@ -445,6 +447,7 @@
 			isa = PBXGroup;
 			children = (
 				81FBE4B12AAFD786004E9790 /* HttpClientFactory.swift */,
+				81D70B9A2ABDA39900C69190 /* ScreensFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -718,6 +721,7 @@
 				814B5E672ABC60B300242017 /* TextFieldSecurity.swift in Sources */,
 				818C24BC2AB68D1F0074A721 /* KeyBoardResponder.swift in Sources */,
 				813FD1F72AB135F900BD4E7D /* ProfileScreen.swift in Sources */,
+				81D70B9B2ABDA39900C69190 /* ScreensFactory.swift in Sources */,
 				81FBE4A52AAFCC79004E9790 /* HttpClientProtocol.swift in Sources */,
 				81FBE4AF2AAFD6D8004E9790 /* StoreHome.swift in Sources */,
 				81E024DD2AAF39EB00E4D00A /* DestinationModel.swift in Sources */,
