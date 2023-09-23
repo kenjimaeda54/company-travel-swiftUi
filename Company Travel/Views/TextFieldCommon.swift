@@ -11,6 +11,7 @@ struct TextFieldCommon: View {
   @Binding var value: String
   var placeHolderText: String
   var fieldValidate: ValidateTextField?
+  var accebilityLabel: String?
 
   var body: some View {
     VStack(alignment: .leading, spacing: 5) {
@@ -23,6 +24,7 @@ struct TextFieldCommon: View {
           .foregroundColor(ColorsApp.gray),
         axis: .vertical
       )
+      .accessibilityLabel(accebilityLabel ?? "")
       .padding(EdgeInsets(top: 7, leading: 15, bottom: 7, trailing: 15))
       .autocorrectionDisabled(true)
       .font(.custom(FontsApp.openRegular, size: 16))

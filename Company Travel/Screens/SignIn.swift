@@ -31,7 +31,8 @@ struct SigIn: View {
   @State private var isLoading = false
 
   var validateEmail: Bool {
-    let pattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+    let pattern =
+      "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
     return returnIsValiteField(value: user.email, pattern: pattern)
   }
 
@@ -73,18 +74,14 @@ struct SigIn: View {
   }
 
   func handleGetPhotoGallery() {
-    storeSigIn.handleApresentedSheetGalleryAndPhoto(
-      sheetSelectedGaleryOrCamera: &showSheetSelectGaleryOrCamera
-    )
+    showSheetSelectGaleryOrCamera = false
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
       showSheetGallery.toggle()
     }
   }
 
   func handleGetPhotoCamera() {
-    storeSigIn.handleApresentedSheetGalleryAndPhoto(
-      sheetSelectedGaleryOrCamera: &showSheetSelectGaleryOrCamera
-    )
+    showSheetSelectGaleryOrCamera = false
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
       showSheetCamera.toggle()
     }
@@ -108,6 +105,7 @@ struct SigIn: View {
               .clipShape(Circle())
           }
         }
+        .accessibilityIdentifier("ButtonAvatar")
 
         Text("Clique na imagem acima para selecionar uma foto")
           .font(.custom(FontsApp.openLight, size: 13))
@@ -127,11 +125,13 @@ struct SigIn: View {
               }
 
             ),
-            placeHolderText: "Coloque seu nome para identificarmos"
+            placeHolderText: "Coloque seu nome para identificarmos",
+            accebilityLabel: "Name"
           )
           .submitLabel(.next)
           .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
           .focused($focusedField, equals: .name)
+
           TextFieldCommon(
             value: Binding(
               get: { user.email }, set: { newValue, _ in
@@ -145,7 +145,8 @@ struct SigIn: View {
 
             ),
             placeHolderText: "Insira seu email",
-            fieldValidate: validateFieldEmail
+            fieldValidate: validateFieldEmail,
+            accebilityLabel: "Email"
           )
           .onChange(of: user.email, perform: { newValue in
             validateAllConditionsEmail(newValue)
@@ -153,6 +154,7 @@ struct SigIn: View {
           .submitLabel(.next)
           .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
           .focused($focusedField, equals: .email)
+
           TextFieldSecurity(
             isSecure: isSecure,
             value: Binding(
@@ -169,7 +171,8 @@ struct SigIn: View {
               isSecure ? Image(systemName: "eye.slash") : Image(systemName: "eye")
             },
             action: handleActionIcon,
-            fieldValidate: user.password.count > 4 ? validateTextFieldPassword : nil
+            fieldValidate: user.password.count > 4 ? validateTextFieldPassword : nil,
+            accebilityLabel: "Password"
           )
           .submitLabel(.done)
           .focused($focusedField, equals: .password)
@@ -239,7 +242,9 @@ struct SigIn: View {
     }
     .sheet(isPresented: $showSheetGallery) {
       ImagePicker(sourceType: .photoLibrary, selectedImage: $image)
+        .accessibilityIdentifier("ImagePickerLibrary")
     }
+    .accessibilityIdentifier("SheetSelectedPhotoLibrary")
   }
 }
 

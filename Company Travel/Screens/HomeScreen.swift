@@ -49,6 +49,7 @@ struct HomeScreen: View {
             ForEach(storeHome.destinations) { destination in
               RowDestination(destionation: destination, isFavorite: $isFavorite)
             }
+
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
           }
           .accessibilityIdentifier("GridHomeDestination")

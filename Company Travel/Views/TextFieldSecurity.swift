@@ -13,6 +13,7 @@ struct TextFieldSecurity<Content: View>: View {
   let icon: () -> Content
   var action: () -> Void
   var fieldValidate: ValidateTextField?
+  var accebilityLabel: String?
 
   var body: some View {
     VStack(alignment: .leading, spacing: 5) {
@@ -53,6 +54,7 @@ struct TextFieldSecurity<Content: View>: View {
           }
         }
       }
+      .accessibilityLabel(accebilityLabel ?? "")
       .padding(EdgeInsets(top: 2, leading: 15, bottom: 2, trailing: 15))
       .frame(maxWidth: .infinity)
       .foregroundColor(ColorsApp.black)
@@ -60,14 +62,16 @@ struct TextFieldSecurity<Content: View>: View {
         RoundedRectangle(cornerRadius: 5)
           .stroke(ColorsApp.black.opacity(0.5), lineWidth: 1)
       )
+
       if fieldValidate != nil {
         Text(fieldValidate!.feedBackWrong)
           .font(.custom(FontsApp.openLight, size: 12))
           .foregroundColor(ColorsApp.red)
+          .accessibilityLabel(fieldValidate!.feedBackWrong)
       }
     }
     // maneira mais simples de criar um text field com icone
-    // e fazer um hstack e o estilo todo do text field deixo no hstack
+    // e fazer um hstack e o estilo todo do text field detro no hstack
     // text field fica sem nenhum estilo visual
   }
 }

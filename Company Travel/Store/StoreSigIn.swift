@@ -10,7 +10,6 @@ import Foundation
 
 class StoreSigIn: ObservableObject {
   @Published var loading = StateLoading.loading
-  @Published var showSheetSelectGaleryOrCamera = false
 
   let httpClient: HttpClientProtocol
 
@@ -35,9 +34,5 @@ class StoreSigIn: ObservableObject {
         }
       }
     }
-  }
-
-  func handleApresentedSheetGalleryAndPhoto(sheetSelectedGaleryOrCamera: inout Bool) {
-    sheetSelectedGaleryOrCamera = false
   }
 }

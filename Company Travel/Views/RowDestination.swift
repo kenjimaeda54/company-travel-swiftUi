@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// cheat test
+// https://www.hackingwithswift.com/articles/148/xcode-ui-testing-cheat-sheet
 struct RowDestination: View {
   var destionation: DestinationModel
   @Binding var isFavorite: Bool
@@ -23,6 +25,7 @@ struct RowDestination: View {
         )
         .offset(x: 70, y: -140)
         .zIndex(2)
+        .accessibilityLabel("This image have touch")
         .gesture(
           TapGesture()
             .onEnded { _ in
@@ -65,7 +68,6 @@ struct RowDestination: View {
       }
       .background(ColorsApp.white)
       .cornerRadius(5)
-      .accessibilityIdentifier("RowDestination")
     }
   }
 }

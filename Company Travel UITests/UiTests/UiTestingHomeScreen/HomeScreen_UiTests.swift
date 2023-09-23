@@ -29,6 +29,12 @@ final class HomeScreen_UiTests: XCTestCase {
     let grid = app.otherElements["GridHomeDestination"]
     XCTAssertTrue(grid.waitForExistence(timeout: 5))
 
+    let predicate =
+      NSPredicate(format: "label CONTAINS 'This image have touch'") // uma possibilidade e adicionar accessibilityLabel
+    // na view
+    let gridItems = grid.images.containing(predicate)
+    XCTAssertEqual(gridItems.count, 3)
+
     let texasText = app.staticTexts["Texas, E.U.A"]
     let newYorkText = app.staticTexts["New York, E.U.A"]
     let kamatakaText = app.staticTexts["Kamataka, India"]
