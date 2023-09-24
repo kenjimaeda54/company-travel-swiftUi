@@ -1120,8 +1120,8 @@
             filePath = "Company Travel UITests/UiTests/UiTestingSigInScreeen/SigInScreen_UiTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "testEnableButtonIfAllFieldsAreFieldIn()"
             landmarkType = "7">
             <Locations>
@@ -1168,8 +1168,8 @@
             filePath = "Company Travel UITests/UiTests/UiTestingSigInScreeen/SigInScreen_UiTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "testTypePasswordWrong()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1216,8 +1216,8 @@
             filePath = "Company Travel UITests/UiTests/UiTestingSigInScreeen/SigInScreen_UiTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "testTypePasswordWrong()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1232,8 +1232,8 @@
             filePath = "Company Travel UITests/UiTests/UiTestingSigInScreeen/SigInScreen_UiTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "testTypeEmailWrong()"
             landmarkType = "7">
          </BreakpointContent>

@@ -11,6 +11,14 @@ import XCTest
 
 final class SigInScreen_UiTests: XCTestCase {
   private var app: XCUIApplication!
+  private var buttonRegisterUser: XCUIElement!
+  private var textFieldName: XCUIElement!
+  private var textFieldEmail: XCUIElement!
+  private var textFieldPassword: XCUIElement!
+  private var buttonAvatar: XCUIElement!
+  private var buttonSheetGallery: XCUIElement!
+  private var sheetPhotoLibrary: XCUIElement!
+  private var imagePickerLibrary: XCUIElement!
 
   override func setUpWithError() throws {
     continueAfterFailure = false
@@ -18,6 +26,16 @@ final class SigInScreen_UiTests: XCTestCase {
     app = XCUIApplication()
     app.launchEnvironment = ["ENV": "TEST", "SCREEN": "SIGIN"]
     app.launch()
+
+    buttonRegisterUser = app.buttons["Cadastrar"]
+    textFieldName = findLabelAndReturnElement("Name")
+    textFieldEmail = findLabelAndReturnElement("Email")
+    textFieldPassword = findLabelAndReturnElement("Password")
+    let predicateButtonAvatar = NSPredicate(format: "identifier == 'ButtonAvatar'")
+    buttonAvatar = app.descendants(matching: .any).matching(predicateButtonAvatar).firstMatch
+    buttonSheetGallery = app.buttons["Pegar foto da galeria"]
+    sheetPhotoLibrary = app.otherElements["SheetSelectedPhotoLibrary"]
+    imagePickerLibrary = app.otherElements["ImagePickerLibrary"]
   }
 
   override func tearDownWithError() throws {
@@ -25,16 +43,6 @@ final class SigInScreen_UiTests: XCTestCase {
   }
 
   func testEnableButtonIfAllFieldsAreFieldIn() {
-    let buttonRegisterUser = app.buttons["Cadastrar"]
-    let textFieldName = findLabelAndReturnElement("Name")
-    let textFieldEmail = findLabelAndReturnElement("Email")
-    let textFieldPassword = findLabelAndReturnElement("Password")
-    let predicateButtonAvatar = NSPredicate(format: "identifier == 'ButtonAvatar'")
-    let buttonAvatar = app.descendants(matching: .any).matching(predicateButtonAvatar).firstMatch
-    let buttonSheetGallery = app.buttons["Pegar foto da galeria"]
-    let sheetPhotoLibrary = app.otherElements["SheetSelectedPhotoLibrary"]
-    let imagePickerLibrary = app.otherElements["ImagePickerLibrary"]
-
     XCTAssertTrue(textFieldName.exists)
     XCTAssertTrue(textFieldEmail.exists)
     XCTAssertTrue(buttonRegisterUser.exists)
@@ -43,11 +51,17 @@ final class SigInScreen_UiTests: XCTestCase {
     textFieldName.tap()
     textFieldName.typeText("Pedro")
 
+    XCTAssertEqual(buttonRegisterUser.isEnabled, false)
+
     textFieldEmail.tap()
     textFieldEmail.typeText("Joao@gmail.com")
 
+    XCTAssertEqual(buttonRegisterUser.isEnabled, false)
+
     textFieldPassword.tap()
     textFieldPassword.typeText("Abacate54$")
+
+    XCTAssertEqual(buttonRegisterUser.isEnabled, false)
 
     buttonAvatar.tap()
 
@@ -66,13 +80,12 @@ final class SigInScreen_UiTests: XCTestCase {
   }
 
   func testTypeEmailWrong() {
-    let textEmail = findLabelAndReturnElement("Email")
     let nextButton = app.buttons["next"]
     let doneButton = app.buttons["done"]
     let textFailedEmail = app.staticTexts["Precisa ser um email valido"]
 
-    textEmail.tap()
-    textEmail.typeText("Joao@.gmail.com")
+    textFieldEmail.tap()
+    textFieldEmail.typeText("Joao@.gmail.com")
     nextButton.tap()
     doneButton.tap()
 
@@ -80,27 +93,18 @@ final class SigInScreen_UiTests: XCTestCase {
   }
 
   func testTypePasswordWrong() {
-    let textPassword = findLabelAndReturnElement("Password")
     let doneButton = app.buttons["done"]
     let textFailedPassword = app
       .staticTexts["Senha precisa ser no mínimo 8 palavras, um maiúsculo, um dígito é um especial"]
 
-    textPassword.tap()
-    textPassword.typeText("abacate54%") // cuidado # nao e permitido
+    textFieldPassword.tap()
+    textFieldPassword.typeText("abacate54%") // cuidado # nao e permitido
     doneButton.tap()
 
     XCTAssertTrue(textFailedPassword.exists)
   }
 
   func testTypeEmailRegistered() {
-    let buttonRegisterUser = app.buttons["Cadastrar"]
-    let textFieldName = findLabelAndReturnElement("Name")
-    let textFieldEmail = findLabelAndReturnElement("Email")
-    let textFieldPassword = findLabelAndReturnElement("Password")
-    let predicateButtonAvatar = NSPredicate(format: "identifier == 'ButtonAvatar'")
-    let buttonAvatar = app.descendants(matching: .any).matching(predicateButtonAvatar).firstMatch
-    let buttonSheetGallery = app.buttons["Pegar foto da galeria"]
-    let imagePickerLibrary = app.otherElements["ImagePickerLibrary"]
     let emailFailed = app.staticTexts["Ops! Este email ja foi registrado"]
 
     textFieldName.tap()
@@ -126,14 +130,6 @@ final class SigInScreen_UiTests: XCTestCase {
   }
 
   func testRegisterUserWithSuccess() {
-    let buttonRegisterUser = app.buttons["Cadastrar"]
-    let textFieldName = findLabelAndReturnElement("Name")
-    let textFieldEmail = findLabelAndReturnElement("Email")
-    let textFieldPassword = findLabelAndReturnElement("Password")
-    let predicateButtonAvatar = NSPredicate(format: "identifier == 'ButtonAvatar'")
-    let buttonAvatar = app.descendants(matching: .any).matching(predicateButtonAvatar).firstMatch
-    let buttonSheetGallery = app.buttons["Pegar foto da galeria"]
-    let imagePickerLibrary = app.otherElements["ImagePickerLibrary"]
     let registerUserSuccess = app.staticTexts["Hi Bella,"]
 
     textFieldName.tap()
@@ -166,7 +162,6 @@ extension SigInScreen_UiTests {
   }
 
   // exemplo como retornar varios elementos
-
 //  func returnElementsFormAndExecuteUserRegistrationFlow(typeName: String, typeEmail: String, typePassword: String)
 //  -> [String: XCUIElement] {
 //    let buttonRegisterUser = app.buttons["Cadastrar"]
