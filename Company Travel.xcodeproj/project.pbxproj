@@ -12,6 +12,8 @@
 		812E8D4A2AAE3DBE0043648D /* Company_TravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E8D492AAE3DBE0043648D /* Company_TravelApp.swift */; };
 		812E8D4E2AAE3DBF0043648D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812E8D4D2AAE3DBF0043648D /* Assets.xcassets */; };
 		812E8D512AAE3DBF0043648D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812E8D502AAE3DBF0043648D /* Preview Assets.xcassets */; };
+		812FE18D2ABFB96500455933 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FE18C2ABFB96500455933 /* UserModel.swift */; };
+		812FE1912ABFC1BD00455933 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FE1902ABFC1BD00455933 /* User.json */; };
 		8136B4F62AB683240083B098 /* ValidateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136B4F52AB683240083B098 /* ValidateTextField.swift */; };
 		813A04922AB37B4500D38CC3 /* TextFieldValidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A04912AB37B4500D38CC3 /* TextFieldValidate.swift */; };
 		813FD1F72AB135F900BD4E7D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FD1F62AB135F900BD4E7D /* ProfileScreen.swift */; };
@@ -116,6 +118,8 @@
 		812E8D4B2AAE3DBE0043648D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		812E8D4D2AAE3DBF0043648D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		812E8D502AAE3DBF0043648D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		812FE18C2ABFB96500455933 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		812FE1902ABFC1BD00455933 /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 		8136B4F52AB683240083B098 /* ValidateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateTextField.swift; sourceTree = "<group>"; };
 		813A04912AB37B4500D38CC3 /* TextFieldValidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidate.swift; sourceTree = "<group>"; };
 		813FD1F62AB135F900BD4E7D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
@@ -270,6 +274,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		812FE18B2ABFB7FF00455933 /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				819430CB2ABBB2F900E245FC /* MockHttpClient.swift */,
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
 		814B5EB32ABC6D1A00242017 /* Company Travel UITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				819430DB2ABBB89100E245FC /* Destination.json */,
+				812FE1902ABFC1BD00455933 /* User.json */,
 			);
 			path = MockData;
 			sourceTree = "<group>";
@@ -340,6 +353,7 @@
 		81D70B9F2ABDAF4100C69190 /* UiTesting */ = {
 			isa = PBXGroup;
 			children = (
+				812FE18B2ABFB7FF00455933 /* MockService */,
 				81FBE4B02AAFD767004E9790 /* Factories */,
 				819430CA2ABBB2D400E245FC /* MockServices */,
 				819430DA2ABBB84700E245FC /* MockData */,
@@ -360,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				81E024DC2AAF39EB00E4D00A /* DestinationModel.swift */,
+				812FE18C2ABFB96500455933 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -433,7 +448,6 @@
 		81FBE4A32AAFCC5A004E9790 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				819430CB2ABBB2F900E245FC /* MockHttpClient.swift */,
 				81FBE4A42AAFCC79004E9790 /* HttpClientProtocol.swift */,
 				81FBE4A62AAFCEE0004E9790 /* HttpClientGeneric.swift */,
 				81FBE4AC2AAFD14B004E9790 /* HttpClient.swift */,
@@ -608,6 +622,7 @@
 				81E025102AAF456700E4D00A /* OpenSans_SemiCondensed-SemiBold.ttf in Resources */,
 				81E025292AAF456700E4D00A /* OpenSans-BoldItalic.ttf in Resources */,
 				812E8D512AAE3DBF0043648D /* Preview Assets.xcassets in Resources */,
+				812FE1912ABFC1BD00455933 /* User.json in Resources */,
 				81E025262AAF456700E4D00A /* OpenSans_SemiCondensed-MediumItalic.ttf in Resources */,
 				81E0250F2AAF456700E4D00A /* OpenSans-SemiBold.ttf in Resources */,
 				81E025272AAF456700E4D00A /* OpenSans-ExtraBold.ttf in Resources */,
@@ -713,6 +728,7 @@
 				811804EF2AB52CA2000BFA5C /* StoreSigIn.swift in Sources */,
 				814B5E912ABC66DD00242017 /* MockHttpClient.swift in Sources */,
 				814B5E622ABC60A400242017 /* TabBarNavigation.swift in Sources */,
+				812FE18D2ABFB96500455933 /* UserModel.swift in Sources */,
 				812E8D4A2AAE3DBE0043648D /* Company_TravelApp.swift in Sources */,
 				81E0252D2AAF471500E4D00A /* FontsApp.swift in Sources */,
 				815A99DC2AB5184100334793 /* UIImage.swift in Sources */,

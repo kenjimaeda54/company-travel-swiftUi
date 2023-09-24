@@ -17,7 +17,13 @@ class StoreSigIn: ObservableObject {
     self.httpClient = HttpClientFactory.create()
   }
 
-  func createUser(email: String, password: String, name: String, data: Data?, completion: @escaping (User?) -> Void) {
+  func createUser(
+    email: String,
+    password: String,
+    name: String,
+    data: Data?,
+    completion: @escaping (UserModel?) -> Void
+  ) {
     httpClient.createUser(email: email, password: password, name: name, data: data) { result in
 
       switch result {

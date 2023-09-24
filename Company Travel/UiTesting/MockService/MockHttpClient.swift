@@ -23,12 +23,25 @@ class MockHttpClient: HttpClientProtocol, Mockable {
     password: String,
     name: String,
     data: Data?,
-    completion: @escaping (Result<User, HttpError>) -> Void
-  ) {}
+    completion: @escaping (Result<UserModel, HttpError>) -> Void
+  ) {
+    let users = loadJson(filename: "User", type: [UserModel].self)
+
+    if users.contains(where: { $0.email == email }) {
+      return completion(.failure(.badResponse))
+    }
+    let userModel = UserModel(
+      displayName: name,
+      photoUrl: URL(string: "https://github.com/kenjimaeda54.png")!,
+      email: email
+    )
+
+    completion(.success(userModel))
+  }
 
   func sigIn(
     email: String,
     password: String,
-    completion: @escaping (Result<User, HttpError>) -> Void
+    completion: @escaping (Result<UserModel, HttpError>) -> Void
   ) {}
 }

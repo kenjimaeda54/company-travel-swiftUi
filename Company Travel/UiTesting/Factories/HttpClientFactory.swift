@@ -5,6 +5,7 @@
 //  Created by kenjimaeda on 11/09/23.
 //
 
+import FirebaseCore
 import Foundation
 
 class HttpClientFactory {

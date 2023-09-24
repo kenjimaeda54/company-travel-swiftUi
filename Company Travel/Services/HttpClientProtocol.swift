@@ -23,11 +23,11 @@ protocol HttpClientProtocol {
     password: String,
     name: String,
     data: Data?,
-    completion: @escaping (Result<User, HttpError>) -> Void
+    completion: @escaping (Result<UserModel, HttpError>) -> Void
   )
   func sigIn(
     email: String,
     password: String,
-    completion: @escaping (Result<User, HttpError>) -> Void
+    completion: @escaping (Result<UserModel, HttpError>) -> Void
   )
 }

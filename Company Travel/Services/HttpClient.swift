@@ -52,7 +52,8 @@ class HttpClient: HttpClientProtocol {
   // https://gist.github.com/rphlfc/13cdd3019e4fdae1ca37d34247a185e0
   // https://firebase.google.com/docs/storage/ios/download-files?hl=pt-br
   func createUser(
-    email: String, password: String, name: String, data: Data?, completion: @escaping (Result<User, HttpError>) -> Void
+    email: String, password: String, name: String, data: Data?,
+    completion: @escaping (Result<UserModel, HttpError>) -> Void
   ) {
     HttpClient.auth.createUser(withEmail: email, password: password) { authResult, error in
       if let error = error {
@@ -78,8 +79,13 @@ class HttpClient: HttpClientProtocol {
                   completion(.failure(.badResponse))
 
                 case .success:
+                  let userModel = UserModel(
+                    displayName: user.displayName,
+                    photoUrl: user.photoURL,
+                    email: user.email
+                  )
                   self.updateUser(name: name, photoUrl: url!)
-                  completion(.success(user))
+                  completion(.success(userModel))
                 }
               }
             }
@@ -89,15 +95,20 @@ class HttpClient: HttpClientProtocol {
     }
   }
 
-  func sigIn(email: String, password: String, completion: @escaping (Result<User, HttpError>) -> Void) {
-    HttpClient.auth.signIn(withEmail: email, password: password) { [weak self] authReult, error in
+  func sigIn(email: String, password: String, completion: @escaping (Result<UserModel, HttpError>) -> Void) {
+    HttpClient.auth.signIn(withEmail: email, password: password) { authReult, error in
       if let error = error {
         print(error.localizedDescription)
         completion(.failure(.badResponse))
       }
 
       if let user = authReult?.user {
-        completion(.success(user))
+        let userModel = UserModel(
+          displayName: user.displayName,
+          photoUrl: user.photoURL,
+          email: user.email
+        )
+        completion(.success(userModel))
       }
     }
   }

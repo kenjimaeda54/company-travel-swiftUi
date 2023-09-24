@@ -47,7 +47,7 @@ final class SigInScreen_UiTests: XCTestCase {
     textFieldEmail.typeText("Joao@gmail.com")
 
     textFieldPassword.tap()
-    textFieldPassword.typeText("Abacate54#")
+    textFieldPassword.typeText("Abacate54$")
 
     buttonAvatar.tap()
 
@@ -91,6 +91,72 @@ final class SigInScreen_UiTests: XCTestCase {
 
     XCTAssertTrue(textFailedPassword.exists)
   }
+
+  func testTypeEmailRegistered() {
+    let buttonRegisterUser = app.buttons["Cadastrar"]
+    let textFieldName = findLabelAndReturnElement("Name")
+    let textFieldEmail = findLabelAndReturnElement("Email")
+    let textFieldPassword = findLabelAndReturnElement("Password")
+    let predicateButtonAvatar = NSPredicate(format: "identifier == 'ButtonAvatar'")
+    let buttonAvatar = app.descendants(matching: .any).matching(predicateButtonAvatar).firstMatch
+    let buttonSheetGallery = app.buttons["Pegar foto da galeria"]
+    let imagePickerLibrary = app.otherElements["ImagePickerLibrary"]
+    let emailFailed = app.staticTexts["Ops! Este email ja foi registrado"]
+
+    textFieldName.tap()
+    textFieldName.typeText("Pedro")
+
+    textFieldEmail.tap()
+    textFieldEmail.typeText("kenji@gmail.com")
+
+    textFieldPassword.tap()
+    textFieldPassword.typeText("Abacate54$")
+
+    buttonAvatar.tap()
+
+    XCTAssertTrue(buttonSheetGallery.exists)
+
+    buttonSheetGallery.tap()
+    imagePickerLibrary.images["Photo, March 30, 2018, 4:14 PM"]
+      .tap()
+
+    buttonRegisterUser.tap()
+
+    XCTAssertTrue(emailFailed.exists)
+  }
+
+  func testRegisterUserWithSuccess() {
+    let buttonRegisterUser = app.buttons["Cadastrar"]
+    let textFieldName = findLabelAndReturnElement("Name")
+    let textFieldEmail = findLabelAndReturnElement("Email")
+    let textFieldPassword = findLabelAndReturnElement("Password")
+    let predicateButtonAvatar = NSPredicate(format: "identifier == 'ButtonAvatar'")
+    let buttonAvatar = app.descendants(matching: .any).matching(predicateButtonAvatar).firstMatch
+    let buttonSheetGallery = app.buttons["Pegar foto da galeria"]
+    let imagePickerLibrary = app.otherElements["ImagePickerLibrary"]
+    let registerUserSuccess = app.staticTexts["Hi Bella,"]
+
+    textFieldName.tap()
+    textFieldName.typeText("Pedro")
+
+    textFieldEmail.tap()
+    textFieldEmail.typeText("Pedro@gmail.com")
+
+    textFieldPassword.tap()
+    textFieldPassword.typeText("Abacate54$")
+
+    buttonAvatar.tap()
+
+    XCTAssertTrue(buttonSheetGallery.exists)
+
+    buttonSheetGallery.tap()
+    imagePickerLibrary.images["Photo, March 30, 2018, 4:14 PM"]
+      .tap()
+
+    buttonRegisterUser.tap()
+
+    XCTAssertTrue(registerUserSuccess.exists)
+  }
 }
 
 extension SigInScreen_UiTests {
@@ -98,4 +164,32 @@ extension SigInScreen_UiTests {
     let predicate = NSPredicate(format: "label == '\(label)'")
     return app.descendants(matching: .any).matching(predicate).firstMatch
   }
+
+  // exemplo como retornar varios elementos
+
+//  func returnElementsFormAndExecuteUserRegistrationFlow(typeName: String, typeEmail: String, typePassword: String)
+//  -> [String: XCUIElement] {
+//    let buttonRegisterUser = app.buttons["Cadastrar"]
+//    let textFieldName = findLabelAndReturnElement("Name")
+//    let textFieldEmail = findLabelAndReturnElement("Email")
+//    let textFieldPassword = findLabelAndReturnElement("Password")
+//    let predicateButtonAvatar = NSPredicate(format: "identifier == 'ButtonAvatar'")
+//    let buttonAvatar = app.descendants(matching: .any).matching(predicateButtonAvatar).firstMatch
+//    let buttonSheetGallery = app.buttons["Pegar foto da galeria"]
+//    let sheetPhotoLibrary = app.otherElements["SheetSelectedPhotoLibrary"]
+//    let imagePickerLibrary = app.otherElements["ImagePickerLibrary"]
+//
+//
+//
+//    return [
+//      "buttonRegisterUser": buttonRegisterUser,
+//      "textFieldName": textFieldName,
+//      "textFieldEmail": textFieldEmail,
+//      "textFieldPassword": textFieldPassword,
+//      "buttonAvatar": buttonAvatar,
+//      "buttonSheetGallery": buttonSheetGallery,
+//      "sheetPhotoLibrary": sheetPhotoLibrary,
+//      "imagePickerLibrary": imagePickerLibrary
+//    ]
+//  }
 }
