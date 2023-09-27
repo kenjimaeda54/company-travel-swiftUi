@@ -2,42 +2,28 @@
 //  RootView.swift
 //  Company Travel
 //
-//  Created by kenjimaeda on 13/09/23.
+//  Created by kenjimaeda on 25/09/23.
 //
 
 import SwiftUI
 
 struct RootView: View {
-  @State var currentTag: TabsTag = .home
-  func handleCurrentTag(_ tag: TabsTag) {
-    currentTag = tag
-  }
+  var user: UserModel?
+  @StateObject var enviromentUser = EnvironmentUser()
 
   var body: some View {
-    NavigationStack {
-      switch currentTag {
-      case .home:
-        HomeScreen()
-          .safeAreaInset(edge: .bottom) {
-            TabBarNavigation(handleCurrentTag: handleCurrentTag, currentTag: currentTag)
-          }
-      case .favorite:
-        FavoriteScreen()
-          .safeAreaInset(edge: .bottom) {
-            TabBarNavigation(handleCurrentTag: handleCurrentTag, currentTag: currentTag)
-          }
-      case .profille:
-        ProfileScreen()
-          .safeAreaInset(edge: .bottom) {
-            TabBarNavigation(handleCurrentTag: handleCurrentTag, currentTag: currentTag)
-          }
+    ZStack {
+      if user != nil {
+        BottomNavigation(currentTag: .home)
+          .environmentObject(enviromentUser)
+      } else {
+        LogIn()
       }
     }
-  }
-}
-
-struct RootView_Previews: PreviewProvider {
-  static var previews: some View {
-    RootView()
+    .onAppear {
+      if user != nil {
+        enviromentUser.user = user!
+      }
+    }
   }
 }

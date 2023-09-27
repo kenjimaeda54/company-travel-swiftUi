@@ -13,7 +13,7 @@ enum TabsTag: Int {
   case profille = 3
 }
 
-struct TabBarNavigation: View {
+struct BottomItemNavigation: View {
   let handleCurrentTag: (TabsTag) -> Void
   let currentTag: TabsTag
 

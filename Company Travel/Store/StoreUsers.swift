@@ -8,8 +8,8 @@
 import FirebaseAuth
 import Foundation
 
-class StoreSigIn: ObservableObject {
-  @Published var loading = StateLoading.loading
+class StoreUsers: ObservableObject {
+  @Published var user: UserModel?
 
   let httpClient: HttpClientProtocol
 
@@ -30,6 +30,27 @@ class StoreSigIn: ObservableObject {
       case let .success(user):
 
         DispatchQueue.main.async {
+          self.user = user
+          completion(user)
+        }
+
+      case let .failure(error):
+        print(error)
+        DispatchQueue.main.async {
+          completion(nil)
+        }
+      }
+    }
+  }
+
+  func logIn(email: String, password: String, completion: @escaping (UserModel?) -> Void) {
+    httpClient.sigIn(email: email, password: password) { result in
+
+      switch result {
+      case let .success(user):
+
+        DispatchQueue.main.async {
+          self.user = user
           completion(user)
         }
 

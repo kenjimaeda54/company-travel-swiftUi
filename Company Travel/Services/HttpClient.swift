@@ -79,12 +79,14 @@ class HttpClient: HttpClientProtocol {
                   completion(.failure(.badResponse))
 
                 case .success:
-                  let userModel = UserModel(
-                    displayName: user.displayName,
-                    photoUrl: user.photoURL,
-                    email: user.email
-                  )
                   self.updateUser(name: name, photoUrl: url!)
+
+                  let userModel = UserModel(
+                    uid: user.uid,
+                    displayName: name,
+                    photoUrl: url!,
+                    email: email
+                  )
                   completion(.success(userModel))
                 }
               }
@@ -96,20 +98,41 @@ class HttpClient: HttpClientProtocol {
   }
 
   func sigIn(email: String, password: String, completion: @escaping (Result<UserModel, HttpError>) -> Void) {
-    HttpClient.auth.signIn(withEmail: email, password: password) { authReult, error in
-      if let error = error {
-        print(error.localizedDescription)
-        completion(.failure(.badResponse))
+    HttpClient.auth.signIn(withEmail: email, password: password) { authResult, error in
+
+      if let error = error as NSError? {
+        print(error.code)
+        completion(.failure(.errorEmailorPasswordWrong))
       }
 
-      if let user = authReult?.user {
+      if let user = authResult?.user {
         let userModel = UserModel(
+          uid: user.uid,
           displayName: user.displayName,
           photoUrl: user.photoURL,
           email: user.email
         )
         completion(.success(userModel))
       }
+
+      // uso de .some e where
+      //			case let .some(error as NSError)
+      //				where error.code == AuthErrorCode.wrongPassword.rawValue:
+      //				print("Passwrod wrong")
+      //				completion(.failure(.errorEmailorPasswordWrong))
+      //
+      //			case let .some(error as NSError)
+      //				where error.code == AuthErrorCode.invalidEmail.rawValue:
+      //				print("Passwrod wrong")
+      //				completion(.failure(.errorEmailorPasswordWrong))
+      //
+      //			case let .some(error as NSError):
+      //				print(error.code)
+      //				completion(.failure(.badResponse))
+      //
+      //			case .none:
+      //
+      //			}
     }
   }
 

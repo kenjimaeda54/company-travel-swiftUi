@@ -23,12 +23,15 @@ class ScreensFactory {
         case "FAVORITE":
           FavoriteScreen()
 
-        default:
+        case "SIGIN":
           SigIn()
+
+        default:
+          LogIn()
         }
 
       } else {
-        SigIn()
+        RootView()
       }
     }
 

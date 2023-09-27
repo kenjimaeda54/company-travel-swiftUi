@@ -9,7 +9,8 @@ import FirebaseAuth
 import Foundation
 
 enum HttpError: Error {
-  case badURL, badResponse, errorEncodingData, noData, invalidURL, invalidRequest, errorUploadPhoto, errorUpdateUser
+  case badURL, badResponse, errorEncodingData, noData, invalidURL, invalidRequest, errorUploadPhoto, errorUpdateUser,
+       errorEmailorPasswordWrong
 }
 
 enum StateLoading {

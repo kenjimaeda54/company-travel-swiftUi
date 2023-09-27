@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UserData {
+struct UserDataSigIn {
   var name: String
   var email: String
   var password: String
@@ -18,7 +18,7 @@ enum FocusField: Int, Hashable {
 }
 
 struct SigIn: View {
-  @State private var user = UserData(name: "", email: "", password: "")
+  @State private var user = UserDataSigIn(name: "", email: "", password: "")
   @State private var showSheetCamera = false
   @State private var showSheetGallery = false
   @State private var showSheetSelectGaleryOrCamera = false
@@ -26,7 +26,7 @@ struct SigIn: View {
   @State private var isPresented = false
   @State private var isSecure = true
   @FocusState var focusedField: FocusField?
-  @State private var storeSigIn = StoreSigIn(httpClient: HttpClientFactory.create())
+  @State private var storeUser = StoreUsers(httpClient: HttpClientFactory.create())
   @State private var validateFieldEmail: ValidateTextField?
   @State private var isLoading = false
 
@@ -181,7 +181,7 @@ struct SigIn: View {
         Spacer()
         ButtonCommon(action: {
           isLoading.toggle()
-          storeSigIn
+          storeUser
             .createUser(
               email: user.email,
               password: user.password,
@@ -201,6 +201,9 @@ struct SigIn: View {
         }, title: "Cadastrar", isLoading: isLoading)
           .disabled(isDisabledButton || isLoading)
           .opacity(isDisabledButton ? 0.5 : 1)
+      }
+      .safeAreaInset(edge: .top, alignment: .leading) {
+        BackButton(foregroundColor: ColorsApp.black)
       }
       .padding(EdgeInsets(top: 5, leading: 20, bottom: 20, trailing: 20))
       .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
@@ -233,7 +236,7 @@ struct SigIn: View {
         .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
       }
       .navigationDestination(isPresented: $isPresented) {
-        RootView()
+        RootView(user: storeUser.user)
           .navigationBarBackButtonHidden(true)
       }
     }

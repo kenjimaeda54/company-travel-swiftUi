@@ -130,7 +130,7 @@ final class SigInScreen_UiTests: XCTestCase {
   }
 
   func testRegisterUserWithSuccess() {
-    let registerUserSuccess = app.staticTexts["Hi Bella,"]
+    let registerUserSuccess = app.staticTexts["Ola Pedro, "]
 
     textFieldName.tap()
     textFieldName.typeText("Pedro")

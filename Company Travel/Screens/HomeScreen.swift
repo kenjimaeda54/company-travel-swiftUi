@@ -14,13 +14,20 @@ import SwiftUI
 struct HomeScreen: View {
   @StateObject var storeHome = StoreHome(httpClient: HttpClientFactory.create())
   @State private var isFavorite = false
+  @EnvironmentObject var stateUser: EnvironmentUser
+  @State private var user = UserModel(
+    uid: "",
+    displayName: "",
+    photoUrl: URL(string: "https://github.com/kenjimaeda54.png")!,
+    email: ""
+  )
 
   var body: some View {
     ScrollView(showsIndicators: false) {
       Group {
         HStack {
           VStack(alignment: .leading) {
-            Text("Hi Bella,")
+            Text("Ola \(user.displayName ?? ""), ")
               .font(.custom(FontsApp.openLight, size: 17))
               .foregroundColor(ColorsApp.gray)
             Text("Viajando hoje?")
@@ -28,11 +35,10 @@ struct HomeScreen: View {
               .foregroundColor(ColorsApp.black)
           }
           Spacer()
-          AsyncImage(url: URL(string: "https://github.com/kenjimaeda54.png")) { phase in
+          AsyncImage(url: user.photoUrl ?? URL(string: "https://github.com/kenjimaeda54.png")) { phase in
             if let image = phase.image {
               image
                 .resizable()
-                .aspectRatio(contentMode: .fit)
                 .frame(width: 50, height: 50)
                 .clipShape(Circle())
             }
@@ -59,6 +65,7 @@ struct HomeScreen: View {
     }
     .onAppear {
       storeHome.getDestionations()
+      user = stateUser.user
     }
     .background(ColorsApp.background, ignoresSafeAreaEdges: .all)
   }
@@ -66,6 +73,6 @@ struct HomeScreen: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    HomeScreen()
+    HomeScreen().environmentObject(EnvironmentUser())
   }
 }

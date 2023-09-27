@@ -31,6 +31,7 @@ class MockHttpClient: HttpClientProtocol, Mockable {
       return completion(.failure(.badResponse))
     }
     let userModel = UserModel(
+      uid: "32434FbE3",
       displayName: name,
       photoUrl: URL(string: "https://github.com/kenjimaeda54.png")!,
       email: email
