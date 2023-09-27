@@ -204,6 +204,7 @@ struct SigIn: View {
       }
       .safeAreaInset(edge: .top, alignment: .leading) {
         BackButton(foregroundColor: ColorsApp.black)
+          .frame(width: 15, height: 10)
       }
       .padding(EdgeInsets(top: 5, leading: 20, bottom: 20, trailing: 20))
       .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)

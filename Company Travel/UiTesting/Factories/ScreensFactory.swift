@@ -9,32 +9,28 @@ import Foundation
 import SwiftUI
 
 class ScreensFactory {
+  @ViewBuilder
   static func create() -> some View {
     let argumentsScreen = ProcessInfo.processInfo.environment["SCREEN"]
     let argumentsEnv = ProcessInfo.processInfo.environment["ENV"]
 
-    @ViewBuilder
-    var view: some View {
-      if argumentsEnv == "TEST" {
-        switch argumentsScreen {
-        case "HOME":
-          HomeScreen()
+    if argumentsEnv == "TEST" {
+      switch argumentsScreen {
+      case "HOME":
+        HomeScreen()
 
-        case "FAVORITE":
-          FavoriteScreen()
+      case "FAVORITE":
+        FavoriteScreen()
 
-        case "SIGIN":
-          SigIn()
+      case "SIGIN":
+        SigIn()
 
-        default:
-          LogIn()
-        }
-
-      } else {
-        RootView()
+      default:
+        LogIn()
       }
-    }
 
-    return view
+    } else {
+      RootView()
+    }
   }
 }

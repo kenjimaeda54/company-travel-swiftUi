@@ -44,5 +44,14 @@ class MockHttpClient: HttpClientProtocol, Mockable {
     email: String,
     password: String,
     completion: @escaping (Result<UserModel, HttpError>) -> Void
-  ) {}
+  ) {
+    let users = loadJson(filename: "User", type: [UserModel].self)
+    let findUser = users.first { $0.email == email }
+
+    if findUser != nil && password == "Abacate54@" {
+      return completion(.success(findUser!))
+    }
+
+    completion(.failure(.badResponse))
+  }
 }

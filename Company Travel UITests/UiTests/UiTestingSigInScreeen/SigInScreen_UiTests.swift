@@ -75,13 +75,12 @@ final class SigInScreen_UiTests: XCTestCase {
     imagePickerLibrary.images["Photo, March 30, 2018, 4:14 PM"]
       .tap() // precisa pegar a referencia da foto e dar um tap que seria o click, primeira foto da galeria esta
     // referencia
-
     XCTAssertEqual(buttonRegisterUser.isEnabled, true)
   }
 
   func testTypeEmailWrong() {
     let nextButton = app.buttons["next"]
-    let doneButton = app.buttons["done"]
+    let doneButton = app.buttons["Done"]
     let textFailedEmail = app.staticTexts["Precisa ser um email valido"]
 
     textFieldEmail.tap()

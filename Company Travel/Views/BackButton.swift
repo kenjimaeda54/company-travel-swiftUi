@@ -21,7 +21,6 @@ struct BackButton: View {
       Button(action: handleBack) {
         Image(systemName: "chevron.left")
           .resizable()
-          .frame(width: 15, height: 20)
           .foregroundColor(ColorsApp.black)
           .aspectRatio(contentMode: .fit)
       }
@@ -32,7 +31,6 @@ struct BackButton: View {
 //      .ultraThinMaterial,
 //      in: Circle()
 //    )
-    .frame(width: 40, height: 40)
   }
 }
 
