@@ -87,6 +87,7 @@ struct LogIn: View {
         .onChange(of: user.email, perform: { newValue in
           validateAllConditionsEmail(newValue)
         })
+        .lineLimit(3)
         .submitLabel(.next)
         .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
         .focused($focusedField, equals: .email)

@@ -9,32 +9,18 @@ import SwiftUI
 
 // cheat test
 // https://www.hackingwithswift.com/articles/148/xcode-ui-testing-cheat-sheet
-struct RowDestination: View {
-  var destionation: DestinationModel
-  @Binding var isFavorite: Bool
+struct RowDestination<Content: View>: View {
+  var destination: DestinationModel
+  var content: () -> Content
+	
+ 
 
   var body: some View {
     ZStack {
-      Image(systemName: "heart.fill")
-        .font(.system(size: 25))
-        .foregroundColor(isFavorite ? ColorsApp.red : ColorsApp.gray)
-        .background(
-          Circle()
-            .foregroundColor(ColorsApp.background)
-            .frame(width: 60, height: 60)
-        )
-        .offset(x: 70, y: -140)
-        .zIndex(2)
-        .accessibilityLabel("This image have touch")
-        .gesture(
-          TapGesture()
-            .onEnded { _ in
-              isFavorite.toggle()
-            }
-        )
+      content()
 
       VStack {
-        AsyncImage(url: URL(string: destionation.poster), scale: 20) { phase in
+				AsyncImage(url: URL(string: destination.poster)) { phase in
 
           if let image = phase.image {
             image
@@ -45,7 +31,7 @@ struct RowDestination: View {
           }
 
           VStack(alignment: .leading, spacing: 3) {
-            Text(destionation.title)
+            Text(destination.title)
               .font(.custom(FontsApp.openRegular, size: 15))
               .foregroundColor(ColorsApp.black)
               .lineLimit(1)
@@ -54,7 +40,7 @@ struct RowDestination: View {
               Image("markMap")
                 .resizable()
                 .frame(width: 20, height: 20)
-              Text(destionation.location)
+              Text(destination.location)
                 .font(.custom(FontsApp.openLight, size: 13))
                 .foregroundColor(ColorsApp.black)
                 .lineLimit(1)
@@ -74,7 +60,19 @@ struct RowDestination: View {
 
 struct RowDestionation_Previews: PreviewProvider {
   static var previews: some View {
-    RowDestination(destionation: destionationMock[0], isFavorite: .constant(false))
-      .previewLayout(.sizeThatFits)
+    RowDestination(destination: destionationMock[0]) {
+      Image(systemName: "heart.fill")
+        .font(.system(size: 25))
+        .foregroundColor(ColorsApp.red)
+        .background(
+          Circle()
+            .foregroundColor(ColorsApp.background)
+            .frame(width: 60, height: 60)
+        )
+        .offset(x: 70, y: -140)
+        .zIndex(2)
+        .accessibilityLabel("This image have touch")
+    }
+    .previewLayout(.sizeThatFits)
   }
 }

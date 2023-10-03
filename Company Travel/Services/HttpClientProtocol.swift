@@ -31,4 +31,9 @@ protocol HttpClientProtocol {
     password: String,
     completion: @escaping (Result<UserModel, HttpError>) -> Void
   )
+  func getFavoritesByUser(idUser: String, completion: @escaping (Result<[FavoriteModel], HttpError>) -> Void)
+
+  func addFavorite(favorite: FavoriteModel)
+
+  func removeFavorite(documentId: String)
 }

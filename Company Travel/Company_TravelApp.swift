@@ -12,6 +12,7 @@ import SwiftUI
 struct Company_TravelApp: App {
   @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
+
   var body: some Scene {
     WindowGroup {
       ScreensFactory.create()

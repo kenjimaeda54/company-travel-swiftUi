@@ -54,4 +54,12 @@ class MockHttpClient: HttpClientProtocol, Mockable {
 
     completion(.failure(.badResponse))
   }
+
+  func getFavoritesByUser(idUser: String, completion: @escaping (Result<[FavoriteModel], HttpError>) -> Void) {
+    completion(.failure(.badResponse))
+  }
+
+  func addFavorite(favorite: FavoriteModel) {}
+
+  func removeFavorite(documentId: String) {}
 }

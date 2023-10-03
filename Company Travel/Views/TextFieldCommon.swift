@@ -27,9 +27,11 @@ struct TextFieldCommon: View {
       .accessibilityLabel(accebilityLabel ?? "")
       .padding(EdgeInsets(top: 7, leading: 15, bottom: 7, trailing: 15))
       .autocorrectionDisabled(true)
+      .textInputAutocapitalization(.never)
       .font(.custom(FontsApp.openRegular, size: 16))
       .frame(maxWidth: .infinity)
       .foregroundColor(ColorsApp.black)
+
       .background(
         RoundedRectangle(cornerRadius: 5)
           .stroke(ColorsApp.black.opacity(0.5), lineWidth: 1)

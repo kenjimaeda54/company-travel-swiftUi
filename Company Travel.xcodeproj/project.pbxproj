@@ -16,6 +16,8 @@
 		812FE1912ABFC1BD00455933 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FE1902ABFC1BD00455933 /* User.json */; };
 		8136B4F62AB683240083B098 /* ValidateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136B4F52AB683240083B098 /* ValidateTextField.swift */; };
 		813A04922AB37B4500D38CC3 /* TextFieldValidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A04912AB37B4500D38CC3 /* TextFieldValidate.swift */; };
+		813E66692AC4A4FC00EB93BB /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E66682AC4A4FC00EB93BB /* FavoriteModel.swift */; };
+		813E666B2AC4A78000EB93BB /* StoreFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E666A2AC4A78000EB93BB /* StoreFavorites.swift */; };
 		813FD1F72AB135F900BD4E7D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FD1F62AB135F900BD4E7D /* ProfileScreen.swift */; };
 		814B5E5E2ABC606300242017 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4AC2AAFD14B004E9790 /* HttpClient.swift */; };
 		814B5E5F2ABC606600242017 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81701F3B2AB374880070E458 /* SignIn.swift */; };
@@ -127,6 +129,8 @@
 		812FE1902ABFC1BD00455933 /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 		8136B4F52AB683240083B098 /* ValidateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateTextField.swift; sourceTree = "<group>"; };
 		813A04912AB37B4500D38CC3 /* TextFieldValidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidate.swift; sourceTree = "<group>"; };
+		813E66682AC4A4FC00EB93BB /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		813E666A2AC4A78000EB93BB /* StoreFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFavorites.swift; sourceTree = "<group>"; };
 		813FD1F62AB135F900BD4E7D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		814B5EB22ABC6D1A00242017 /* Company Travel UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Company Travel UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		814C2C322AC3B779004D0D46 /* LogInScreen_UiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreen_UiTests.swift; sourceTree = "<group>"; };
@@ -385,6 +389,7 @@
 			children = (
 				81FBE4AE2AAFD6D8004E9790 /* StoreHome.swift */,
 				811804EE2AB52CA2000BFA5C /* StoreUsers.swift */,
+				813E666A2AC4A78000EB93BB /* StoreFavorites.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 			children = (
 				81E024DC2AAF39EB00E4D00A /* DestinationModel.swift */,
 				812FE18C2ABFB96500455933 /* UserModel.swift */,
+				813E66682AC4A4FC00EB93BB /* FavoriteModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -739,6 +745,7 @@
 				814B5E5E2ABC606300242017 /* HttpClient.swift in Sources */,
 				814B5E612ABC609E00242017 /* PlaceHolders.swift in Sources */,
 				814B5E932ABC673F00242017 /* Mockable.swift in Sources */,
+				813E66692AC4A4FC00EB93BB /* FavoriteModel.swift in Sources */,
 				81A2D3222AB388A40005DD73 /* MaxLengthCharacter.swift in Sources */,
 				815A99D82AB483FC00334793 /* UIDevice.swift in Sources */,
 				81FBE4C22AAFE6B6004E9790 /* CornerRadius.swift in Sources */,
@@ -767,6 +774,7 @@
 				81FBE4A72AAFCEE0004E9790 /* HttpClientGeneric.swift in Sources */,
 				81BE34D32AC1F8DE00AA5073 /* RootView.swift in Sources */,
 				818C24B82AB6876E0074A721 /* HelpersFunction.swift in Sources */,
+				813E666B2AC4A78000EB93BB /* StoreFavorites.swift in Sources */,
 				81DC31882AB25CDC00025335 /* Shimmer.swift in Sources */,
 				81FBE4BB2AAFDB53004E9790 /* destionationMock.swift in Sources */,
 				81BE34D52AC2090B00AA5073 /* EnvironmentUser.swift in Sources */,

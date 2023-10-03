@@ -9,11 +9,9 @@ import FirebaseAuth
 import FirebaseFirestore
 import SwiftUI
 
-// MARK: - Precisamos implementar apos os tests a foto do usuario e o nome conforme faz o create user
-
 struct HomeScreen: View {
   @StateObject var storeHome = StoreHome(httpClient: HttpClientFactory.create())
-  @State private var isFavorite = false
+  @StateObject var storeFavorite = StoreFavorites(httpClient: HttpClientFactory.create())
   @EnvironmentObject var stateUser: EnvironmentUser
   @State private var user = UserModel(
     uid: "",
@@ -53,7 +51,51 @@ struct HomeScreen: View {
         if storeHome.stateLoading == .sucess {
           LazyVGrid(columns: gridItemDestionation, spacing: 30) {
             ForEach(storeHome.destinations) { destination in
-              RowDestination(destionation: destination, isFavorite: $isFavorite)
+              RowDestination(destination: destination) {
+                Image(systemName: "heart.fill")
+                  .font(.system(size: 25))
+                  .foregroundColor(
+                    storeFavorite.favorites
+                      .contains(where: { $0.idDestination == destination.id }) ? ColorsApp.red : ColorsApp.gray
+                      .opacity(0.6)
+                  )
+                  .background(
+                    Circle()
+                      .foregroundColor(ColorsApp.background)
+                      .frame(width: 60, height: 60)
+                  )
+                  .offset(x: 70, y: -140)
+                  .zIndex(2)
+                  .accessibilityLabel("This image have touch")
+                  .redactShimmer(condition: storeFavorite.stateLoading == .loading)
+                  .onTapGesture {
+                    do {
+                      let favoriteDictionary = [
+                        "id": UUID().uuidString,
+                        "idDestination": destination.id,
+                        "idUser": stateUser.user.uid
+                      ]
+
+                      let favorite = try FavoriteModel(dictionary: favoriteDictionary)
+                      let favoriteInListLocal = storeFavorite.favorites
+                        .first(where: { $0.idDestination == destination.id })
+
+                      if let favoriteLocal = favoriteInListLocal {
+                        storeFavorite.deleteFavorite(documentId: favoriteLocal.id)
+                        storeFavorite.favorites.removeAll(where: { $0.id == favoriteLocal.id })
+
+                      } else {
+                        storeFavorite
+                          .addFavorite(favorite: favorite)
+
+                        return storeFavorite.favorites.append(favorite)
+                      }
+
+                    } catch {
+                      print(error.localizedDescription)
+                    }
+                  }
+              }
             }
 
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
@@ -64,8 +106,9 @@ struct HomeScreen: View {
       .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
     }
     .onAppear {
-      storeHome.getDestionations()
       user = stateUser.user
+      storeHome.getDestinations()
+      storeFavorite.getFavoritesByUser(userId: stateUser.user.uid)
     }
     .background(ColorsApp.background, ignoresSafeAreaEdges: .all)
   }

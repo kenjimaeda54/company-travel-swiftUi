@@ -12,13 +12,15 @@ import FirebaseStorage
 import Foundation
 
 class HttpClient: HttpClientProtocol {
-  static var destination: [DestinationModel] = []
+  static var destinations: [DestinationModel] = []
+  static var favorites: [FavoriteModel] = []
   static let db = Firestore.firestore()
   static let auth = Auth.auth()
   static let storage = Storage.storage()
 
   init() {
-    HttpClient.destination = []
+    HttpClient.destinations = []
+    HttpClient.favorites = []
   }
 
   func fetchDestination(completion: @escaping (Result<[DestinationModel], HttpError>) -> Void) {
@@ -42,9 +44,9 @@ class HttpClient: HttpClientProtocol {
           title: it["title"] as? String ?? ""
         )
 
-        HttpClient.destination.append(destionation)
+        HttpClient.destinations.append(destionation)
       }
-      completion(.success(HttpClient.destination))
+      completion(.success(HttpClient.destinations))
     }
   }
 
@@ -102,7 +104,7 @@ class HttpClient: HttpClientProtocol {
 
       if let error = error as NSError? {
         print(error.code)
-        completion(.failure(.errorEmailorPasswordWrong))
+        return completion(.failure(.errorEmailorPasswordWrong))
       }
 
       if let user = authResult?.user {
@@ -142,6 +144,59 @@ class HttpClient: HttpClientProtocol {
     changeRequest?.photoURL = photoUrl
     changeRequest?.commitChanges { error in
       print(error?.localizedDescription)
+    }
+  }
+
+  // usando string para struct
+  // https://stackoverflow.com/questions/42550657/writing-json-file-programmatically-swift
+  func getFavoritesByUser(idUser: String, completion: @escaping (Result<[FavoriteModel], HttpError>) -> Void) {
+    HttpClient.db.collection("Favorites").whereField("idUser", isEqualTo: idUser).getDocuments { querySnapshot, error in
+
+      if error != nil {
+        return completion(.failure(.badResponse))
+      } else {
+        for document in querySnapshot!.documents {
+          let data = document.data()
+          // se eu fizer o foreach ou map estarei desmembro cada data, ou seja esse document.data() representa
+          // o data de um documento, e assim por diante //["idUser": vWOQlzYKdSaDBxqDt6NA3JdV1rD2, "idDestionation":
+          // 56778dsdewewewszas]
+
+          do {
+            let favoriteDictionary = [
+              "id": document.documentID,
+              "idUser": data["idUser"],
+              "idDestination": data["idDestination"]
+            ]
+
+            let favorite = try FavoriteModel(dictionary: favoriteDictionary)
+            HttpClient.favorites.append(favorite)
+          } catch {
+            print(error.localizedDescription)
+          }
+        }
+        completion(.success(HttpClient.favorites))
+      }
+    }
+  }
+
+  func addFavorite(favorite: FavoriteModel) {
+    HttpClient.db.collection("Favorites").document(favorite.id).setData([
+      "idDestination": favorite.idDestination,
+      "idUser": favorite.idUser
+    ]) { error in
+
+      if let error = error {
+        return print(error)
+      }
+    }
+  }
+
+  func removeFavorite(documentId: String) {
+    HttpClient.db.collection("Favorites").document(documentId).delete { error in
+
+      if let error = error {
+        print(error.localizedDescription)
+      }
     }
   }
 }

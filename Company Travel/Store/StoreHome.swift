@@ -16,7 +16,7 @@ class StoreHome: ObservableObject {
     self.httpClient = HttpClientFactory.create()
   }
 
-  func getDestionations() {
+  func getDestinations() {
     httpClient.fetchDestination { result in
 
       switch result {
