@@ -19,6 +19,8 @@
 		813E66692AC4A4FC00EB93BB /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E66682AC4A4FC00EB93BB /* FavoriteModel.swift */; };
 		813E666B2AC4A78000EB93BB /* StoreFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E666A2AC4A78000EB93BB /* StoreFavorites.swift */; };
 		813FD1F72AB135F900BD4E7D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FD1F62AB135F900BD4E7D /* ProfileScreen.swift */; };
+		814711132ACD73AA00616BE1 /* PointsOfInterestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814711122ACD73AA00616BE1 /* PointsOfInterestScreen.swift */; };
+		814711152ACD7AB100616BE1 /* DetailsDestinationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814711142ACD7AB100616BE1 /* DetailsDestinationScreen.swift */; };
 		814B5E5E2ABC606300242017 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4AC2AAFD14B004E9790 /* HttpClient.swift */; };
 		814B5E5F2ABC606600242017 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81701F3B2AB374880070E458 /* SignIn.swift */; };
 		814B5E602ABC606900242017 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E8D4B2AAE3DBE0043648D /* HomeScreen.swift */; };
@@ -53,6 +55,7 @@
 		81DC31822AB248F400025335 /* BottomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC31812AB248F400025335 /* BottomNavigation.swift */; };
 		81DC31882AB25CDC00025335 /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC31872AB25CDC00025335 /* Shimmer.swift */; };
 		81DC318A2AB25CE900025335 /* RedactShimmerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC31892AB25CE900025335 /* RedactShimmerViewModifier.swift */; };
+		81DEBF1F2ACD8AAA000B8625 /* FontWithLineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DEBF1E2ACD8AAA000B8625 /* FontWithLineHeight.swift */; };
 		81E024DD2AAF39EB00E4D00A /* DestinationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E024DC2AAF39EB00E4D00A /* DestinationModel.swift */; };
 		81E025072AAF456700E4D00A /* OpenSans_Condensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81E024E32AAF456500E4D00A /* OpenSans_Condensed-Bold.ttf */; };
 		81E025082AAF456700E4D00A /* OpenSans_Condensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81E024E42AAF456500E4D00A /* OpenSans_Condensed-Light.ttf */; };
@@ -132,6 +135,8 @@
 		813E66682AC4A4FC00EB93BB /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
 		813E666A2AC4A78000EB93BB /* StoreFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFavorites.swift; sourceTree = "<group>"; };
 		813FD1F62AB135F900BD4E7D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		814711122ACD73AA00616BE1 /* PointsOfInterestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsOfInterestScreen.swift; sourceTree = "<group>"; };
+		814711142ACD7AB100616BE1 /* DetailsDestinationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDestinationScreen.swift; sourceTree = "<group>"; };
 		814B5EB22ABC6D1A00242017 /* Company Travel UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Company Travel UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		814C2C322AC3B779004D0D46 /* LogInScreen_UiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreen_UiTests.swift; sourceTree = "<group>"; };
 		815A99D72AB483FC00334793 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
@@ -158,6 +163,7 @@
 		81DC31872AB25CDC00025335 /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
 		81DC31892AB25CE900025335 /* RedactShimmerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactShimmerViewModifier.swift; sourceTree = "<group>"; };
 		81DC318B2AB25DC500025335 /* PlaceHolders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolders.swift; sourceTree = "<group>"; };
+		81DEBF1E2ACD8AAA000B8625 /* FontWithLineHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWithLineHeight.swift; sourceTree = "<group>"; };
 		81E024DC2AAF39EB00E4D00A /* DestinationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationModel.swift; sourceTree = "<group>"; };
 		81E024E32AAF456500E4D00A /* OpenSans_Condensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-Bold.ttf"; sourceTree = "<group>"; };
 		81E024E42AAF456500E4D00A /* OpenSans_Condensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-Light.ttf"; sourceTree = "<group>"; };
@@ -414,6 +420,8 @@
 				81701F3B2AB374880070E458 /* SignIn.swift */,
 				81BE34D22AC1F8DE00AA5073 /* RootView.swift */,
 				81FBE2A22AC2ED2F001C0361 /* LogIn.swift */,
+				814711122ACD73AA00616BE1 /* PointsOfInterestScreen.swift */,
+				814711142ACD7AB100616BE1 /* DetailsDestinationScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -533,6 +541,7 @@
 				81FBE4C12AAFE6B6004E9790 /* CornerRadius.swift */,
 				81DC31872AB25CDC00025335 /* Shimmer.swift */,
 				81DC31892AB25CE900025335 /* RedactShimmerViewModifier.swift */,
+				81DEBF1E2ACD8AAA000B8625 /* FontWithLineHeight.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -740,6 +749,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				81FDE4632AB47015004F3C59 /* ImagePickerRepresentable.swift in Sources */,
+				81DEBF1F2ACD8AAA000B8625 /* FontWithLineHeight.swift in Sources */,
+				814711152ACD7AB100616BE1 /* DetailsDestinationScreen.swift in Sources */,
 				81E025312AAF4A6B00E4D00A /* ColorsApp.swift in Sources */,
 				814B5E652ABC60AF00242017 /* TextFieldCommon.swift in Sources */,
 				814B5E5E2ABC606300242017 /* HttpClient.swift in Sources */,
@@ -747,6 +758,7 @@
 				814B5E932ABC673F00242017 /* Mockable.swift in Sources */,
 				813E66692AC4A4FC00EB93BB /* FavoriteModel.swift in Sources */,
 				81A2D3222AB388A40005DD73 /* MaxLengthCharacter.swift in Sources */,
+				814711132ACD73AA00616BE1 /* PointsOfInterestScreen.swift in Sources */,
 				815A99D82AB483FC00334793 /* UIDevice.swift in Sources */,
 				81FBE4C22AAFE6B6004E9790 /* CornerRadius.swift in Sources */,
 				814B5E5F2ABC606600242017 /* SignIn.swift in Sources */,

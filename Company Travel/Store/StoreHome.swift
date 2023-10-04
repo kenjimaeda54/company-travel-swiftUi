@@ -14,6 +14,7 @@ class StoreHome: ObservableObject {
 
   init(httpClient: HttpClientProtocol) {
     self.httpClient = HttpClientFactory.create()
+    self.destinations = []
   }
 
   func getDestinations() {

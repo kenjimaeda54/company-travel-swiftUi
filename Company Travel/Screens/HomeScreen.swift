@@ -51,50 +51,55 @@ struct HomeScreen: View {
         if storeHome.stateLoading == .sucess {
           LazyVGrid(columns: gridItemDestionation, spacing: 30) {
             ForEach(storeHome.destinations) { destination in
-              RowDestination(destination: destination) {
-                Image(systemName: "heart.fill")
-                  .font(.system(size: 25))
-                  .foregroundColor(
-                    storeFavorite.favorites
-                      .contains(where: { $0.idDestination == destination.id }) ? ColorsApp.red : ColorsApp.gray
-                      .opacity(0.6)
-                  )
-                  .background(
-                    Circle()
-                      .foregroundColor(ColorsApp.background)
-                      .frame(width: 60, height: 60)
-                  )
-                  .offset(x: 70, y: -140)
-                  .zIndex(2)
-                  .accessibilityLabel("This image have touch")
-                  .redactShimmer(condition: storeFavorite.stateLoading == .loading)
-                  .onTapGesture {
-                    do {
-                      let favoriteDictionary = [
-                        "id": UUID().uuidString,
-                        "idDestination": destination.id,
-                        "idUser": stateUser.user.uid
-                      ]
+              NavigationLink {
+                DetailsDestinationScreen(destination: destination)
 
-                      let favorite = try FavoriteModel(dictionary: favoriteDictionary)
-                      let favoriteInListLocal = storeFavorite.favorites
-                        .first(where: { $0.idDestination == destination.id })
+              } label: {
+                RowDestination(destination: destination) {
+                  Image(systemName: "heart.fill")
+                    .font(.system(size: 25))
+                    .foregroundColor(
+                      storeFavorite.favorites
+                        .contains(where: { $0.idDestination == destination.id }) ? ColorsApp.red : ColorsApp.gray
+                        .opacity(0.6)
+                    )
+                    .background(
+                      Circle()
+                        .foregroundColor(ColorsApp.background)
+                        .frame(width: 60, height: 60)
+                    )
+                    .offset(x: 70, y: -140)
+                    .zIndex(2)
+                    .accessibilityLabel("This image have touch")
+                    .redactShimmer(condition: storeFavorite.stateLoading == .loading)
+                    .onTapGesture {
+                      do {
+                        let favoriteDictionary = [
+                          "id": UUID().uuidString,
+                          "idDestination": destination.id,
+                          "idUser": stateUser.user.uid
+                        ]
 
-                      if let favoriteLocal = favoriteInListLocal {
-                        storeFavorite.deleteFavorite(documentId: favoriteLocal.id)
-                        storeFavorite.favorites.removeAll(where: { $0.id == favoriteLocal.id })
+                        let favorite = try FavoriteModel(dictionary: favoriteDictionary)
+                        let favoriteInListLocal = storeFavorite.favorites
+                          .first(where: { $0.idDestination == destination.id })
 
-                      } else {
-                        storeFavorite
-                          .addFavorite(favorite: favorite)
+                        if let favoriteLocal = favoriteInListLocal {
+                          storeFavorite.deleteFavorite(documentId: favoriteLocal.id)
+                          storeFavorite.favorites.removeAll(where: { $0.id == favoriteLocal.id })
 
-                        return storeFavorite.favorites.append(favorite)
+                        } else {
+                          storeFavorite
+                            .addFavorite(favorite: favorite)
+
+                          return storeFavorite.favorites.append(favorite)
+                        }
+
+                      } catch {
+                        print(error.localizedDescription)
                       }
-
-                    } catch {
-                      print(error.localizedDescription)
                     }
-                  }
+                }
               }
             }
 

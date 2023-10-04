@@ -12,19 +12,20 @@ import FirebaseStorage
 import Foundation
 
 class HttpClient: HttpClientProtocol {
-  static var destinations: [DestinationModel] = []
-  static var favorites: [FavoriteModel] = []
-  static let db = Firestore.firestore()
-  static let auth = Auth.auth()
-  static let storage = Storage.storage()
+  var destinations: [DestinationModel] = []
+  var favorites: [FavoriteModel] = []
+  let db = Firestore.firestore()
+  let auth = Auth.auth()
+  let storage = Storage.storage()
 
   init() {
-    HttpClient.destinations = []
-    HttpClient.favorites = []
+    self.destinations = []
+    self.favorites = []
   }
 
   func fetchDestination(completion: @escaping (Result<[DestinationModel], HttpError>) -> Void) {
-    HttpClient.db.collection("Destination").getDocuments { snapshot, error in
+    destinations = []
+    db.collection("Destination").getDocuments { snapshot, error in
       if error != nil {
         return completion(.failure(.badResponse))
       }
@@ -44,9 +45,9 @@ class HttpClient: HttpClientProtocol {
           title: it["title"] as? String ?? ""
         )
 
-        HttpClient.destinations.append(destionation)
+        self.destinations.append(destionation)
       }
-      completion(.success(HttpClient.destinations))
+      completion(.success(self.destinations))
     }
   }
 
@@ -57,14 +58,14 @@ class HttpClient: HttpClientProtocol {
     email: String, password: String, name: String, data: Data?,
     completion: @escaping (Result<UserModel, HttpError>) -> Void
   ) {
-    HttpClient.auth.createUser(withEmail: email, password: password) { authResult, error in
+    auth.createUser(withEmail: email, password: password) { authResult, error in
       if let error = error {
         print(error.localizedDescription)
         completion(.failure(.badResponse))
       }
 
       if let user = authResult?.user {
-        let storageRef = HttpClient.storage.reference()
+        let storageRef = self.storage.reference()
         let photoUserRef = storageRef.child("images/\(user.uid).jpg")
         if let uploadPhoto = data {
           photoUserRef.putData(uploadPhoto, metadata: nil) { _, _ in
@@ -100,7 +101,7 @@ class HttpClient: HttpClientProtocol {
   }
 
   func sigIn(email: String, password: String, completion: @escaping (Result<UserModel, HttpError>) -> Void) {
-    HttpClient.auth.signIn(withEmail: email, password: password) { authResult, error in
+    auth.signIn(withEmail: email, password: password) { authResult, error in
 
       if let error = error as NSError? {
         print(error.code)
@@ -139,7 +140,7 @@ class HttpClient: HttpClientProtocol {
   }
 
   func updateUser(name: String, photoUrl: URL) {
-    let changeRequest = HttpClient.auth.currentUser?.createProfileChangeRequest()
+    let changeRequest = auth.currentUser?.createProfileChangeRequest()
     changeRequest?.displayName = name
     changeRequest?.photoURL = photoUrl
     changeRequest?.commitChanges { error in
@@ -150,7 +151,8 @@ class HttpClient: HttpClientProtocol {
   // usando string para struct
   // https://stackoverflow.com/questions/42550657/writing-json-file-programmatically-swift
   func getFavoritesByUser(idUser: String, completion: @escaping (Result<[FavoriteModel], HttpError>) -> Void) {
-    HttpClient.db.collection("Favorites").whereField("idUser", isEqualTo: idUser).getDocuments { querySnapshot, error in
+    favorites = []
+    db.collection("Favorites").whereField("idUser", isEqualTo: idUser).getDocuments { querySnapshot, error in
 
       if error != nil {
         return completion(.failure(.badResponse))
@@ -169,18 +171,18 @@ class HttpClient: HttpClientProtocol {
             ]
 
             let favorite = try FavoriteModel(dictionary: favoriteDictionary)
-            HttpClient.favorites.append(favorite)
+            self.favorites.append(favorite)
           } catch {
             print(error.localizedDescription)
           }
         }
-        completion(.success(HttpClient.favorites))
+        completion(.success(self.favorites))
       }
     }
   }
 
   func addFavorite(favorite: FavoriteModel) {
-    HttpClient.db.collection("Favorites").document(favorite.id).setData([
+    db.collection("Favorites").document(favorite.id).setData([
       "idDestination": favorite.idDestination,
       "idUser": favorite.idUser
     ]) { error in
@@ -192,7 +194,7 @@ class HttpClient: HttpClientProtocol {
   }
 
   func removeFavorite(documentId: String) {
-    HttpClient.db.collection("Favorites").document(documentId).delete { error in
+    db.collection("Favorites").document(documentId).delete { error in
 
       if let error = error {
         print(error.localizedDescription)

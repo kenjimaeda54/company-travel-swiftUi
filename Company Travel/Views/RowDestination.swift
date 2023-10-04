@@ -12,15 +12,13 @@ import SwiftUI
 struct RowDestination<Content: View>: View {
   var destination: DestinationModel
   var content: () -> Content
-	
- 
 
   var body: some View {
     ZStack {
       content()
 
       VStack {
-				AsyncImage(url: URL(string: destination.poster)) { phase in
+        AsyncImage(url: URL(string: destination.poster)) { phase in
 
           if let image = phase.image {
             image

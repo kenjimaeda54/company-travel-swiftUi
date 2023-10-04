@@ -7,9 +7,8 @@
 
 import Foundation
 
-
-//implementar o write on json
-//https://stackoverflow.com/questions/42550657/writing-json-file-programmatically-swift
+// implementar o write on json
+// https://stackoverflow.com/questions/42550657/writing-json-file-programmatically-swift
 
 protocol Mockable: AnyObject {
   var bundle: Bundle { get }
