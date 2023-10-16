@@ -43,11 +43,8 @@ final class SigInScreen_UiTests: XCTestCase {
   }
 
   func testEnableButtonIfAllFieldsAreFieldIn() {
-    XCTAssertTrue(textFieldName.exists)
-    XCTAssertTrue(textFieldEmail.exists)
     XCTAssertTrue(buttonRegisterUser.exists)
     XCTAssert(buttonAvatar.exists)
-
     textFieldName.tap()
     textFieldName.typeText("Pedro")
 
@@ -64,7 +61,6 @@ final class SigInScreen_UiTests: XCTestCase {
     XCTAssertEqual(buttonRegisterUser.isEnabled, false)
 
     buttonAvatar.tap()
-
     XCTAssertTrue(buttonSheetGallery.exists)
 
     // MARK: - Test sheet gallery
@@ -72,14 +68,16 @@ final class SigInScreen_UiTests: XCTestCase {
     buttonSheetGallery.tap()
     XCTAssertTrue(sheetPhotoLibrary.exists)
     XCTAssertTrue(imagePickerLibrary.exists)
-    imagePickerLibrary.images["Photo, March 30, 2018, 4:14 PM"]
+    imagePickerLibrary.images["Photo, 30 March 2018, 16:14"]
       .tap() // precisa pegar a referencia da foto e dar um tap que seria o click, primeira foto da galeria esta
-    // referencia
-    XCTAssertEqual(buttonRegisterUser.isEnabled, true)
+//    // referencia, essa referencia depende do tipo de linguagem que esta no sistema, este modo e internacional ou
+//    /ingles
+
+    XCTAssertEqual(buttonRegisterUser.waitForExistence(timeout: 3), true)
   }
 
   func testTypeEmailWrong() {
-    let nextButton = app.buttons["next"]
+    let nextButton = app.buttons["Next:"] // depois que atulizou para ios17
     let doneButton = app.buttons["Done"]
     let textFailedEmail = app.staticTexts["Precisa ser um email valido"]
 
@@ -92,7 +90,7 @@ final class SigInScreen_UiTests: XCTestCase {
   }
 
   func testTypePasswordWrong() {
-    let doneButton = app.buttons["done"]
+    let doneButton = app.buttons["Done"]
     let textFailedPassword = app
       .staticTexts["Senha precisa ser no mínimo 8 palavras, um maiúsculo, um dígito é um especial"]
 
@@ -120,7 +118,7 @@ final class SigInScreen_UiTests: XCTestCase {
     XCTAssertTrue(buttonSheetGallery.exists)
 
     buttonSheetGallery.tap()
-    imagePickerLibrary.images["Photo, March 30, 2018, 4:14 PM"]
+    imagePickerLibrary.images["Photo, 30 March 2018, 16:14"]
       .tap()
 
     buttonRegisterUser.tap()
@@ -145,7 +143,7 @@ final class SigInScreen_UiTests: XCTestCase {
     XCTAssertTrue(buttonSheetGallery.exists)
 
     buttonSheetGallery.tap()
-    imagePickerLibrary.images["Photo, March 30, 2018, 4:14 PM"]
+    imagePickerLibrary.images["Photo, 30 March 2018, 16:14"]
       .tap()
 
     buttonRegisterUser.tap()

@@ -7,36 +7,27 @@
 
 import SwiftUI
 
-struct BackButton: View {
+struct ButtonCommonWithIcon: View {
   var foregroundColor: Color
-  @Environment(\.dismiss) var dismiss
-
-  func handleBack() {
-    dismiss()
-  }
+  var iconSytem: String
+  var action: () -> Void
 
   var body: some View {
     ZStack {
       Color.clear
-      Button(action: handleBack) {
-        Image(systemName: "chevron.left")
+      Button(action: action) {
+        Image(systemName: iconSytem)
           .resizable()
-          .foregroundColor(ColorsApp.black)
+          .foregroundColor(foregroundColor)
           .aspectRatio(contentMode: .fit)
       }
     }
-
-    // passar um blur quando o fundo e branco
-//    .background(
-//      .ultraThinMaterial,
-//      in: Circle()
-//    )
   }
 }
 
 struct BackButton_Previews: PreviewProvider {
   static var previews: some View {
-    BackButton(foregroundColor: ColorsApp.black)
+    ButtonCommonWithIcon(foregroundColor: ColorsApp.black, iconSytem: "chrevron-left", action: {})
       .frame(maxWidth: .infinity, maxHeight: .infinity)
       .background(ColorsApp.blue)
   }

@@ -11,7 +11,7 @@ import SwiftUI
 extension PresentationDetent {
   static let bar = Self.custom(BarDetent.self)
   static let small = Self.height(150)
-  static let customMedium = Self.height(300)
+  static let customMedium = Self.height(260)
   static let extraLarge = Self.fraction(0.75)
 }
 

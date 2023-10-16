@@ -11,7 +11,7 @@ let destionationMock = [
   DestinationModel(
     id: "sfsfsfserr3434343",
     location: "California, E.U.A",
-    overview: "Sao Fransico,no norte da California, e uma cidade com colinas sutada na ponta de uma peninsula cercada pelo Oceano Pcifico e pela Baia de Sao Franncisco.Ela e conhecida pela nevoa que dura o ano todo ",
+    overview: "lorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenloren",
     pointsActivies: [
       37.81098,
       -122.483716
@@ -22,8 +22,8 @@ let destionationMock = [
   ),
   DestinationModel(
     id: "spppprrer343434",
-    location: "Londres, Inglaterra",
-    overview: "Londres,capital da Inglaterra e do Reino Unido, e uma cidadde do seculo 21 com uma historia que remonta a era romana.Seu centro abriga as sedes imponentes do Parlamento",
+    location: "Londres,Inglaterra",
+    overview: "lorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenlorenlorenlorenvlorenlorenlorenloren",
     pointsActivies: [
       51.52018,
       -0.169881

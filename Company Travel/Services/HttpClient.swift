@@ -201,4 +201,33 @@ class HttpClient: HttpClientProtocol {
       }
     }
   }
+
+  // https://stackoverflow.com/questions/52347576/send-post-request-with-bearer-token-and-json-body-in-swift
+  func getPointsInterest(geocode: PointsGeoCode, completion: @escaping (Result<PointsInterest, HttpError>) -> Void) {
+    guard let url =
+      URL(
+        string: "https://test.api.amadeus.com/v1/shopping/activities?latitude=\(geocode.latitude)&longitude=\(geocode.longitude)&radius=15"
+      )
+    else {
+      return completion(.failure(.badURL))
+    }
+
+    var request = URLRequest(url: url)
+    request.httpMethod = "GET"
+    request.setValue("Bearer \("ZAIYqN6xrgvDixLIqULW2CAmPoRT")", forHTTPHeaderField: "Authorization")
+
+    URLSession.shared.dataTask(with: url) { data, _, error in
+      guard let data = data, error == nil else {
+        return completion(.failure(.badResponse))
+      }
+
+      do {
+        let pointsJson = try JSONDecoder().decode(PointsInterest.self, from: data)
+        completion(.success(pointsJson))
+      } catch {
+        print(error.localizedDescription)
+        completion(.failure(.noData))
+      }
+    }
+  }
 }

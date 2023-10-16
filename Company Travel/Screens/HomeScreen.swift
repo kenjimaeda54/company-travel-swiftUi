@@ -39,9 +39,11 @@ struct HomeScreen: View {
                 .resizable()
                 .frame(width: 50, height: 50)
                 .clipShape(Circle())
+                .accessibilityIdentifier("teste")
             }
           }
         }
+        .accessibilityIdentifier(user.photoUrl!.absoluteString)
         .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
         Text("Destinos")
           .font(.custom(FontsApp.openRegular, size: 20))
@@ -53,7 +55,7 @@ struct HomeScreen: View {
             ForEach(storeHome.destinations) { destination in
               NavigationLink {
                 DetailsDestinationScreen(destination: destination)
-
+                  .navigationBarBackButtonHidden(true)
               } label: {
                 RowDestination(destination: destination) {
                   Image(systemName: "heart.fill")
@@ -100,6 +102,7 @@ struct HomeScreen: View {
                       }
                     }
                 }
+                .accessibilityIdentifier("Quantity favorite \(storeFavorite.favorites.count)")
               }
             }
 

@@ -18,6 +18,7 @@ enum FocusField: Int, Hashable {
 }
 
 struct SigIn: View {
+  @Environment(\.dismiss) private var dismiss
   @State private var user = UserDataSigIn(name: "", email: "", password: "")
   @State private var showSheetCamera = false
   @State private var showSheetGallery = false
@@ -85,6 +86,10 @@ struct SigIn: View {
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
       showSheetCamera.toggle()
     }
+  }
+
+  func handleActionBack() {
+    dismiss()
   }
 
   var body: some View {
@@ -203,7 +208,7 @@ struct SigIn: View {
           .opacity(isDisabledButton ? 0.5 : 1)
       }
       .safeAreaInset(edge: .top, alignment: .leading) {
-        BackButton(foregroundColor: ColorsApp.black)
+        ButtonCommonWithIcon(foregroundColor: ColorsApp.black, iconSytem: "chevron.left", action: handleActionBack)
           .frame(width: 15, height: 10)
       }
       .padding(EdgeInsets(top: 5, leading: 20, bottom: 20, trailing: 20))
