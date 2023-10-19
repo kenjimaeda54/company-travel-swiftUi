@@ -29,7 +29,6 @@ class StoreFavorites: ObservableObject {
         }
 
       case let .failure(error):
-
         print(error.localizedDescription)
         DispatchQueue.main.async {
           self.stateLoading = StateLoading.failure

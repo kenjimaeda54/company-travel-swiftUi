@@ -9,12 +9,12 @@ import Foundation
 
 class StorePoints: ObservableObject {
   @Published var isLoading = StateLoading.loading
-  var pointsInterest: PointsInterest? = nil
+  var pointsInterest: PointsInterestModel? = nil
   var httpCLient: HttpClientProtocol
 
   init(
     isLoading: StateLoading = StateLoading.loading,
-    pointsInterest: PointsInterest? = nil,
+    pointsInterest: PointsInterestModel? = nil,
     httpCLient: HttpClientProtocol
   ) {
     self.isLoading = isLoading

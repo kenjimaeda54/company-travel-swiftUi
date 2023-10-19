@@ -7,9 +7,20 @@
 
 import Foundation
 
-struct PointsInterest: Decodable {
-  let meta: PointsMeta
-  let data: PointsData
+struct PointsInterestModel: Decodable {
+  let data: [PointsData]
+}
+
+struct PointsData: Decodable {
+  let type: String
+  let subType: String
+  let id: String
+  let `self`: PointsSelf
+  let geoCode: PointsGeoCode
+  let name: String
+  let category: String
+  let rank: Int
+  let tags: [String]
 }
 
 struct PointsMeta: Decodable {
@@ -21,27 +32,14 @@ struct PointsLinks: Decodable {
   let `self`: String
 }
 
-struct PointsData: Decodable {
-  let id: String
-  let type: String
-  let `self`: PointsSelf
-  let name: String
-  let shortDescription: String
-  let geoCode: PointsGeoCode
-  let rating: String
-  let pictures: [String]
-  let bookingLink: String
-  let price: PointsPrice
-}
-
 struct PointsSelf: Decodable {
   let href: String
   let methods: [String]
 }
 
 struct PointsGeoCode: Decodable {
-  let latitude: String
-  let longitude: String
+  let latitude: Double
+  let longitude: Double
 }
 
 struct PointsPrice: Decodable {

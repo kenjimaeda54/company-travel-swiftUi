@@ -12,6 +12,8 @@ struct DetailsDestinationScreen: View {
   @State private var isPresented = true
   @State private var interactive = false
   @Environment(\.dismiss) var dismiss
+  @Environment(\.isPresented) var presentation
+  @State private var isNavigate = false
 
   func handleBack() {
     dismiss()
@@ -19,30 +21,32 @@ struct DetailsDestinationScreen: View {
 
   var body: some View {
     GeometryReader { metrics in
-      ZStack {
-        AsyncImage(url: URL(string: destination.poster)) { phase in
+      NavigationStack {
+        ZStack {
+          AsyncImage(url: URL(string: destination.poster)) { phase in
 
-          if let image = phase.image {
-            image
-              .resizable() // para conseguir manipular precisa dessa propriedade
-              .scaledToFill()
+            if let image = phase.image {
+              image
+                .resizable() // para conseguir manipular precisa dessa propriedade
+                .scaledToFill()
 
-          } else {
-            PlaceHolderImageDestionation()
+            } else {
+              PlaceHolderImageDestionation()
+            }
           }
+          .accessibilityIdentifier(destination.poster)
+          Button(action: { isPresented.toggle() }) {
+            Text("Abrir detalhes")
+              .font(.custom(FontsApp.openLight, size: 19))
+              .foregroundColor(ColorsApp.white)
+              .padding(.all, 8)
+          }
+          .background(
+            .ultraThinMaterial,
+            in: RoundedRectangle(cornerRadius: 5)
+          )
+          .position(x: metrics.size.width / 2, y: metrics.size.height - 100)
         }
-        .accessibilityIdentifier(destination.poster)
-        Button(action: { isPresented.toggle() }) {
-          Text("Abrir detalhes")
-            .font(.custom(FontsApp.openLight, size: 19))
-            .foregroundColor(ColorsApp.white)
-            .padding(.all, 8)
-        }
-        .background(
-          .ultraThinMaterial,
-          in: RoundedRectangle(cornerRadius: 5)
-        )
-        .position(x: metrics.size.width / 2, y: metrics.size.height - 100)
       }
     }
     .ignoresSafeArea(.all)
@@ -91,10 +95,15 @@ struct DetailsDestinationScreen: View {
                 .fontWithLineHeight(font: UIFont(name: FontsApp.openLight, size: 16)!, lineHeight: 25)
                 .foregroundColor(ColorsApp.black)
             }
+
             Text("Mapa")
               .font(.custom(FontsApp.openRegular, size: 17))
               .foregroundColor(ColorsApp.black)
               .offset(x: -200)
+              .onTapGesture {
+                isNavigate.toggle()
+                isPresented.toggle()
+              }
           }
           .padding(.top, 5)
           .frame(alignment: .leading)
@@ -117,6 +126,10 @@ struct DetailsDestinationScreen: View {
       .presentationDetents([.customMedium])
       .padding(EdgeInsets(top: 15, leading: 5, bottom: 0, trailing: 5))
       /* .interactiveDismissDisabled(!interactive)*/ // para remover swipe e close sheet, porem nenhum evento ira funfa
+    }
+    .navigationDestination(isPresented: $isNavigate) {
+      PointsOfInterestScreen(destination: destination)
+        .navigationBarBackButtonHidden(true)
     }
     .safeAreaInset(edge: .top, alignment: .leading) {
       HStack {

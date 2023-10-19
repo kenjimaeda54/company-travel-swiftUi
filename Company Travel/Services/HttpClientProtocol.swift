@@ -37,5 +37,8 @@ protocol HttpClientProtocol {
 
   func removeFavorite(documentId: String)
 
-  func getPointsInterest(geocode: PointsGeoCode, completion: @escaping (Result<PointsInterest, HttpError>) -> Void)
+  func getPointsInterest(
+    geocode: PointsGeoCode,
+    completion: @escaping (Result<PointsInterestModel, HttpError>) -> Void
+  )
 }
