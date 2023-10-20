@@ -20,7 +20,6 @@
 		813E66692AC4A4FC00EB93BB /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E66682AC4A4FC00EB93BB /* FavoriteModel.swift */; };
 		813E666B2AC4A78000EB93BB /* StoreFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E666A2AC4A78000EB93BB /* StoreFavorites.swift */; };
 		813FD1F72AB135F900BD4E7D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FD1F62AB135F900BD4E7D /* ProfileScreen.swift */; };
-		814711132ACD73AA00616BE1 /* PointsOfInterestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814711122ACD73AA00616BE1 /* PointsOfInterestScreen.swift */; };
 		814711152ACD7AB100616BE1 /* DetailsDestinationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814711142ACD7AB100616BE1 /* DetailsDestinationScreen.swift */; };
 		8147A0032AE1F779000CA290 /* HeaderStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147A0022AE1F779000CA290 /* HeaderStack.swift */; };
 		814B5E5E2ABC606300242017 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4AC2AAFD14B004E9790 /* HttpClient.swift */; };
@@ -141,7 +140,6 @@
 		813E66682AC4A4FC00EB93BB /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
 		813E666A2AC4A78000EB93BB /* StoreFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFavorites.swift; sourceTree = "<group>"; };
 		813FD1F62AB135F900BD4E7D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
-		814711122ACD73AA00616BE1 /* PointsOfInterestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsOfInterestScreen.swift; sourceTree = "<group>"; };
 		814711142ACD7AB100616BE1 /* DetailsDestinationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDestinationScreen.swift; sourceTree = "<group>"; };
 		8147A0022AE1F779000CA290 /* HeaderStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStack.swift; sourceTree = "<group>"; };
 		814B5EB22ABC6D1A00242017 /* Company Travel UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Company Travel UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -444,7 +442,6 @@
 				81701F3B2AB374880070E458 /* SignIn.swift */,
 				81BE34D22AC1F8DE00AA5073 /* RootView.swift */,
 				81FBE2A22AC2ED2F001C0361 /* LogIn.swift */,
-				814711122ACD73AA00616BE1 /* PointsOfInterestScreen.swift */,
 				814711142ACD7AB100616BE1 /* DetailsDestinationScreen.swift */,
 			);
 			path = Screens;
@@ -784,7 +781,6 @@
 				814B5E932ABC673F00242017 /* Mockable.swift in Sources */,
 				813E66692AC4A4FC00EB93BB /* FavoriteModel.swift in Sources */,
 				81A2D3222AB388A40005DD73 /* MaxLengthCharacter.swift in Sources */,
-				814711132ACD73AA00616BE1 /* PointsOfInterestScreen.swift in Sources */,
 				815A99D82AB483FC00334793 /* UIDevice.swift in Sources */,
 				81FBE4C22AAFE6B6004E9790 /* CornerRadius.swift in Sources */,
 				814B5E5F2ABC606600242017 /* SignIn.swift in Sources */,

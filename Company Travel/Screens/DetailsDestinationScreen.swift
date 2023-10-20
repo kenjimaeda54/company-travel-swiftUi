@@ -5,15 +5,24 @@
 //  Created by kenjimaeda on 04/10/23.
 //
 
+import MapKit
 import SwiftUI
+
+enum TabSelected {
+  case overview
+  case points
+}
 
 struct DetailsDestinationScreen: View {
   let destination: DestinationModel
+  @State private var showAlert = false
   @State private var isPresented = true
   @State private var interactive = false
   @Environment(\.dismiss) var dismiss
   @Environment(\.isPresented) var presentation
   @State private var isNavigate = false
+  @State private var tabSelected: TabSelected = .overview
+  @StateObject private var storePointsIntereset = StorePoints(httpCLient: HttpClientFactory.create())
 
   func handleBack() {
     dismiss()
@@ -22,30 +31,119 @@ struct DetailsDestinationScreen: View {
   var body: some View {
     GeometryReader { metrics in
       NavigationStack {
-        ZStack {
-          AsyncImage(url: URL(string: destination.poster)) { phase in
+        if tabSelected == TabSelected.points {
+          VStack(alignment: .center) {
+            switch storePointsIntereset.isLoading {
+            case .loading:
+              Text("IsLoading")
+                .font(.custom(FontsApp.openMedium, size: 25))
+                .foregroundColor(ColorsApp.blue)
 
-            if let image = phase.image {
-              image
-                .resizable() // para conseguir manipular precisa dessa propriedade
-                .scaledToFill()
+            case .failure:
+              Text("Error")
+                .font(.custom(FontsApp.openMedium, size: 25))
+                .foregroundColor(ColorsApp.blue)
 
-            } else {
-              PlaceHolderImageDestionation()
+            default:
+              if #available(iOS 17.0, *) {
+                GeometryReader { geometry in
+
+                  ZStack {
+                    Map(initialPosition: .region(MKCoordinateRegion(
+                      center: CLLocationCoordinate2D(
+                        latitude: destination.pointsActivies[0],
+                        longitude: destination.pointsActivies[1]
+                      ),
+                      span: MKCoordinateSpan(latitudeDelta: 0.13, longitudeDelta: 0.13)
+                    ))) {
+                      ForEach(storePointsIntereset.pointsInterest!.data, id: \.id) { it in
+                        Annotation("", coordinate: CLLocationCoordinate2D(
+                          latitude: Double(it.geoCode.latitude),
+                          longitude: Double(it.geoCode.longitude)
+                        )) {
+                          VStack(spacing: 3) {
+                            Image("annotation")
+                              .resizable()
+                              .renderingMode(.template)
+                              .frame(width: 35, height: 35)
+                              .foregroundColor(ColorsApp.orange)
+                            Text(it.name)
+                              .font(.custom(FontsApp.openRegular, size: 12))
+                              .foregroundColor(ColorsApp.white)
+                              .padding(.vertical, 5)
+                              .padding(.horizontal, 7)
+                              .background(
+                                .ultraThinMaterial,
+                                in: RoundedRectangle(cornerRadius: 7)
+                              )
+                          }
+                        }
+                      }
+                    }
+                    .mapControlVisibility(.hidden)
+                    .mapStyle(.hybrid(elevation: .realistic))
+                    ButtonCommonWithIcon(foregroundColor: ColorsApp.white, iconSytem: "chevron.left", action: {})
+                      .frame(width: 15, height: 10)
+                      .padding(.all, 7)
+                      .background(
+                        .ultraThinMaterial,
+                        in: Circle()
+                      )
+                      .position(x: 20, y: geometry.safeAreaInsets.top)
+                    Button(action: { isPresented.toggle() }) {
+                      Text("Abrir detalhes")
+                        .font(.custom(FontsApp.openLight, size: 19))
+                        .foregroundColor(ColorsApp.white)
+                        .padding(.all, 8)
+                    }
+                    .background(
+                      .ultraThinMaterial,
+                      in: RoundedRectangle(cornerRadius: 5)
+                    )
+                    .position(x: metrics.size.width / 2, y: metrics.size.height - 100)
+                  }
+                }
+
+              } else {
+                Text("Não esta disponível para sua versão")
+                  .font(.custom(FontsApp.openMedium, size: 25))
+                  .foregroundColor(ColorsApp.blue)
+                  .alert("Precisa atualizar para versão 17", isPresented: $showAlert) {
+                    Text("Voltar")
+                      .onTapGesture {
+                        tabSelected = TabSelected.overview
+                      }
+                  }
+              }
             }
           }
-          .accessibilityIdentifier(destination.poster)
-          Button(action: { isPresented.toggle() }) {
-            Text("Abrir detalhes")
-              .font(.custom(FontsApp.openLight, size: 19))
-              .foregroundColor(ColorsApp.white)
-              .padding(.all, 8)
+
+        } else {
+          ZStack {
+            AsyncImage(url: URL(string: destination.poster)) { phase in
+
+              if let image = phase.image {
+                image
+                  .resizable() // para conseguir manipular precisa dessa propriedade
+                  .scaledToFill()
+
+              } else {
+                PlaceHolderImageDestionation()
+              }
+            }
+            .accessibilityIdentifier(destination.poster)
+            Button(action: { isPresented.toggle() }) {
+              Text("Abrir detalhes")
+                .font(.custom(FontsApp.openLight, size: 19))
+                .foregroundColor(ColorsApp.white)
+                .padding(.all, 8)
+            }
+            .background(
+              .ultraThinMaterial,
+              in: RoundedRectangle(cornerRadius: 5)
+            )
+            .position(x: metrics.size.width / 2, y: metrics.size.height - 100)
           }
-          .background(
-            .ultraThinMaterial,
-            in: RoundedRectangle(cornerRadius: 5)
-          )
-          .position(x: metrics.size.width / 2, y: metrics.size.height - 100)
         }
       }
     }
@@ -80,33 +178,32 @@ struct DetailsDestinationScreen: View {
               .foregroundColor(ColorsApp.black)
           }
           .frame(maxWidth: .infinity, alignment: .leading)
-          HStack(alignment: .top, spacing: 0) {
-            VStack(alignment: .leading) {
-              Text("Descrição")
-                .padding(.bottom, 10)
-                .font(.custom(FontsApp.openRegular, size: 17))
-                .foregroundColor(ColorsApp.black)
-                .background(
-                  ColorsApp.blue
-                    .frame(height: 2)
-                    .padding(.top, 20)
-                )
-              Text(destination.overview)
-                .fontWithLineHeight(font: UIFont(name: FontsApp.openLight, size: 16)!, lineHeight: 25)
-                .foregroundColor(ColorsApp.black)
-            }
 
-            Text("Mapa")
-              .font(.custom(FontsApp.openRegular, size: 17))
-              .foregroundColor(ColorsApp.black)
-              .offset(x: -200)
+          HStack(alignment: .top, spacing: 15) {
+            TextOverviewOrPoints(isShowWithDecoration: tabSelected == TabSelected.overview, text: "Descricao")
               .onTapGesture {
-                isNavigate.toggle()
-                isPresented.toggle()
+                tabSelected = TabSelected.overview
+              }
+
+            TextOverviewOrPoints(isShowWithDecoration: tabSelected == TabSelected.points, text: "Pontos de interesse")
+              .onTapGesture {
+                tabSelected = TabSelected.points
+                if #available(iOS 17.0, *) {
+                  showAlert = false
+                  storePointsIntereset.getAllPointsInreset(geoCode: PointsGeoCode(
+                    latitude: destination.pointsActivies[0],
+                    longitude: destination.pointsActivies[1]
+                  ))
+                } else {
+                  showAlert = true
+                }
               }
           }
           .padding(.top, 5)
-          .frame(alignment: .leading)
+          .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+          Text(destination.overview)
+            .fontWithLineHeight(font: UIFont(name: FontsApp.openLight, size: 16)!, lineHeight: 25)
+            .foregroundColor(ColorsApp.black)
 
           Spacer()
         }
@@ -127,16 +224,38 @@ struct DetailsDestinationScreen: View {
       .padding(EdgeInsets(top: 15, leading: 5, bottom: 0, trailing: 5))
       /* .interactiveDismissDisabled(!interactive)*/ // para remover swipe e close sheet, porem nenhum evento ira funfa
     }
-    .navigationDestination(isPresented: $isNavigate) {
-      PointsOfInterestScreen(destination: destination)
-        .navigationBarBackButtonHidden(true)
-    }
     .safeAreaInset(edge: .top, alignment: .leading) {
-      HeaderStack(actionFavorite: {})
+      if tabSelected == TabSelected.overview {
+        HeaderStack(actionFavorite: {})
+      }
     }
   }
 }
 
 #Preview {
   DetailsDestinationScreen(destination: destionationMock[1])
+}
+
+struct TextOverviewOrPoints: View {
+  var isShowWithDecoration: Bool
+
+  var text: String
+  var body: some View {
+    if isShowWithDecoration {
+      Text(text)
+        .padding(.bottom, 10)
+        .font(.custom(FontsApp.openRegular, size: 17))
+        .foregroundColor(ColorsApp.black)
+        .background(
+          ColorsApp.blue
+            .frame(height: 2)
+            .padding(.top, 20)
+        )
+    } else {
+      Text(text)
+        .padding(.bottom, 10)
+        .font(.custom(FontsApp.openRegular, size: 17))
+        .foregroundColor(ColorsApp.black)
+    }
+  }
 }
