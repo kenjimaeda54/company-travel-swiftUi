@@ -46,62 +46,67 @@ struct DetailsDestinationScreen: View {
 
             default:
               if #available(iOS 17.0, *) {
-                GeometryReader { geometry in
-
-                  ZStack {
-                    Map(initialPosition: .region(MKCoordinateRegion(
-                      center: CLLocationCoordinate2D(
-                        latitude: destination.pointsActivies[0],
-                        longitude: destination.pointsActivies[1]
-                      ),
-                      span: MKCoordinateSpan(latitudeDelta: 0.13, longitudeDelta: 0.13)
-                    ))) {
-                      ForEach(storePointsIntereset.pointsInterest!.data, id: \.id) { it in
-                        Annotation("", coordinate: CLLocationCoordinate2D(
-                          latitude: Double(it.geoCode.latitude),
-                          longitude: Double(it.geoCode.longitude)
-                        )) {
-                          VStack(spacing: 3) {
-                            Image("annotation")
-                              .resizable()
-                              .renderingMode(.template)
-                              .frame(width: 35, height: 35)
-                              .foregroundColor(ColorsApp.orange)
-                            Text(it.name)
-                              .font(.custom(FontsApp.openRegular, size: 12))
-                              .foregroundColor(ColorsApp.white)
-                              .padding(.vertical, 5)
-                              .padding(.horizontal, 7)
-                              .background(
-                                .ultraThinMaterial,
-                                in: RoundedRectangle(cornerRadius: 7)
-                              )
-                          }
+                ZStack {
+                  Map(initialPosition: .region(MKCoordinateRegion(
+                    center: CLLocationCoordinate2D(
+                      latitude: destination.pointsActivies[0],
+                      longitude: destination.pointsActivies[1]
+                    ),
+                    span: MKCoordinateSpan(latitudeDelta: 0.13, longitudeDelta: 0.13)
+                  ))) {
+                    ForEach(storePointsIntereset.pointsInterest!.data, id: \.id) { it in
+                      Annotation("", coordinate: CLLocationCoordinate2D(
+                        latitude: Double(it.geoCode.latitude),
+                        longitude: Double(it.geoCode.longitude)
+                      )) {
+                        VStack(spacing: 3) {
+                          Image("annotation")
+                            .resizable()
+                            .renderingMode(.template)
+                            .frame(width: 35, height: 35)
+                            .foregroundColor(ColorsApp.orange)
+                          Text(it.name)
+                            .font(.custom(FontsApp.openRegular, size: 12))
+                            .foregroundColor(ColorsApp.white)
+                            .padding(.vertical, 5)
+                            .padding(.horizontal, 7)
+                            .background(
+                              .ultraThinMaterial,
+                              in: RoundedRectangle(cornerRadius: 7)
+                            )
                         }
                       }
                     }
-                    .mapControlVisibility(.hidden)
-                    .mapStyle(.hybrid(elevation: .realistic))
-                    ButtonCommonWithIcon(foregroundColor: ColorsApp.white, iconSytem: "chevron.left", action: {})
-                      .frame(width: 15, height: 10)
-                      .padding(.all, 7)
-                      .background(
-                        .ultraThinMaterial,
-                        in: Circle()
-                      )
-                      .position(x: 20, y: geometry.safeAreaInsets.top)
-                    Button(action: { isPresented.toggle() }) {
-                      Text("Abrir detalhes")
-                        .font(.custom(FontsApp.openLight, size: 19))
-                        .foregroundColor(ColorsApp.white)
-                        .padding(.all, 8)
-                    }
+                  }
+                  .mapControlVisibility(.hidden)
+                  .mapStyle(.hybrid(elevation: .realistic))
+									ButtonCommonWithIcon(foregroundColor: ColorsApp.white, iconSytem: "chevron.left", action: {handleBack()})
+                    .frame(width: 15, height: 10)
+                    .padding(.all, 7)
                     .background(
                       .ultraThinMaterial,
-                      in: RoundedRectangle(cornerRadius: 5)
+                      in: Circle()
                     )
-                    .position(x: metrics.size.width / 2, y: metrics.size.height - 100)
+                    .position(x: 25, y: metrics.size.height * 0.08)
+                  ButtonCommonWithIcon(foregroundColor: ColorsApp.white, iconSytem: "heart", action: {})
+                    .frame(width: 15, height: 10)
+                    .padding(.all, 7)
+                    .background(
+                      .ultraThinMaterial,
+                      in: Circle()
+                    )
+                    .position(x: metrics.size.width - 25, y: metrics.size.height * 0.08)
+                  Button(action: { isPresented.toggle() }) {
+                    Text("Abrir detalhes")
+                      .font(.custom(FontsApp.openLight, size: 19))
+                      .foregroundColor(ColorsApp.white)
+                      .padding(.all, 8)
                   }
+                  .background(
+                    .ultraThinMaterial,
+                    in: RoundedRectangle(cornerRadius: 5)
+                  )
+                  .position(x: metrics.size.width / 2, y: metrics.size.height - 100)
                 }
 
               } else {
@@ -180,7 +185,7 @@ struct DetailsDestinationScreen: View {
           .frame(maxWidth: .infinity, alignment: .leading)
 
           HStack(alignment: .top, spacing: 15) {
-            TextOverviewOrPoints(isShowWithDecoration: tabSelected == TabSelected.overview, text: "Descricao")
+            TextOverviewOrPoints(isShowWithDecoration: tabSelected == TabSelected.overview, text: "Descrição")
               .onTapGesture {
                 tabSelected = TabSelected.overview
               }
