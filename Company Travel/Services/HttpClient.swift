@@ -284,30 +284,21 @@ class HttpClient: HttpClientProtocol {
         self.generateToken { token in
           if let token = token {
             self.token = token
-            guard let url =
-              URL(
-                string: "https://test.api.amadeus.com/v1/reference-data/locations/pois?latitude=\(geocode.latitude)&longitude=\(geocode.longitude)&radius=5"
-              )
-            else {
-              return completion(.failure(.badURL))
-            }
 
-            var request = URLRequest(url: url)
-            request.httpMethod = "GET"
             request.setValue("Bearer  \(token)", forHTTPHeaderField: "Authorization")
 
-            URLSession.shared.dataTask(with: request) { data, _, _ in
+            URLSession.shared.dataTask(with: request) { newData, _, newError in
 
-              guard let data = data, error == nil else {
+              guard let newData = newData, newError == nil else {
                 return completion(.failure(.badResponse))
               }
 
               do {
-                let response = try JSONDecoder().decode(PointsInterestModel.self, from: data)
+                let response = try JSONDecoder().decode(PointsInterestModel.self, from: newData)
                 return completion(.success(response))
               } catch {
                 print(error.localizedDescription)
-                return
+                return completion(.failure(.noData))
               }
 
             }.resume()

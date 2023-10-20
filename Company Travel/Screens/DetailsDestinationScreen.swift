@@ -132,25 +132,7 @@ struct DetailsDestinationScreen: View {
         .navigationBarBackButtonHidden(true)
     }
     .safeAreaInset(edge: .top, alignment: .leading) {
-      HStack {
-        ButtonCommonWithIcon(foregroundColor: ColorsApp.white, iconSytem: "chevron.left", action: handleBack)
-          .frame(width: 15, height: 10)
-          .padding(.all, 7)
-          .background(
-            .ultraThinMaterial,
-            in: Circle()
-          )
-          .offset(x: 20)
-        Spacer()
-        ButtonCommonWithIcon(foregroundColor: ColorsApp.white, iconSytem: "heart", action: {})
-          .frame(width: 15, height: 10)
-          .padding(.all, 7)
-          .background(
-            .ultraThinMaterial,
-            in: Circle()
-          )
-          .offset(x: -20)
-      }
+      HeaderStack(actionFavorite: {})
     }
   }
 }

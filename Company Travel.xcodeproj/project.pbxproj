@@ -22,6 +22,7 @@
 		813FD1F72AB135F900BD4E7D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FD1F62AB135F900BD4E7D /* ProfileScreen.swift */; };
 		814711132ACD73AA00616BE1 /* PointsOfInterestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814711122ACD73AA00616BE1 /* PointsOfInterestScreen.swift */; };
 		814711152ACD7AB100616BE1 /* DetailsDestinationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814711142ACD7AB100616BE1 /* DetailsDestinationScreen.swift */; };
+		8147A0032AE1F779000CA290 /* HeaderStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147A0022AE1F779000CA290 /* HeaderStack.swift */; };
 		814B5E5E2ABC606300242017 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4AC2AAFD14B004E9790 /* HttpClient.swift */; };
 		814B5E5F2ABC606600242017 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81701F3B2AB374880070E458 /* SignIn.swift */; };
 		814B5E602ABC606900242017 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E8D4B2AAE3DBE0043648D /* HomeScreen.swift */; };
@@ -142,6 +143,7 @@
 		813FD1F62AB135F900BD4E7D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		814711122ACD73AA00616BE1 /* PointsOfInterestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsOfInterestScreen.swift; sourceTree = "<group>"; };
 		814711142ACD7AB100616BE1 /* DetailsDestinationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDestinationScreen.swift; sourceTree = "<group>"; };
+		8147A0022AE1F779000CA290 /* HeaderStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStack.swift; sourceTree = "<group>"; };
 		814B5EB22ABC6D1A00242017 /* Company Travel UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Company Travel UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		814C2C322AC3B779004D0D46 /* LogInScreen_UiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreen_UiTests.swift; sourceTree = "<group>"; };
 		81572E7E2AD624530032845B /* DetailsDestinationScreen_UiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDestinationScreen_UiTests.swift; sourceTree = "<group>"; };
@@ -545,6 +547,7 @@
 				81FDE4642AB47965004F3C59 /* ButtonCommon.swift */,
 				8109BF1A2AB64C7A000D38C2 /* TextFieldSecurity.swift */,
 				816484792AC3AB13006F4CF0 /* ButtonCommonWithIcon.swift */,
+				8147A0022AE1F779000CA290 /* HeaderStack.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -822,6 +825,7 @@
 				81AAB49E2AB135CF0037C3F2 /* FavoriteScreen.swift in Sources */,
 				814B5E642ABC60AA00242017 /* RowDestination.swift in Sources */,
 				81D23C3E2ADD52CE006F684C /* StorePoints.swift in Sources */,
+				8147A0032AE1F779000CA290 /* HeaderStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
