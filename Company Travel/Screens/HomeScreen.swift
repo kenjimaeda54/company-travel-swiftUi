@@ -5,6 +5,7 @@
 //  Created by kenjimaeda on 10/09/23.
 //
 
+import CachedAsyncImage
 import FirebaseAuth
 import FirebaseFirestore
 import SwiftUI
@@ -108,11 +109,13 @@ struct HomeScreen: View {
 
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
           }
+          .scrollBounceBehavior(.basedOnSize)
           .accessibilityIdentifier("GridHomeDestination")
         }
       }
       .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
     }
+    .scrollBounceBehavior(.basedOnSize)
     .onAppear {
       user = stateUser.user
       storeHome.getDestinations()

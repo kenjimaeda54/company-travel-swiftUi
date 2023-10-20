@@ -48,6 +48,7 @@
 		8164847A2AC3AB13006F4CF0 /* ButtonCommonWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816484792AC3AB13006F4CF0 /* ButtonCommonWithIcon.swift */; };
 		818C24B82AB6876E0074A721 /* HelpersFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818C24B72AB6876E0074A721 /* HelpersFunction.swift */; };
 		818C24BC2AB68D1F0074A721 /* KeyBoardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818C24BB2AB68D1F0074A721 /* KeyBoardResponder.swift */; };
+		81936CCF2AE2DD3100B37F9B /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 81936CCE2AE2DD3100B37F9B /* CachedAsyncImage */; };
 		81A2D3222AB388A40005DD73 /* MaxLengthCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2D3212AB388A40005DD73 /* MaxLengthCharacter.swift */; };
 		81AAB49E2AB135CF0037C3F2 /* FavoriteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AAB49D2AB135CF0037C3F2 /* FavoriteScreen.swift */; };
 		81BE34D32AC1F8DE00AA5073 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BE34D22AC1F8DE00AA5073 /* RootView.swift */; };
@@ -234,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E540202AB8CC0E00660BF4 /* FirebaseAuth in Frameworks */,
+				81936CCF2AE2DD3100B37F9B /* CachedAsyncImage in Frameworks */,
 				81E540222AB8CC0E00660BF4 /* FirebaseFirestore in Frameworks */,
 				81E540242AB8CC0E00660BF4 /* FirebaseStorage in Frameworks */,
 			);
@@ -598,6 +600,7 @@
 				81E5401F2AB8CC0E00660BF4 /* FirebaseAuth */,
 				81E540212AB8CC0E00660BF4 /* FirebaseFirestore */,
 				81E540232AB8CC0E00660BF4 /* FirebaseStorage */,
+				81936CCE2AE2DD3100B37F9B /* CachedAsyncImage */,
 			);
 			productName = "Company Travel";
 			productReference = 812E8D462AAE3DBE0043648D /* Company Travel.app */;
@@ -656,6 +659,7 @@
 			mainGroup = 812E8D3D2AAE3DBE0043648D;
 			packageReferences = (
 				81E5401E2AB8CC0E00660BF4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				81936CCD2AE2DD3100B37F9B /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
 			);
 			productRefGroup = 812E8D472AAE3DBE0043648D /* Products */;
 			projectDirPath = "";
@@ -1100,6 +1104,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		81936CCD2AE2DD3100B37F9B /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
 		81E5401E2AB8CC0E00660BF4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1125,6 +1137,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 81E5401E2AB8CC0E00660BF4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		81936CCE2AE2DD3100B37F9B /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81936CCD2AE2DD3100B37F9B /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
 		};
 		81E5401F2AB8CC0E00660BF4 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;

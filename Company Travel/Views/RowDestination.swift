@@ -5,6 +5,7 @@
 //  Created by kenjimaeda on 11/09/23.
 //
 
+import CachedAsyncImage
 import SwiftUI
 
 // cheat test
@@ -18,7 +19,7 @@ struct RowDestination<Content: View>: View {
       content()
 
       VStack {
-        AsyncImage(url: URL(string: destination.poster)) { phase in
+        CachedAsyncImage(url: URL(string: destination.poster)) { phase in
 
           if let image = phase.image {
             image
