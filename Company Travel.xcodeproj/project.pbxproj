@@ -49,6 +49,7 @@
 		818C24B82AB6876E0074A721 /* HelpersFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818C24B72AB6876E0074A721 /* HelpersFunction.swift */; };
 		818C24BC2AB68D1F0074A721 /* KeyBoardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818C24BB2AB68D1F0074A721 /* KeyBoardResponder.swift */; };
 		81936CCF2AE2DD3100B37F9B /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 81936CCE2AE2DD3100B37F9B /* CachedAsyncImage */; };
+		81936CD12AE2E71E00B37F9B /* PointsInterest.json in Resources */ = {isa = PBXBuildFile; fileRef = 81936CD02AE2E71E00B37F9B /* PointsInterest.json */; };
 		81A2D3222AB388A40005DD73 /* MaxLengthCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2D3212AB388A40005DD73 /* MaxLengthCharacter.swift */; };
 		81AAB49E2AB135CF0037C3F2 /* FavoriteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AAB49D2AB135CF0037C3F2 /* FavoriteScreen.swift */; };
 		81BE34D32AC1F8DE00AA5073 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BE34D22AC1F8DE00AA5073 /* RootView.swift */; };
@@ -155,6 +156,7 @@
 		81701F3D2AB374EE0070E458 /* TextFieldCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCommon.swift; sourceTree = "<group>"; };
 		818C24B72AB6876E0074A721 /* HelpersFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersFunction.swift; sourceTree = "<group>"; };
 		818C24BB2AB68D1F0074A721 /* KeyBoardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardResponder.swift; sourceTree = "<group>"; };
+		81936CD02AE2E71E00B37F9B /* PointsInterest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PointsInterest.json; sourceTree = "<group>"; };
 		819430C72ABBB1D600E245FC /* HomeScreen_UiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen_UiTests.swift; sourceTree = "<group>"; };
 		819430CB2ABBB2F900E245FC /* MockHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHttpClient.swift; sourceTree = "<group>"; };
 		819430CD2ABBB3A300E245FC /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 				819430DB2ABBB89100E245FC /* Destination.json */,
 				812FE1902ABFC1BD00455933 /* User.json */,
 				813E14B82AD80666001C13A5 /* Favorite.json */,
+				81936CD02AE2E71E00B37F9B /* PointsInterest.json */,
 			);
 			path = MockData;
 			sourceTree = "<group>";
@@ -718,6 +721,7 @@
 				81E0250C2AAF456700E4D00A /* OpenSans_Condensed-Medium.ttf in Resources */,
 				81E025242AAF456700E4D00A /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				814B5E922ABC673B00242017 /* Destination.json in Resources */,
+				81936CD12AE2E71E00B37F9B /* PointsInterest.json in Resources */,
 				81E0251D2AAF456700E4D00A /* OpenSans-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

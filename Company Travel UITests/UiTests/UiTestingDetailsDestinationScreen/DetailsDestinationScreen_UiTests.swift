@@ -60,4 +60,26 @@ final class DetailsDestinationScreen_UiTests: XCTestCase {
     XCTAssertTrue(price.exists)
     XCTAssertTrue(overView.exists)
   }
+
+  func testRenderMapWithPointsInterest() {
+    let title = app.staticTexts["Pontos de interesse"]
+    let predicateMap = NSPredicate(
+      format: "identifier  == 'mapView'"
+    )
+    let map = app.descendants(matching: .any).matching(predicateMap).firstMatch
+    let annotationOne = app.staticTexts["Klyde Warren Park"]
+    let annotationTwo = app.staticTexts["Dallas Museum of Art"]
+    let predicateSheet = NSPredicate(
+      format: "identifier  == 'sheet'"
+    )
+    let sheet = app.descendants(matching: .any).matching(predicateSheet).firstMatch
+    title.tap()
+
+    let existsMap = map.waitForExistence(timeout: 7)
+    sheet.swipeDown()
+
+    XCTAssertTrue(existsMap)
+    XCTAssertTrue(annotationOne.exists)
+    XCTAssertTrue(annotationTwo.exists)
+  }
 }

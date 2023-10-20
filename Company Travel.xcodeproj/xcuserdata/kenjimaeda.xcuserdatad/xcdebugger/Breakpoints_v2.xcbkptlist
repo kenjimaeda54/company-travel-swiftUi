@@ -2766,7 +2766,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "879DAE18-5A3F-4F16-ABA2-38C3C0BF0CCA"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel UITests/UiTests/UiTestingHomeScreen/HomeScreen_UiTests.swift"
@@ -2907,7 +2907,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2CBE0E03-94E0-47AB-96E4-BC238FA7EDEB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
@@ -2923,7 +2923,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C8DC5B91-C91B-43AB-A41E-760712961362"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
@@ -2939,7 +2939,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DF89B3BA-9991-4307-A836-51A49011CBCE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
@@ -2955,7 +2955,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "379B3EB6-70B4-4038-BB38-0AC5C1D90DE7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
@@ -3065,7 +3065,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B32B37BD-6179-40D3-9D7C-D06AFB92D065"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Store/StorePoints.swift"
@@ -3143,7 +3143,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EA414ECF-06BD-49E8-B4F6-32DA9B0A3618"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Store/StorePoints.swift"
@@ -4046,6 +4046,177 @@
             endingLineNumber = "16"
             landmarkName = "PointsOfInterestScreen"
             landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "669F4FE0-9943-40C2-B05A-99E979E935EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "testRenderMapWithPointsInterest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "526159BA-C773-42BC-900E-235173472C92"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "testRenderMapWithPointsInterest()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "526159BA-C773-42BC-900E-235173472C92 - 9b1f0914151665b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.DetailsDestinationScreen_UiTests.testRenderMapWithPointsInterest() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "2040">
+               </Location>
+               <Location
+                  uuid = "526159BA-C773-42BC-900E-235173472C92 - 9b1f0914151662dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.DetailsDestinationScreen_UiTests.testRenderMapWithPointsInterest() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "2328">
+               </Location>
+               <Location
+                  uuid = "526159BA-C773-42BC-900E-235173472C92 - 9b1f0914151662bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.DetailsDestinationScreen_UiTests.testRenderMapWithPointsInterest() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "2796">
+               </Location>
+               <Location
+                  uuid = "526159BA-C773-42BC-900E-235173472C92 - 9b1f0914151663e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.DetailsDestinationScreen_UiTests.testRenderMapWithPointsInterest() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "3368">
+               </Location>
+               <Location
+                  uuid = "526159BA-C773-42BC-900E-235173472C92 - 9b1f0914151663e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.DetailsDestinationScreen_UiTests.testRenderMapWithPointsInterest() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "3452">
+               </Location>
+               <Location
+                  uuid = "526159BA-C773-42BC-900E-235173472C92 - 9b1f091415166386"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.DetailsDestinationScreen_UiTests.testRenderMapWithPointsInterest() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "3596">
+               </Location>
+               <Location
+                  uuid = "526159BA-C773-42BC-900E-235173472C92 - 9b1f0914151662fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.DetailsDestinationScreen_UiTests.testRenderMapWithPointsInterest() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "2680">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F2C9D4A-A653-4728-A5DD-B4F02E24E334"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "testRenderMapWithPointsInterest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52D366C7-F858-4354-8986-891766C0A15A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingDetailsDestinationScreen/DetailsDestinationScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "testRenderMapWithPointsInterest()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

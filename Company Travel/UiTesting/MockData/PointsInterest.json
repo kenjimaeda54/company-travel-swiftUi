@@ -1,0 +1,298 @@
+{
+	"data": [
+		{
+			"type": "location",
+			"subType": "POINT_OF_INTEREST",
+			"id": "C6A0CECDE2",
+			"self": {
+				"href": "https://test.api.amadeus.com/v1/reference-data/locations/pois/C6A0CECDE2",
+				"methods": [
+					"GET"
+				]
+			},
+			"geoCode": {
+				"latitude": 32.789104,
+				"longitude": -96.80207
+			},
+			"name": "Klyde Warren Park",
+			"category": "SIGHTS",
+			"rank": 5,
+			"tags": [
+				"park",
+				"sightseeing",
+				"tourguide",
+				"landmark",
+				"sights",
+				"attraction",
+				"activities",
+				"commercialplace",
+				"sports",
+				"theater",
+				"shopping",
+				"restaurant",
+				"outdoorplace",
+				"beauty&spas",
+				"hiking"
+			]
+		},
+		{
+			"type": "location",
+			"subType": "POINT_OF_INTEREST",
+			"id": "8F9614B88A",
+			"self": {
+				"href": "https://test.api.amadeus.com/v1/reference-data/locations/pois/8F9614B88A",
+				"methods": [
+					"GET"
+				]
+			},
+			"geoCode": {
+				"latitude": 32.78782,
+				"longitude": -96.801285
+			},
+			"name": "Dallas Museum of Art",
+			"category": "SIGHTS",
+			"rank": 5,
+			"tags": [
+				"museum",
+				"sightseeing",
+				"artgallerie",
+				"tourguide",
+				"restaurant",
+				"sights",
+				"landmark",
+				"historicplace",
+				"historic",
+				"attraction",
+				"professionalservices",
+				"commercialplace",
+				"activities"
+			]
+		},
+		{
+			"type": "location",
+			"subType": "POINT_OF_INTEREST",
+			"id": "884B6FBEA4",
+			"self": {
+				"href": "https://test.api.amadeus.com/v1/reference-data/locations/pois/884B6FBEA4",
+				"methods": [
+					"GET"
+				]
+			},
+			"geoCode": {
+				"latitude": 32.82027,
+				"longitude": -96.80273
+			},
+			"name": "Al Biernat's",
+			"category": "RESTAURANT",
+			"rank": 5,
+			"tags": [
+				"restaurant",
+				"seafood",
+				"steakhouse",
+				"bar",
+				"banquethalls",
+				"events",
+				"professionalservices",
+				"shopping",
+				"sightseeing",
+				"commercialplace"
+			]
+		},
+		{
+			"type": "location",
+			"subType": "POINT_OF_INTEREST",
+			"id": "942AC2301A",
+			"self": {
+				"href": "https://test.api.amadeus.com/v1/reference-data/locations/pois/942AC2301A",
+				"methods": [
+					"GET"
+				]
+			},
+			"geoCode": {
+				"latitude": 32.81716,
+				"longitude": -96.81112
+			},
+			"name": "Bob's Steak & Chop House",
+			"category": "RESTAURANT",
+			"rank": 5,
+			"tags": [
+				"restaurant",
+				"steakhouse",
+				"seafood",
+				"events"
+			]
+		},
+		{
+			"type": "location",
+			"subType": "POINT_OF_INTEREST",
+			"id": "B9A0F78E60",
+			"self": {
+				"href": "https://test.api.amadeus.com/v1/reference-data/locations/pois/B9A0F78E60",
+				"methods": [
+					"GET"
+				]
+			},
+			"geoCode": {
+				"latitude": 32.817097,
+				"longitude": -96.80211
+			},
+			"name": "Chocolate Secrets",
+			"category": "RESTAURANT",
+			"rank": 5,
+			"tags": [
+				"restaurant",
+				"shopping",
+				"food",
+				"kids",
+				"chocolate",
+				"bar",
+				"musicvenue",
+				"gift",
+				"bakery",
+				"club",
+				"sightseeing",
+				"commercialplace"
+			]
+		},
+		{
+			"type": "location",
+			"subType": "POINT_OF_INTEREST",
+			"id": "A8CF881492",
+			"self": {
+				"href": "https://test.api.amadeus.com/v1/reference-data/locations/pois/A8CF881492",
+				"methods": [
+					"GET"
+				]
+			},
+			"geoCode": {
+				"latitude": 32.821198,
+				"longitude": -96.81532
+			},
+			"name": "Nonna",
+			"category": "RESTAURANT",
+			"rank": 5,
+			"tags": [
+				"restaurant",
+				"grills",
+				"seafood",
+				"professionalservices",
+				"shopping",
+				"sightseeing",
+				"commercialplace",
+				"bar"
+			]
+		},
+		{
+			"type": "location",
+			"subType": "POINT_OF_INTEREST",
+			"id": "01CECCA7E5",
+			"self": {
+				"href": "https://test.api.amadeus.com/v1/reference-data/locations/pois/01CECCA7E5",
+				"methods": [
+					"GET"
+				]
+			},
+			"geoCode": {
+				"latitude": 32.820457,
+				"longitude": -96.8144
+			},
+			"name": "Whole Foods Market",
+			"category": "RESTAURANT",
+			"rank": 5,
+			"tags": [
+				"vegetarian",
+				"shopping",
+				"food",
+				"health&medical",
+				"supermarket",
+				"sightseeing",
+				"commercialplace",
+				"market"
+			]
+		},
+		{
+			"type": "location",
+			"subType": "POINT_OF_INTEREST",
+			"id": "E2D7B764C4",
+			"self": {
+				"href": "https://test.api.amadeus.com/v1/reference-data/locations/pois/E2D7B764C4",
+				"methods": [
+					"GET"
+				]
+			},
+			"geoCode": {
+				"latitude": 32.823326,
+				"longitude": -96.79029
+			},
+			"name": "Highland Park Soda Fountain",
+			"category": "RESTAURANT",
+			"rank": 5,
+			"tags": [
+				"restaurant",
+				"sightseeing",
+				"health&medical",
+				"pharmacy"
+			]
+		},
+		{
+			"type": "location",
+			"subType": "POINT_OF_INTEREST",
+			"id": "7D3FEF2229",
+			"self": {
+				"href": "https://test.api.amadeus.com/v1/reference-data/locations/pois/7D3FEF2229",
+				"methods": [
+					"GET"
+				]
+			},
+			"geoCode": {
+				"latitude": 32.820435,
+				"longitude": -96.80238
+			},
+			"name": "The Mint",
+			"category": "RESTAURANT",
+			"rank": 5,
+			"tags": [
+				"restaurant",
+				"thai"
+			]
+		},
+		{
+			"type": "location",
+			"subType": "POINT_OF_INTEREST",
+			"id": "AC1C3F37F6",
+			"self": {
+				"href": "https://test.api.amadeus.com/v1/reference-data/locations/pois/AC1C3F37F6",
+				"methods": [
+					"GET"
+				]
+			},
+			"geoCode": {
+				"latitude": 32.796818,
+				"longitude": -96.8203
+			},
+			"name": "Meddlesome Moth",
+			"category": "RESTAURANT",
+			"rank": 10,
+			"tags": [
+				"restaurant",
+				"grills",
+				"gastropub",
+				"sightseeing",
+				"bar",
+				"club",
+				"pub",
+				"commercialplace"
+			]
+		}
+	],
+	"meta": {
+		"count": 359,
+		"links": {
+			"self": "https://test.api.amadeus.com/v1/reference-data/locations/pois?latitude= 32.806993&longitude=-96.836857 &radius=5&city_id=5270&type =PJ",
+			"next": "https://test.api.amadeus.com/v1/reference-data/locations/pois?latitude= 32.806993&longitude=-96.836857 &radius=5&city_id=5270&type =PJ&page[offset]=10&page[limit]=10",
+			"last": "https://test.api.amadeus.com/v1/reference-data/locations/pois?latitude= 32.806993&longitude=-96.836857 &radius=5&city_id=5270&type =PJ&page[offset]=350&page[limit]=10",
+			"first": "https://test.api.amadeus.com/v1/reference-data/locations/pois?latitude= 32.806993&longitude=-96.836857 &radius=5&city_id=5270&type =PJ&page[offset]=0&page[limit]=10",
+			"up": "https://test.api.amadeus.com/v1/reference-data/locations/pois?latitude= 32.806993&longitude=-96.836857 &radius=5&city_id=5270&type =PJ"
+		}
+	}
+}

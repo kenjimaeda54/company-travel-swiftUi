@@ -78,6 +78,7 @@ struct DetailsDestinationScreen: View {
                       }
                     }
                   }
+                  .accessibilityIdentifier("mapView")
                   .mapControlVisibility(.hidden)
                   .mapStyle(.hybrid(elevation: .realistic))
                   ButtonCommonWithIcon(
@@ -231,6 +232,7 @@ struct DetailsDestinationScreen: View {
       }
       .presentationDetents([.customMedium])
       .padding(EdgeInsets(top: 15, leading: 5, bottom: 0, trailing: 5))
+      .accessibilityIdentifier("sheet")
       /* .interactiveDismissDisabled(!interactive)*/ // para remover swipe e close sheet, porem nenhum evento ira funfa
     }
     .safeAreaInset(edge: .top, alignment: .leading) {

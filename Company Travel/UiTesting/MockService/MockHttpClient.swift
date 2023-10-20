@@ -67,6 +67,7 @@ class MockHttpClient: HttpClientProtocol, Mockable {
     geocode: PointsGeoCode,
     completion: @escaping (Result<PointsInterestModel, HttpError>) -> Void
   ) {
-    print("ola")
+    let pointsInterest = loadJson(filename: "PointsInterest", type: PointsInterestModel.self)
+    completion(.success(pointsInterest))
   }
 }
