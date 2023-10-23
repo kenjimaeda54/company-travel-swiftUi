@@ -78,13 +78,11 @@ final class SigInScreen_UiTests: XCTestCase {
 
   func testTypeEmailWrong() {
     let nextButton = app.buttons["Next:"] // depois que atulizou para ios17
-    let doneButton = app.buttons["Done"]
     let textFailedEmail = app.staticTexts["Precisa ser um email valido"]
 
     textFieldEmail.tap()
     textFieldEmail.typeText("Joao@.gmail.com")
     nextButton.tap()
-    doneButton.tap()
 
     XCTAssertTrue(textFailedEmail.exists)
   }

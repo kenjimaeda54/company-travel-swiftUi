@@ -5,6 +5,7 @@
 //  Created by kenjimaeda on 25/09/23.
 //
 
+import FirebaseAuth
 import Foundation
 
 class EnvironmentUser: ObservableObject {

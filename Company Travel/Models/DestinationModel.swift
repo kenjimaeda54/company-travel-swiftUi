@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DestinationModel: Identifiable, Decodable {
+struct DestinationModel: Identifiable, Codable {
   let id: String
   let location: String
   let overview: String

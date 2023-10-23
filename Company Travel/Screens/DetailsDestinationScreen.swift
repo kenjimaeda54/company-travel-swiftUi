@@ -5,6 +5,7 @@
 //  Created by kenjimaeda on 04/10/23.
 //
 
+import CachedAsyncImage
 import MapKit
 import SwiftUI
 
@@ -35,9 +36,7 @@ struct DetailsDestinationScreen: View {
           VStack(alignment: .center) {
             switch storePointsIntereset.isLoading {
             case .loading:
-              Text("IsLoading")
-                .font(.custom(FontsApp.openMedium, size: 25))
-                .foregroundColor(ColorsApp.blue)
+              PlaceHolderScreen()
 
             case .failure:
               Text("Error")
@@ -130,7 +129,7 @@ struct DetailsDestinationScreen: View {
 
         } else {
           ZStack {
-            AsyncImage(url: URL(string: destination.poster)) { phase in
+            CachedAsyncImage(url: URL(string: destination.poster)) { phase in
 
               if let image = phase.image {
                 image
@@ -223,8 +222,13 @@ struct DetailsDestinationScreen: View {
           Text("Comprar agora")
             .padding(.vertical, 10)
             .foregroundColor(ColorsApp.white)
+            .onTapGesture {
+              isNavigate.toggle()
+              isPresented.toggle()
+            }
           Spacer()
         }
+
         .background(
           RoundedRectangle(cornerRadius: 50)
             .foregroundColor(ColorsApp.blue)
@@ -239,6 +243,10 @@ struct DetailsDestinationScreen: View {
       if tabSelected == TabSelected.overview {
         HeaderStack(actionFavorite: {})
       }
+    }
+    .navigationDestination(isPresented: $isNavigate) {
+      BuyTravelScreeen(destination: destination.title)
+        .navigationBarBackButtonHidden(true)
     }
   }
 }

@@ -16,8 +16,15 @@ struct PlaceHolderImageDestionation: View {
   }
 }
 
-struct PlaceHolderImageDestionation_Previews: PreviewProvider {
-  static var previews: some View {
-    PlaceHolderImageDestionation()
+struct PlaceHolderScreen: View {
+  var body: some View {
+    Image("placeHolderCity")
+      .resizable()
+      .ignoresSafeArea()
+      .redactShimmer(condition: true)
   }
+}
+
+#Preview {
+  PlaceHolderScreen()
 }

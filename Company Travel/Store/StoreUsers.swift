@@ -10,11 +10,24 @@ import Foundation
 
 class StoreUsers: ObservableObject {
   @Published var user: UserModel?
-
   let httpClient: HttpClientProtocol
 
   init(httpClient: HttpClientProtocol) {
     self.httpClient = HttpClientFactory.create()
+  }
+
+  func getUserLoged() {
+    Auth.auth().addStateDidChangeListener { _, user in
+      if let user = user {
+        let userModel = UserModel(
+          uid: user.uid,
+          displayName: user.displayName,
+          photoUrl: user.photoURL,
+          email: user.email
+        )
+        self.user = userModel
+      }
+    }
   }
 
   func createUser(

@@ -10,16 +10,17 @@ import SwiftUI
 struct RootView: View {
   var user: UserModel?
   @StateObject var enviromentUser = EnvironmentUser()
+  @StateObject var store = StoreUsers(httpClient: HttpClientFactory.create())
 
   var body: some View {
     ZStack {
       if user != nil {
         BottomNavigation(currentTag: .home)
-          .environmentObject(enviromentUser)
       } else {
         LogIn()
       }
     }
+    .environmentObject(enviromentUser)
     .onAppear {
       if user != nil {
         enviromentUser.user = user!

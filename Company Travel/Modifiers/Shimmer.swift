@@ -12,7 +12,7 @@ import SwiftUI
 /// an operation is in progress.
 public struct Shimmer: ViewModifier {
   @State private var phase: CGFloat = 0
-  var duration = 1.5
+  var duration = 1.2
   var bounce = false
 
   public func body(content: Content) -> some View {
@@ -43,8 +43,8 @@ public struct Shimmer: ViewModifier {
   /// The `phase` parameter shifts the gradient, moving the opaque band.
   struct GradientMask: View {
     let phase: CGFloat
-    let centerColor = ColorsApp.gray
-    let edgeColor = ColorsApp.gray.opacity(0.3)
+    let centerColor = Color.black
+    let edgeColor = Color.gray.opacity(0.3)
 
     var body: some View {
       LinearGradient(

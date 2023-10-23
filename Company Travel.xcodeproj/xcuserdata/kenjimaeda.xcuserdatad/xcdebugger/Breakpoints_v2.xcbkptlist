@@ -1149,8 +1149,8 @@
             filePath = "Company Travel UITests/UiTests/UiTestingSigInScreeen/SigInScreen_UiTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "testTypeEmailRegistered()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1197,8 +1197,8 @@
             filePath = "Company Travel UITests/UiTests/UiTestingSigInScreeen/SigInScreen_UiTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "testTypeEmailRegistered()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1213,8 +1213,8 @@
             filePath = "Company Travel UITests/UiTests/UiTestingSigInScreeen/SigInScreen_UiTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "testTypeEmailRegistered()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1469,8 +1469,8 @@
             filePath = "Company Travel/Store/StoreUsers.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "createUser(email:password:name:data:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1643,26 +1643,10 @@
             filePath = "Company Travel/Store/StoreUsers.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "createUser(email:password:name:data:completion:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4F9E8036-2AB4-4B20-9DA2-1C4D57425260"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Company Travel/Screens/RootView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "RootView"
-            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1675,8 +1659,8 @@
             filePath = "Company Travel/Store/StoreUsers.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "logIn(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1691,8 +1675,8 @@
             filePath = "Company Travel/Store/StoreUsers.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "logIn(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1770,8 +1754,8 @@
             filePath = "Company Travel/Store/StoreUsers.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "logIn(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1786,26 +1770,10 @@
             filePath = "Company Travel/Store/StoreUsers.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "logIn(email:password:completion:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6C2BC4CC-7EEB-4EE4-A336-88330B4C1A06"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Company Travel/Screens/RootView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "body"
-            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1818,10 +1786,42 @@
             filePath = "Company Travel/Screens/RootView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "197F8FA1-542E-4838-A4E6-A55802F41910 - df3656cba75653fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.RootView.body.getter : some"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Screens/RootView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "197F8FA1-542E-4838-A4E6-A55802F41910 - 4e642c0ebc686cd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;Company_Travel.BottomNavigation, Company_Travel.LogIn&gt; in Company_Travel.RootView.body.getter : some"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Screens/RootView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3972,7 +3972,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "63AEA370-0988-4F38-BEAE-2CC9DD73DEB9"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Services/HttpClient.swift"
@@ -3988,7 +3988,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A13430D0-C13F-41AB-B67B-F2C928E3724B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Services/HttpClient.swift"
@@ -4004,7 +4004,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "F2268DCA-1523-4B81-9712-5DA2D4487C0F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Services/HttpClient.swift"
@@ -4020,7 +4020,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DED18ECE-0FBF-418C-A985-FF304B9E9E97"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Services/HttpClient.swift"
