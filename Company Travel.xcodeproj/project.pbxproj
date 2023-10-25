@@ -47,6 +47,7 @@
 		815A99DA2AB4893800334793 /* PresentationDetent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A99D92AB4893800334793 /* PresentationDetent.swift */; };
 		815A99DC2AB5184100334793 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A99DB2AB5184100334793 /* UIImage.swift */; };
 		8164847A2AC3AB13006F4CF0 /* ButtonCommonWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816484792AC3AB13006F4CF0 /* ButtonCommonWithIcon.swift */; };
+		816CA6062AE89B34005EEC90 /* favoritesDestinationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CA6052AE89B34005EEC90 /* favoritesDestinationMock.swift */; };
 		818C24B82AB6876E0074A721 /* HelpersFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818C24B72AB6876E0074A721 /* HelpersFunction.swift */; };
 		818C24BC2AB68D1F0074A721 /* KeyBoardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818C24BB2AB68D1F0074A721 /* KeyBoardResponder.swift */; };
 		818F28632AE5605800227ABA /* BuyTravelScreeen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F28622AE5605800227ABA /* BuyTravelScreeen.swift */; };
@@ -112,7 +113,7 @@
 		81FBE4A72AAFCEE0004E9790 /* HttpClientGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4A62AAFCEE0004E9790 /* HttpClientGeneric.swift */; };
 		81FBE4AF2AAFD6D8004E9790 /* StoreHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4AE2AAFD6D8004E9790 /* StoreHome.swift */; };
 		81FBE4B52AAFDA52004E9790 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4B42AAFDA52004E9790 /* constants.swift */; };
-		81FBE4BB2AAFDB53004E9790 /* destionationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4BA2AAFDB53004E9790 /* destionationMock.swift */; };
+		81FBE4BB2AAFDB53004E9790 /* destinationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4BA2AAFDB53004E9790 /* destinationMock.swift */; };
 		81FBE4C22AAFE6B6004E9790 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4C12AAFE6B6004E9790 /* CornerRadius.swift */; };
 		81FDE4632AB47015004F3C59 /* ImagePickerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FDE4622AB47015004F3C59 /* ImagePickerRepresentable.swift */; };
 /* End PBXBuildFile section */
@@ -155,6 +156,7 @@
 		815A99D92AB4893800334793 /* PresentationDetent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDetent.swift; sourceTree = "<group>"; };
 		815A99DB2AB5184100334793 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		816484792AC3AB13006F4CF0 /* ButtonCommonWithIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCommonWithIcon.swift; sourceTree = "<group>"; };
+		816CA6052AE89B34005EEC90 /* favoritesDestinationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritesDestinationMock.swift; sourceTree = "<group>"; };
 		81701F3B2AB374880070E458 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		81701F3D2AB374EE0070E458 /* TextFieldCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCommon.swift; sourceTree = "<group>"; };
 		818C24B72AB6876E0074A721 /* HelpersFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersFunction.swift; sourceTree = "<group>"; };
@@ -228,7 +230,7 @@
 		81FBE4AE2AAFD6D8004E9790 /* StoreHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHome.swift; sourceTree = "<group>"; };
 		81FBE4B12AAFD786004E9790 /* HttpClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientFactory.swift; sourceTree = "<group>"; };
 		81FBE4B42AAFDA52004E9790 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
-		81FBE4BA2AAFDB53004E9790 /* destionationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = destionationMock.swift; sourceTree = "<group>"; };
+		81FBE4BA2AAFDB53004E9790 /* destinationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = destinationMock.swift; sourceTree = "<group>"; };
 		81FBE4BE2AAFDBBF004E9790 /* RowDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowDestination.swift; sourceTree = "<group>"; };
 		81FBE4C12AAFE6B6004E9790 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		81FDE4622AB47015004F3C59 /* ImagePickerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerRepresentable.swift; sourceTree = "<group>"; };
@@ -563,7 +565,8 @@
 		81FBE4B92AAFDB37004E9790 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				81FBE4BA2AAFDB53004E9790 /* destionationMock.swift */,
+				81FBE4BA2AAFDB53004E9790 /* destinationMock.swift */,
+				816CA6052AE89B34005EEC90 /* favoritesDestinationMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -807,6 +810,7 @@
 				811804EF2AB52CA2000BFA5C /* StoreUsers.swift in Sources */,
 				814B5E912ABC66DD00242017 /* MockHttpClient.swift in Sources */,
 				814B5E622ABC60A400242017 /* BottomItemNavigation.swift in Sources */,
+				816CA6062AE89B34005EEC90 /* favoritesDestinationMock.swift in Sources */,
 				81FBE2A32AC2ED2F001C0361 /* LogIn.swift in Sources */,
 				812FE18D2ABFB96500455933 /* UserModel.swift in Sources */,
 				812E8D4A2AAE3DBE0043648D /* Company_TravelApp.swift in Sources */,
@@ -825,7 +829,7 @@
 				818C24B82AB6876E0074A721 /* HelpersFunction.swift in Sources */,
 				813E666B2AC4A78000EB93BB /* StoreFavorites.swift in Sources */,
 				81DC31882AB25CDC00025335 /* Shimmer.swift in Sources */,
-				81FBE4BB2AAFDB53004E9790 /* destionationMock.swift in Sources */,
+				81FBE4BB2AAFDB53004E9790 /* destinationMock.swift in Sources */,
 				81BE34D52AC2090B00AA5073 /* EnvironmentUser.swift in Sources */,
 				81D23C3C2ADD4B13006F684C /* PointsInterestModel.swift in Sources */,
 				814B5E8E2ABC650400242017 /* HttpClientFactory.swift in Sources */,

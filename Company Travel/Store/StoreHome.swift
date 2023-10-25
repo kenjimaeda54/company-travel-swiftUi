@@ -10,7 +10,7 @@ import Foundation
 class StoreHome: ObservableObject {
   let httpClient: HttpClientProtocol
   @Published var stateLoading = StateLoading.loading
-  var destinations: [DestinationModel] = []
+  @Published var destinations: [DestinationModel] = []
 
   init(httpClient: HttpClientProtocol) {
     self.httpClient = HttpClientFactory.create()

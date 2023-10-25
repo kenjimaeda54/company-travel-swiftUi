@@ -252,7 +252,7 @@ struct DetailsDestinationScreen: View {
 }
 
 #Preview {
-  DetailsDestinationScreen(destination: destionationMock[1])
+  DetailsDestinationScreen(destination: destinationMock[1])
 }
 
 struct TextOverviewOrPoints: View {

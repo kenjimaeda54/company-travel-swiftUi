@@ -10,7 +10,8 @@ import Foundation
 class StoreFavorites: ObservableObject {
   let httpClient: HttpClientProtocol
   @Published var stateLoading = StateLoading.loading
-  @Published var favorites: [FavoriteModel] = []
+  @Published var favorites: [FavoriteModel] = [] // published e que refresh a tela
+  var favoritesDestination: [FavoriteDestination] = []
 
   init(httpClient: HttpClientProtocol) {
     self.httpClient = HttpClientFactory.create()
@@ -43,5 +44,11 @@ class StoreFavorites: ObservableObject {
 
   func deleteFavorite(documentId: String) {
     httpClient.removeFavorite(documentId: documentId)
+  }
+
+  func handleDestinationFavorites(destinations: [DestinationModel]) {
+    favoritesDestination = favorites.map { favorite in
+      FavoriteDestination(id: favorite.id, destination: destinations.first { $0.id == favorite.idDestination }!)
+    }
   }
 }

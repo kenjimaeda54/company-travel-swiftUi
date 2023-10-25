@@ -11,8 +11,8 @@ import FirebaseFirestore
 import SwiftUI
 
 struct HomeScreen: View {
-  @StateObject var storeHome = StoreHome(httpClient: HttpClientFactory.create())
-  @StateObject var storeFavorite = StoreFavorites(httpClient: HttpClientFactory.create())
+  @ObservedObject var storeHome = StoreHome(httpClient: HttpClientFactory.create())
+  @ObservedObject var storeFavorite = StoreFavorites(httpClient: HttpClientFactory.create())
   @EnvironmentObject var stateUser: EnvironmentUser
   @State private var user = UserModel(
     uid: "",
@@ -52,7 +52,7 @@ struct HomeScreen: View {
           .frame(maxWidth: .infinity, alignment: .leading)
 
         if storeHome.stateLoading == .sucess {
-          LazyVGrid(columns: gridItemDestionation, spacing: 30) {
+          LazyVGrid(columns: gridItemDestinations, spacing: 30) {
             ForEach(storeHome.destinations) { destination in
               NavigationLink {
                 DetailsDestinationScreen(destination: destination)

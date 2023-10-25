@@ -59,7 +59,7 @@ struct RowDestination<Content: View>: View {
 
 struct RowDestionation_Previews: PreviewProvider {
   static var previews: some View {
-    RowDestination(destination: destionationMock[0]) {
+    RowDestination(destination: destinationMock[0]) {
       Image(systemName: "heart.fill")
         .font(.system(size: 25))
         .foregroundColor(ColorsApp.red)

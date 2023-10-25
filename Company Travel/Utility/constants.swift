@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-var gridItemDestionation: [GridItem] {
+var gridItemDestinations: [GridItem] {
   return Array(repeating: GridItem(.flexible(), spacing: 17), count: 2)
 }
 

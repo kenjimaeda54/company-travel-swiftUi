@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FavoriteDestination: Codable {
+struct FavoriteDestination: Codable, Identifiable {
   let id: String
-  let destionation: DestinationModel
+  let destination: DestinationModel
 }

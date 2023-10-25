@@ -112,7 +112,12 @@ class HttpClient: HttpClientProtocol {
         let storageRef = self.storage.reference()
         let photoUserRef = storageRef.child("images/\(user.uid).jpg")
         if let uploadPhoto = data {
-          photoUserRef.putData(uploadPhoto, metadata: nil) { _, _ in
+          photoUserRef.putData(uploadPhoto, metadata: nil) { _, error in
+
+            if error != nil {
+              print(error)
+              return completion(.failure(.errorUploadPhoto))
+            }
 
             photoUserRef.downloadURL { url, _ in
               guard url != nil else {
