@@ -109,41 +109,58 @@ class HttpClient: HttpClientProtocol {
       }
 
       if let user = authResult?.user {
-        let storageRef = self.storage.reference()
-        let photoUserRef = storageRef.child("images/\(user.uid).jpg")
-        if let uploadPhoto = data {
-          photoUserRef.putData(uploadPhoto, metadata: nil) { _, error in
+        self.sigIn(email: email, password: password) { result in
 
-            if error != nil {
-              print(error)
-              return completion(.failure(.errorUploadPhoto))
-            }
+          switch result {
+          case .failure:
+            completion(.failure(.badResponse))
 
-            photoUserRef.downloadURL { url, _ in
-              guard url != nil else {
-                return completion(.failure(.badURL))
-              }
+          case .success:
+            self.converterDataFromUrlRequest(data: data, reference: user.uid) { result in
 
-              self.sigIn(email: email, password: password) { result in
+              switch result {
+              case let .success(url):
+                self.updateUser(name: name, photoUrl: url)
 
-                switch result {
-                case .failure:
-                  completion(.failure(.badResponse))
+                let userModel = UserModel(
+                  uid: user.uid,
+                  displayName: name,
+                  photoUrl: url,
+                  email: email
+                )
+                completion(.success(userModel))
 
-                case .success:
-                  self.updateUser(name: name, photoUrl: url!)
-
-                  let userModel = UserModel(
-                    uid: user.uid,
-                    displayName: name,
-                    photoUrl: url!,
-                    email: email
-                  )
-                  completion(.success(userModel))
-                }
+              case let .failure(error):
+                completion(.failure(error))
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  func converterDataFromUrlRequest(
+    data: Data?,
+    reference: String,
+    completion: @escaping (Result<URL, HttpError>) -> Void
+  ) {
+    let storageRef = storage.reference()
+    let photoUserRef = storageRef.child("images/\(reference).jpg")
+    if let uploadPhoto = data {
+      photoUserRef.putData(uploadPhoto, metadata: nil) { _, error in
+
+        if error != nil {
+          print(error)
+          return completion(.failure(.badResponse))
+        }
+
+        photoUserRef.downloadURL { url, _ in
+          if let url = url {
+            return completion(.success(url))
+          }
+
+          return completion(.failure(.badURL))
         }
       }
     }
@@ -188,12 +205,24 @@ class HttpClient: HttpClientProtocol {
     }
   }
 
-  func updateUser(name: String, photoUrl: URL) {
+  func updateUser(name: String, photoUrl: URL, email: String? = nil, password: String? = nil) {
     let changeRequest = auth.currentUser?.createProfileChangeRequest()
     changeRequest?.displayName = name
     changeRequest?.photoURL = photoUrl
     changeRequest?.commitChanges { error in
       print(error?.localizedDescription)
+    }
+
+    if let email = email {
+      Auth.auth().currentUser?.updateEmail(to: email) { error in
+        print(error?.localizedDescription)
+      }
+    }
+
+    if let password = password {
+      Auth.auth().currentUser?.updatePassword(to: password) { error in
+        print(error?.localizedDescription)
+      }
     }
   }
 

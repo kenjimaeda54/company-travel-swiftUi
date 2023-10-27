@@ -41,4 +41,12 @@ protocol HttpClientProtocol {
     geocode: PointsGeoCode,
     completion: @escaping (Result<PointsInterestModel, HttpError>) -> Void
   )
+
+  func updateUser(name: String, photoUrl: URL, email: String?, password: String?) -> Void
+
+  func converterDataFromUrlRequest(
+    data: Data?,
+    reference: String,
+    completion: @escaping (Result<URL, HttpError>) -> Void
+  ) -> Void
 }

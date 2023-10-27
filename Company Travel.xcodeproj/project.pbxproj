@@ -57,6 +57,7 @@
 		81AAB49E2AB135CF0037C3F2 /* FavoriteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AAB49D2AB135CF0037C3F2 /* FavoriteScreen.swift */; };
 		81BE34D32AC1F8DE00AA5073 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BE34D22AC1F8DE00AA5073 /* RootView.swift */; };
 		81BE34D52AC2090B00AA5073 /* EnvironmentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BE34D42AC2090B00AA5073 /* EnvironmentUser.swift */; };
+		81C1764B2AEBE9D80038E003 /* RowTitleAndSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C1764A2AEBE9D80038E003 /* RowTitleAndSubtitle.swift */; };
 		81D23C3C2ADD4B13006F684C /* PointsInterestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D23C3B2ADD4B13006F684C /* PointsInterestModel.swift */; };
 		81D23C3E2ADD52CE006F684C /* StorePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D23C3D2ADD52CE006F684C /* StorePoints.swift */; };
 		81D70B9B2ABDA39900C69190 /* ScreensFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D70B9A2ABDA39900C69190 /* ScreensFactory.swift */; };
@@ -172,6 +173,7 @@
 		81AAB49D2AB135CF0037C3F2 /* FavoriteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreen.swift; sourceTree = "<group>"; };
 		81BE34D22AC1F8DE00AA5073 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		81BE34D42AC2090B00AA5073 /* EnvironmentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentUser.swift; sourceTree = "<group>"; };
+		81C1764A2AEBE9D80038E003 /* RowTitleAndSubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTitleAndSubtitle.swift; sourceTree = "<group>"; };
 		81D23C3B2ADD4B13006F684C /* PointsInterestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsInterestModel.swift; sourceTree = "<group>"; };
 		81D23C3D2ADD52CE006F684C /* StorePoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorePoints.swift; sourceTree = "<group>"; };
 		81D70B9A2ABDA39900C69190 /* ScreensFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensFactory.swift; sourceTree = "<group>"; };
@@ -558,6 +560,7 @@
 				8109BF1A2AB64C7A000D38C2 /* TextFieldSecurity.swift */,
 				816484792AC3AB13006F4CF0 /* ButtonCommonWithIcon.swift */,
 				8147A0022AE1F779000CA290 /* HeaderStack.swift */,
+				81C1764A2AEBE9D80038E003 /* RowTitleAndSubtitle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -813,6 +816,7 @@
 				816CA6062AE89B34005EEC90 /* favoritesDestinationMock.swift in Sources */,
 				81FBE2A32AC2ED2F001C0361 /* LogIn.swift in Sources */,
 				812FE18D2ABFB96500455933 /* UserModel.swift in Sources */,
+				81C1764B2AEBE9D80038E003 /* RowTitleAndSubtitle.swift in Sources */,
 				812E8D4A2AAE3DBE0043648D /* Company_TravelApp.swift in Sources */,
 				81E0252D2AAF471500E4D00A /* FontsApp.swift in Sources */,
 				815A99DC2AB5184100334793 /* UIImage.swift in Sources */,

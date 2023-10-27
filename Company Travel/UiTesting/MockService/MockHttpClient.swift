@@ -70,4 +70,16 @@ class MockHttpClient: HttpClientProtocol, Mockable {
     let pointsInterest = loadJson(filename: "PointsInterest", type: PointsInterestModel.self)
     completion(.success(pointsInterest))
   }
+
+  func converterDataFromUrlRequest(
+    data: Data?,
+    reference: String,
+    completion: @escaping (Result<URL, HttpError>) -> Void
+  ) {
+    print("converter")
+  }
+
+  func updateUser(name: String, photoUrl: URL, email: String?, password: String?) {
+    print("update")
+  }
 }

@@ -92,6 +92,7 @@ struct DetailsDestinationScreen: View {
                     in: Circle()
                   )
                   .position(x: 25, y: metrics.size.height * 0.08)
+                  .onTapGesture {}
                   ButtonCommonWithIcon(foregroundColor: ColorsApp.white, iconSytem: "heart", action: {})
                     .frame(width: 15, height: 10)
                     .padding(.all, 7)

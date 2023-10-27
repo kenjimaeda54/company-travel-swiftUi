@@ -24,6 +24,7 @@ struct FavoriteScreen: View {
               RowDestination(destination: favorites.destination) {
                 Text("")
               }
+              .padding(.vertical, 15)
             }
           }
         }

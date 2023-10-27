@@ -75,4 +75,25 @@ class StoreUsers: ObservableObject {
       }
     }
   }
+
+  func updateUser(email: String? = nil, password: String? = nil, data: Data? = nil, name: String? = nil) {
+    getUserLoged()
+
+    httpClient.converterDataFromUrlRequest(data: data, reference: user!.uid) { result in
+
+      switch result {
+      case let .success(url):
+        self.httpClient.updateUser(
+          name: name ?? self.user!.displayName!,
+          photoUrl: url,
+          email: email,
+          password: password
+        )
+
+      case let .failure(error):
+
+        print(error)
+      }
+    }
+  }
 }
