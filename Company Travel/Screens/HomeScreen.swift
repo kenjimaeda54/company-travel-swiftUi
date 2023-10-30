@@ -12,21 +12,16 @@ import SwiftUI
 
 struct HomeScreen: View {
   @ObservedObject var storeHome = StoreHome(httpClient: HttpClientFactory.create())
+  @StateObject private var storeUser = StoreUsers(httpClient: HttpClientFactory.create())
   @ObservedObject var storeFavorite = StoreFavorites(httpClient: HttpClientFactory.create())
   @EnvironmentObject var stateUser: EnvironmentUser
-  @State private var user = UserModel(
-    uid: "",
-    displayName: "",
-    photoUrl: URL(string: "https://github.com/kenjimaeda54.png")!,
-    email: ""
-  )
 
   var body: some View {
     ScrollView(showsIndicators: false) {
       Group {
         HStack {
           VStack(alignment: .leading) {
-            Text("Ola \(user.displayName ?? ""), ")
+            Text("Ola \(stateUser.user.displayName ?? ""), ")
               .font(.custom(FontsApp.openLight, size: 17))
               .foregroundColor(ColorsApp.gray)
             Text("Viajando hoje?")
@@ -34,7 +29,7 @@ struct HomeScreen: View {
               .foregroundColor(ColorsApp.black)
           }
           Spacer()
-          AsyncImage(url: user.photoUrl ?? URL(string: "https://github.com/kenjimaeda54.png")) { phase in
+          AsyncImage(url: stateUser.user.photoUrl ?? URL(string: "https://github.com/kenjimaeda54.png")) { phase in
             if let image = phase.image {
               image
                 .resizable()
@@ -44,7 +39,7 @@ struct HomeScreen: View {
             }
           }
         }
-        .accessibilityIdentifier(user.photoUrl!.absoluteString)
+        .accessibilityIdentifier(stateUser.user.photoUrl!.absoluteString)
         .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
         Text("Destinos")
           .font(.custom(FontsApp.openRegular, size: 20))
@@ -117,7 +112,6 @@ struct HomeScreen: View {
     }
     .scrollBounceBehavior(.basedOnSize)
     .onAppear {
-      user = stateUser.user
       storeHome.getDestinations()
       storeFavorite.getFavoritesByUser(userId: stateUser.user.uid)
     }

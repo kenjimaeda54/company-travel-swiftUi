@@ -164,6 +164,7 @@ class HttpClient: HttpClientProtocol {
         }
       }
     }
+    return completion(.failure(.noData))
   }
 
   func sigIn(email: String, password: String, completion: @escaping (Result<UserModel, HttpError>) -> Void) {
@@ -205,18 +206,13 @@ class HttpClient: HttpClientProtocol {
     }
   }
 
-  func updateUser(name: String, photoUrl: URL, email: String? = nil, password: String? = nil) {
+  // verificar se esta entrando em email e password
+  func updateUser(name: String, photoUrl: URL, password: String? = nil) {
     let changeRequest = auth.currentUser?.createProfileChangeRequest()
     changeRequest?.displayName = name
     changeRequest?.photoURL = photoUrl
     changeRequest?.commitChanges { error in
       print(error?.localizedDescription)
-    }
-
-    if let email = email {
-      Auth.auth().currentUser?.updateEmail(to: email) { error in
-        print(error?.localizedDescription)
-      }
     }
 
     if let password = password {

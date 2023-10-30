@@ -257,7 +257,7 @@ struct SigIn: View {
   }
 }
 
-struct LogInScreen_Previews: PreviewProvider {
+struct SignIn_Previews: PreviewProvider {
   static var previews: some View {
     SigIn()
   }

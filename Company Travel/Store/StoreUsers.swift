@@ -16,7 +16,7 @@ class StoreUsers: ObservableObject {
     self.httpClient = HttpClientFactory.create()
   }
 
-  func getUserLoged() {
+  func getUserLoged(completion: @escaping (UserModel?) -> Void) {
     Auth.auth().addStateDidChangeListener { _, user in
       if let user = user {
         let userModel = UserModel(
@@ -25,7 +25,7 @@ class StoreUsers: ObservableObject {
           photoUrl: user.photoURL,
           email: user.email
         )
-        self.user = userModel
+        completion(userModel)
       }
     }
   }
@@ -76,23 +76,29 @@ class StoreUsers: ObservableObject {
     }
   }
 
-  func updateUser(email: String? = nil, password: String? = nil, data: Data? = nil, name: String? = nil) {
-    getUserLoged()
+  func updateUser(
+    password: String? = nil,
+    data: Data? = nil,
+    name: String? = nil
+  ) {
+    getUserLoged { currentUser in
+      self.httpClient.converterDataFromUrlRequest(data: data, reference: currentUser!.uid) { result in
+        switch result {
+        case let .success(url):
 
-    httpClient.converterDataFromUrlRequest(data: data, reference: user!.uid) { result in
+          self.httpClient.updateUser(
+            name: (name ?? currentUser!.displayName)!,
+            photoUrl: url,
+            password: password
+          )
 
-      switch result {
-      case let .success(url):
-        self.httpClient.updateUser(
-          name: name ?? self.user!.displayName!,
-          photoUrl: url,
-          email: email,
-          password: password
-        )
-
-      case let .failure(error):
-
-        print(error)
+        case .failure:
+          self.httpClient.updateUser(
+            name: (name ?? currentUser!.displayName)!,
+            photoUrl: currentUser!.photoUrl!,
+            password: password
+          )
+        }
       }
     }
   }

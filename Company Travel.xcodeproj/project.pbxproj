@@ -109,6 +109,7 @@
 		81E540202AB8CC0E00660BF4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 81E5401F2AB8CC0E00660BF4 /* FirebaseAuth */; };
 		81E540222AB8CC0E00660BF4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 81E540212AB8CC0E00660BF4 /* FirebaseFirestore */; };
 		81E540242AB8CC0E00660BF4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 81E540232AB8CC0E00660BF4 /* FirebaseStorage */; };
+		81E70EE92AED9E82005E96EF /* SizePreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E70EE82AED9E82005E96EF /* SizePreferenceKey.swift */; };
 		81FBE2A32AC2ED2F001C0361 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE2A22AC2ED2F001C0361 /* LogIn.swift */; };
 		81FBE4A52AAFCC79004E9790 /* HttpClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4A42AAFCC79004E9790 /* HttpClientProtocol.swift */; };
 		81FBE4A72AAFCEE0004E9790 /* HttpClientGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBE4A62AAFCEE0004E9790 /* HttpClientGeneric.swift */; };
@@ -225,6 +226,7 @@
 		81E0252C2AAF471500E4D00A /* FontsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsApp.swift; sourceTree = "<group>"; };
 		81E0252E2AAF47FC00E4D00A /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		81E025302AAF4A6B00E4D00A /* ColorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsApp.swift; sourceTree = "<group>"; };
+		81E70EE82AED9E82005E96EF /* SizePreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePreferenceKey.swift; sourceTree = "<group>"; };
 		81FBE2A22AC2ED2F001C0361 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		81FBE4A42AAFCC79004E9790 /* HttpClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientProtocol.swift; sourceTree = "<group>"; };
 		81FBE4A62AAFCEE0004E9790 /* HttpClientGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientGeneric.swift; sourceTree = "<group>"; };
@@ -581,6 +583,7 @@
 				81DC31872AB25CDC00025335 /* Shimmer.swift */,
 				81DC31892AB25CE900025335 /* RedactShimmerViewModifier.swift */,
 				81DEBF1E2ACD8AAA000B8625 /* FontWithLineHeight.swift */,
+				81E70EE82AED9E82005E96EF /* SizePreferenceKey.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -812,6 +815,7 @@
 				8136B4F62AB683240083B098 /* ValidateTextField.swift in Sources */,
 				811804EF2AB52CA2000BFA5C /* StoreUsers.swift in Sources */,
 				814B5E912ABC66DD00242017 /* MockHttpClient.swift in Sources */,
+				81E70EE92AED9E82005E96EF /* SizePreferenceKey.swift in Sources */,
 				814B5E622ABC60A400242017 /* BottomItemNavigation.swift in Sources */,
 				816CA6062AE89B34005EEC90 /* favoritesDestinationMock.swift in Sources */,
 				81FBE2A32AC2ED2F001C0361 /* LogIn.swift in Sources */,

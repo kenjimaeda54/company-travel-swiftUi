@@ -79,7 +79,7 @@ class MockHttpClient: HttpClientProtocol, Mockable {
     print("converter")
   }
 
-  func updateUser(name: String, photoUrl: URL, email: String?, password: String?) {
+  func updateUser(name: String, photoUrl: URL, password: String?) {
     print("update")
   }
 }
