@@ -5,6 +5,7 @@
 //  Created by kenjimaeda on 12/09/23.
 //
 
+import AlertToast
 import CachedAsyncImage
 import SwiftUI
 
@@ -19,9 +20,13 @@ struct ProfileScreen: View {
   @State private var image = UIImage()
   @StateObject private var storeUser = StoreUsers(httpClient: HttpClientFactory.create())
   @EnvironmentObject var enviromentUser: EnvironmentUser
+  @State private var showSheetCamera = false
+  @State private var showSheetGallery = false
   @FocusState private var fiedlFocus: FieldFocus?
+  @State private var showSheetSelectGaleryOrCamera = false
   @State private var isLoading = false
   @State private var displayName = ""
+  @State private var showMessageUpdateUser = false
   @State private var email = ""
   @State private var password = ""
   var imageFirebase: Data? {
@@ -50,28 +55,49 @@ struct ProfileScreen: View {
     )
     fiedlFocus = Optional.none
     isLoading = false
+    showMessageUpdateUser = true
+  }
+
+  func handleToogleCamera() {
+    showSheetSelectGaleryOrCamera.toggle()
+  }
+
+  func handleGetPhotoCamera() {
+    showSheetSelectGaleryOrCamera = false
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+      showSheetCamera.toggle()
+    }
+  }
+
+  func handleGetPhotoGallery() {
+    showSheetSelectGaleryOrCamera = false
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+      showSheetGallery.toggle()
+    }
   }
 
   var body: some View {
     VStack(alignment: .center, spacing: 0) {
-      if image.hasContent {
-        Image(uiImage: image)
-          .resizable()
-          .frame(width: 100, height: 100)
-          .background(Color.black.opacity(0.2))
-          .clipShape(Circle())
-      } else {
-        AsyncImage(
-          url: enviromentUser.user
-            .photoUrl ?? URL(string: "https://github.com/kenjimaeda54.png")
-        ) { phase in
+      Button(action: handleToogleCamera) {
+        if image.hasContent {
+          Image(uiImage: image)
+            .resizable()
+            .frame(width: 100, height: 100)
+            .background(Color.black.opacity(0.2))
+            .clipShape(Circle())
+        } else {
+          AsyncImage(
+            url: enviromentUser.user
+              .photoUrl ?? URL(string: "https://github.com/kenjimaeda54.png")
+          ) { phase in
 
-          if let image = phase.image {
-            image
-              .resizable()
-              .frame(width: 100, height: 100)
-              .background(Color.black.opacity(0.2))
-              .clipShape(Circle())
+            if let image = phase.image {
+              image
+                .resizable()
+                .frame(width: 100, height: 100)
+                .background(Color.black.opacity(0.2))
+                .clipShape(Circle())
+            }
           }
         }
       }
@@ -117,7 +143,56 @@ struct ProfileScreen: View {
         }
       }
     }
+    .sheet(isPresented: $showSheetSelectGaleryOrCamera) {
+      VStack(alignment: .leading) {
+        if UIDevice.current.isSimulator {
+          Text("Identificamos que esta em um emulador 🥲")
+            .font(.custom(FontsApp.openLight, size: 16))
+            .foregroundColor(ColorsApp.gray)
+          ButtonCommon(
+            action: handleGetPhotoGallery,
+            title: "Pegar foto da galeria"
+          )
+
+        } else {
+          ButtonCommon(
+            action: handleGetPhotoGallery,
+            title: "Pegar foto da galeria"
+          )
+          ButtonCommon(
+            action: handleGetPhotoCamera,
+            title: "Tirar foto"
+          )
+        }
+      }
+      .presentationDetents([.small])
+      .presentationBackground(ColorsApp.white)
+      .frame(alignment: .center)
+      .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
+    }
+    .sheet(isPresented: $showSheetCamera) {
+      ImagePicker(sourceType: .camera, selectedImage: $image)
+    }
+    .sheet(isPresented: $showSheetGallery) {
+      ImagePicker(sourceType: .photoLibrary, selectedImage: $image)
+        .accessibilityIdentifier("ImagePickerLibrary")
+    }
     .environmentObject(enviromentUser)
+    .toast(isPresenting: $showMessageUpdateUser, duration: 2, alert: {
+      AlertToast(
+        displayMode: .banner(.pop),
+        type: .regular,
+        title: "Atualizado com sucesso",
+        style:
+        AlertToast.AlertStyle.style(
+          backgroundColor: ColorsApp.blue,
+          titleColor: ColorsApp.white,
+          titleFont: Font.custom(FontsApp.openRegular, size: 15)
+        )
+      )
+    }) {
+      showMessageUpdateUser = false
+    }
   }
 }
 

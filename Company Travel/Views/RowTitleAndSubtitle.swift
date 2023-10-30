@@ -28,9 +28,9 @@ struct RowTitleAndSubtitle: View {
           Text(subTitle)
             .font(.custom(FontsApp.openBold, size: 17))
             .foregroundColor(ColorsApp.gray)
-            .autocorrectionDisabled()
-            .textInputAutocapitalization(.never)
         }
+        .autocorrectionDisabled()
+        .textInputAutocapitalization(.never)
       }
       .frame(width: spaceAvaibleText)
     }
