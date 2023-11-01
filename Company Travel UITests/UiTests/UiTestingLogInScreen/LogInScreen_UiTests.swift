@@ -15,7 +15,6 @@ final class LogInScreen_UiTests: XCTestCase {
 
   override func setUpWithError() throws {
     continueAfterFailure = false
-
     app = XCUIApplication()
     app.launchEnvironment = ["ENV": "TEST", "SCREEN": "LOGIN"]
     app.launch()
@@ -57,7 +56,7 @@ final class LogInScreen_UiTests: XCTestCase {
     let buttonRegister = app.buttons["Entrar"]
 
     textFieldEmail.tap()
-    textFieldEmail.typeText("Joao@gmail.com")
+    textFieldEmail.typeText("kenjiMaedafamily3@gmail.com")
 
     textFieldPassword.tap()
     textFieldPassword.typeText("Abacate54@")
@@ -83,7 +82,9 @@ final class LogInScreen_UiTests: XCTestCase {
   }
 
   func testSucessLogiInIfPasswordAndEmailIsCorrect() {
-    let textNameHomeScreen = app.staticTexts["Ola Maeda, "]
+    let textNameHomeScreen = app
+      .staticTexts["Ola Carlos, "] // nome vai depender do usuario salvo file
+    // namager
     let buttonRegister = app.buttons["Entrar"]
 
     textFieldEmail.tap()

@@ -10,7 +10,7 @@ import Foundation
 
 enum HttpError: Error {
   case badURL, badResponse, errorEncodingData, noData, invalidURL, invalidRequest, errorUploadPhoto, errorUpdateUser,
-       errorEmailorPasswordWrong
+       errorEmailorPasswordWrong, errorCreateUser
 }
 
 enum StateLoading {
@@ -36,6 +36,8 @@ protocol HttpClientProtocol {
   func addFavorite(favorite: FavoriteModel)
 
   func removeFavorite(documentId: String)
+
+  func getUserLoged(completion: @escaping (UserModel?) -> Void)
 
   func getPointsInterest(
     geocode: PointsGeoCode,

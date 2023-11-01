@@ -34,6 +34,7 @@ struct BottomItemNavigation: View {
           }
         }
       }, isSelected: currentTag == .home, nameIcon: "house")
+        .accessibilityIdentifier("house")
       Spacer()
       ContentButtonTabBar(handlePressButton: { handleCurrentTag(.favorite) }, viewNavigation: {
         Group {
@@ -49,6 +50,7 @@ struct BottomItemNavigation: View {
           }
         }
       }, isSelected: currentTag == .favorite, nameIcon: "doubleHeart")
+        .accessibilityIdentifier("doubleHeart")
       Spacer()
       ContentButtonTabBar(handlePressButton: { handleCurrentTag(.profille) }, viewNavigation: {
         Group {
@@ -64,6 +66,7 @@ struct BottomItemNavigation: View {
           }
         }
       }, isSelected: currentTag == .profille, nameIcon: "config")
+        .accessibilityIdentifier("config")
     }
     .ignoresSafeArea(.all)
     .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 50)

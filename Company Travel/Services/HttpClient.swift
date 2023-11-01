@@ -67,6 +67,20 @@ class HttpClient: HttpClientProtocol {
     }.resume()
   }
 
+  func getUserLoged(completion: @escaping (UserModel?) -> Void) {
+    Auth.auth().addStateDidChangeListener { _, user in
+      if let user = user {
+        let userModel = UserModel(
+          uid: user.uid,
+          displayName: user.displayName,
+          photoUrl: user.photoURL,
+          email: user.email
+        )
+        completion(userModel)
+      }
+    }
+  }
+
   func fetchDestination(completion: @escaping (Result<[DestinationModel], HttpError>) -> Void) {
     destinations = []
     db.collection("Destination").getDocuments { snapshot, error in

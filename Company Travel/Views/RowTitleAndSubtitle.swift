@@ -33,6 +33,7 @@ struct RowTitleAndSubtitle: View {
         .textInputAutocapitalization(.never)
       }
       .frame(width: spaceAvaibleText)
+      .accessibilityIdentifier(subTitle)
     }
   }
 }

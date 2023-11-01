@@ -315,8 +315,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "sigIn(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1119,10 +1119,10 @@
             filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "MockHttpClient"
-            landmarkType = "3">
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "sigIn(email:password:completion:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "3912D269-07BD-4A71-A7C9-42CB8C5C79DF - 44bb45bbb2b8795c"
@@ -1167,8 +1167,8 @@
             filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "sigIn(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1183,9 +1183,9 @@
             filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "createUser(email:password:name:data:completion:)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "sigIn(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1272,22 +1272,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E9D224E4-A1E5-4A29-9A10-93E68399F286"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "sigIn(email:password:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "1F4C406E-B20F-4246-A0CF-C7D942646995"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1295,8 +1279,8 @@
             filePath = "Company Travel/Store/StoreUsers.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "createUser(email:password:name:data:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1358,8 +1342,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "converterDataFromUrlRequest(data:reference:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1436,8 +1420,8 @@
             filePath = "Company Travel/Store/StoreUsers.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "logIn(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1578,8 +1562,8 @@
             filePath = "Company Travel UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "testErrorMessageIfEmailWrong()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1626,10 +1610,10 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "276"
-            endingLineNumber = "276"
-            landmarkName = "removeFavorite(documentId:)"
-            landmarkType = "7">
+            startingLineNumber = "292"
+            endingLineNumber = "292"
+            landmarkName = "HttpClient"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "AFE8EF29-7F25-47AE-9A50-02A1AD684098 - 2f28cca2a4280b0f"
@@ -1704,10 +1688,10 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
-            landmarkName = "addFavorite(favorite:)"
-            landmarkType = "7">
+            startingLineNumber = "283"
+            endingLineNumber = "283"
+            landmarkName = "HttpClient"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "2B2D1297-67CA-4B64-A332-AF1302667A2C - 2f28cca2a4280bc9"
@@ -1767,8 +1751,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "254"
-            endingLineNumber = "254"
+            startingLineNumber = "270"
+            endingLineNumber = "270"
             landmarkName = "getFavoritesByUser(idUser:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1830,8 +1814,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "261"
-            endingLineNumber = "261"
+            startingLineNumber = "277"
+            endingLineNumber = "277"
             landmarkName = "addFavorite(favorite:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1846,10 +1830,10 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "255"
-            endingLineNumber = "255"
-            landmarkName = "getFavoritesByUser(idUser:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "271"
+            endingLineNumber = "271"
+            landmarkName = "HttpClient"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1862,8 +1846,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "270"
-            endingLineNumber = "270"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
             landmarkName = "removeFavorite(documentId:)"
             landmarkType = "7">
             <Locations>
@@ -1941,8 +1925,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "createUser(email:password:name:data:completion:)"
             landmarkType = "7">
             <Locations>
@@ -2004,8 +1988,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "fetchDestination(completion:)"
             landmarkType = "7">
             <Locations>
@@ -2345,8 +2329,8 @@
             filePath = "Company Travel UITests/UiTests/UiTestingHomeScreen/HomeScreen_UiTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "testAddAndRemoveFavorites()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2361,8 +2345,8 @@
             filePath = "Company Travel UITests/UiTests/UiTestingHomeScreen/HomeScreen_UiTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "testAddAndRemoveFavorites()"
             landmarkType = "7">
             <Locations>
@@ -2424,10 +2408,10 @@
             filePath = "Company Travel UITests/UiTests/UiTestingHomeScreen/HomeScreen_UiTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "HomeScreen_UiTests"
-            landmarkType = "3">
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "testAddAndRemoveFavorites()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3021,8 +3005,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "generateToken(completion:)"
             landmarkType = "7">
             <Locations>
@@ -3084,8 +3068,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "generateToken(completion:)"
             landmarkType = "7">
             <Locations>
@@ -3132,8 +3116,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "generateToken(completion:)"
             landmarkType = "7">
             <Locations>
@@ -3210,8 +3194,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "generateToken(completion:)"
             landmarkType = "7">
             <Locations>
@@ -3303,8 +3287,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "generateToken(completion:)"
             landmarkType = "7">
             <Locations>
@@ -3441,10 +3425,10 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "generateToken(completion:)"
-            landmarkType = "7">
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "HttpClient"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "72B8C868-A11B-40CF-B59D-02A57CD946C8 - 370eec8dde745ca5"
@@ -3534,10 +3518,10 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "HttpClient"
-            landmarkType = "3">
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "fetchDestination(completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3550,8 +3534,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "fetchDestination(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3566,8 +3550,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "HttpClient"
             landmarkType = "3">
          </BreakpointContent>
@@ -3582,8 +3566,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "generateToken(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3598,8 +3582,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "generateToken(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3614,8 +3598,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "generateToken(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3630,8 +3614,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "328"
-            endingLineNumber = "328"
+            startingLineNumber = "344"
+            endingLineNumber = "344"
             landmarkName = "getPointsInterest(geocode:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3646,8 +3630,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "337"
-            endingLineNumber = "337"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
             landmarkName = "getPointsInterest(geocode:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3662,8 +3646,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "338"
-            endingLineNumber = "338"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
             landmarkName = "getPointsInterest(geocode:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3678,10 +3662,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "340"
-            endingLineNumber = "340"
-            landmarkName = "getPointsInterest(geocode:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "356"
+            endingLineNumber = "356">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3938,271 +3920,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4982B28A-B12C-4D71-A0E7-BDD9BB09425E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Company Travel/Store/StoreUsers.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "getUserLoged(completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4982B28A-B12C-4D71-A0E7-BDD9BB09425E - 11d40209a5336099"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Company_Travel.StoreUsers.getUserLoged() -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "4982B28A-B12C-4D71-A0E7-BDD9BB09425E - 91d043ba99b44b25"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged() -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "312">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8D70A814-91B9-4F31-8EAA-01DA6CEA33FD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Company Travel/Store/StoreUsers.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "getUserLoged(completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8D70A814-91B9-4F31-8EAA-01DA6CEA33FD - 91d043ba99b44ade"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged() -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "1020">
-               </Location>
-               <Location
-                  uuid = "8D70A814-91B9-4F31-8EAA-01DA6CEA33FD - 91d043ba99b44ab9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged() -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "396">
-               </Location>
-               <Location
-                  uuid = "8D70A814-91B9-4F31-8EAA-01DA6CEA33FD - 91d043ba99b44ab9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged() -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "440">
-               </Location>
-               <Location
-                  uuid = "8D70A814-91B9-4F31-8EAA-01DA6CEA33FD - 3929ba5d048c61e3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged(completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "456">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "290F2226-2F3A-4C38-BDAC-37A4CE6ED32D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Company Travel/Store/StoreUsers.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "getUserLoged(completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "290F2226-2F3A-4C38-BDAC-37A4CE6ED32D - 91d043ba99b44b04"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged() -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "324">
-               </Location>
-               <Location
-                  uuid = "290F2226-2F3A-4C38-BDAC-37A4CE6ED32D - 91d043ba99b44b04"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged() -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "380">
-               </Location>
-               <Location
-                  uuid = "290F2226-2F3A-4C38-BDAC-37A4CE6ED32D - 91d043ba99b44aff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged() -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "324">
-               </Location>
-               <Location
-                  uuid = "290F2226-2F3A-4C38-BDAC-37A4CE6ED32D - 91d043ba99b44aff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged() -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "380">
-               </Location>
-               <Location
-                  uuid = "290F2226-2F3A-4C38-BDAC-37A4CE6ED32D - 91d043ba99b44b5a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged() -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "1020">
-               </Location>
-               <Location
-                  uuid = "290F2226-2F3A-4C38-BDAC-37A4CE6ED32D - 91d043ba99b44b5a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged() -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "396">
-               </Location>
-               <Location
-                  uuid = "290F2226-2F3A-4C38-BDAC-37A4CE6ED32D - 3929ba5d048c6000"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRAuth, Swift.Optional&lt;__C.FIRUser&gt;) -&gt; () in Company_Travel.StoreUsers.getUserLoged(completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "412">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "86307F7C-CBD3-4BC0-8377-398E15EA720B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Company Travel/Store/StoreUsers.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "getUserLoged(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "03D54A65-12E5-43BB-A01C-992C2CE05D9A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -4210,10 +3927,2092 @@
             filePath = "Company Travel/Screens/ProfileScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67907EFB-66BB-4AF9-A7CA-AF2086A50873"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingBuyTravelScreen/BuyTravelScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "testRenderTitleCorrectUserBuyTravel()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1FBCE830-92CD-4245-95CA-C8DA17524291"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingBuyTravelScreen/BuyTravelScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "setUpWithError()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1FBCE830-92CD-4245-95CA-C8DA17524291 - b22ec11b187d0d70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.BuyTravelScreeen_UiTests.setUpWithError() throws -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingBuyTravelScreen/BuyTravelScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "2832">
+               </Location>
+               <Location
+                  uuid = "1FBCE830-92CD-4245-95CA-C8DA17524291 - b22ec11b187d0d5f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.BuyTravelScreeen_UiTests.setUpWithError() throws -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingBuyTravelScreen/BuyTravelScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "2600">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7941AE9-98C5-4DA3-9756-96084F31FEBB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingBuyTravelScreen/BuyTravelScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "testRenderTitleCorrectUserBuyTravel()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B9C36F6-E505-4FEA-94AA-A2D0DE444917"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "testRenderCorrectDataWhenClickedProfile()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99C20B30-CD98-459C-B315-E0437E182E6F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "ProfileScreen_UiTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "99C20B30-CD98-459C-B315-E0437E182E6F - c0d2c3a6760d76e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.ProfileScreen_UiTests.testRenderCorrectDataWhenClickedProfile() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1116">
+               </Location>
+               <Location
+                  uuid = "99C20B30-CD98-459C-B315-E0437E182E6F - c0d2c3a6760d76e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.ProfileScreen_UiTests.testRenderCorrectDataWhenClickedProfile() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1092">
+               </Location>
+               <Location
+                  uuid = "99C20B30-CD98-459C-B315-E0437E182E6F - c0d2c3a6760d7681"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.ProfileScreen_UiTests.testRenderCorrectDataWhenClickedProfile() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "1676">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2CA7AEF-C9ED-4E9B-B213-2DD3C43136F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Screens/ProfileScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBA2C4CD-0326-4F07-8FCE-5DC0A39A02D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "testRenderCorrectDataWhenClickedProfile()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B08F5B0-6974-449D-BD69-0C442ABB8AED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2ED799C-E824-4E69-A604-AEF08FE8D5EA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152">
+            <Locations>
+               <Location
+                  uuid = "F2ED799C-E824-4E69-A604-AEF08FE8D5EA - 51ceb7c51ec709de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "1344">
+               </Location>
+               <Location
+                  uuid = "F2ED799C-E824-4E69-A604-AEF08FE8D5EA - 51ceb7c51ec708d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "1708">
+               </Location>
+               <Location
+                  uuid = "F2ED799C-E824-4E69-A604-AEF08FE8D5EA - 51ceb7c51ec708d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "1692">
+               </Location>
+               <Location
+                  uuid = "F2ED799C-E824-4E69-A604-AEF08FE8D5EA - 51ceb7c51ec70fe8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "1892">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F295CA8-A4A4-4F2F-B590-ECC82BC696E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153">
+            <Locations>
+               <Location
+                  uuid = "3F295CA8-A4A4-4F2F-B590-ECC82BC696E4 - 51ceb7c51ec7093d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "1368">
+               </Location>
+               <Location
+                  uuid = "3F295CA8-A4A4-4F2F-B590-ECC82BC696E4 - 51ceb7c51ec70835"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "1732">
+               </Location>
+               <Location
+                  uuid = "3F295CA8-A4A4-4F2F-B590-ECC82BC696E4 - 51ceb7c51ec70835"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "1716">
+               </Location>
+               <Location
+                  uuid = "3F295CA8-A4A4-4F2F-B590-ECC82BC696E4 - 51ceb7c51ec70fcf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "1916">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7D7872A-D976-4D50-9FCE-B22F6B781B2F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "584FDEF1-1DB8-4353-9B74-0635A7EC4660"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB7242D6-C6F9-41F3-BC0F-C8CA66160863"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CB7242D6-C6F9-41F3-BC0F-C8CA66160863 - d4278c8ab84553c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "1248">
+               </Location>
+               <Location
+                  uuid = "CB7242D6-C6F9-41F3-BC0F-C8CA66160863 - d4278c8ab8455008"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "628">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E8727BE-F606-470B-9C46-23CD38E7DB08"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Screens/ProfileScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "handleUpdate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5AC2717D-52F8-4841-A851-C6361B21D7C2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5AC2717D-52F8-4841-A851-C6361B21D7C2 - fa9ea11cf402f275"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "5AC2717D-52F8-4841-A851-C6361B21D7C2 - eaa00981f668d8cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B4FA934-C372-40B2-A422-45B5A0334CDF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6B4FA934-C372-40B2-A422-45B5A0334CDF - eaa00981f668d8ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "6B4FA934-C372-40B2-A422-45B5A0334CDF - d4278c8ab845508c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "528">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21AD2676-A17C-4FAF-A8FB-810FA38F8EE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA9C0B17-2CBA-407D-A79A-20C3876B2BFA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42CDB3DB-65EF-40E8-A008-6A68BF2AD4C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156">
+            <Locations>
+               <Location
+                  uuid = "42CDB3DB-65EF-40E8-A008-6A68BF2AD4C9 - 51ceb7c51ec70952"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "1980">
+               </Location>
+               <Location
+                  uuid = "42CDB3DB-65EF-40E8-A008-6A68BF2AD4C9 - 51ceb7c51ec70952"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "1960">
+               </Location>
+               <Location
+                  uuid = "42CDB3DB-65EF-40E8-A008-6A68BF2AD4C9 - 51ceb7c51ec70faa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "2992">
+               </Location>
+               <Location
+                  uuid = "42CDB3DB-65EF-40E8-A008-6A68BF2AD4C9 - 51ceb7c51ec70faa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "2968">
+               </Location>
+               <Location
+                  uuid = "42CDB3DB-65EF-40E8-A008-6A68BF2AD4C9 - 51ceb7c51ec70f6c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "3168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9B124C9-8F73-42D1-851E-ABF514E5F451"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111">
+            <Locations>
+               <Location
+                  uuid = "F9B124C9-8F73-42D1-851E-ABF514E5F451 - 51ceb7c51ec709b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "876">
+               </Location>
+               <Location
+                  uuid = "F9B124C9-8F73-42D1-851E-ABF514E5F451 - 51ceb7c51ec709b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "864">
+               </Location>
+               <Location
+                  uuid = "F9B124C9-8F73-42D1-851E-ABF514E5F451 - 51ceb7c51ec708f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "1668">
+               </Location>
+               <Location
+                  uuid = "F9B124C9-8F73-42D1-851E-ABF514E5F451 - 51ceb7c51ec708f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "1652">
+               </Location>
+               <Location
+                  uuid = "F9B124C9-8F73-42D1-851E-ABF514E5F451 - 51ceb7c51ec70f89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "1852">
+               </Location>
+               <Location
+                  uuid = "F9B124C9-8F73-42D1-851E-ABF514E5F451 - 51ceb7c51ec70d99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "2184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C36F3CD8-7EE6-4999-87BC-704A03307A64"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5289466-AF6C-40C7-B0AC-210126159CA3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154">
+            <Locations>
+               <Location
+                  uuid = "E5289466-AF6C-40C7-B0AC-210126159CA3 - 51ceb7c51ec70814"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "1888">
+               </Location>
+               <Location
+                  uuid = "E5289466-AF6C-40C7-B0AC-210126159CA3 - 51ceb7c51ec70814"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "1872">
+               </Location>
+               <Location
+                  uuid = "E5289466-AF6C-40C7-B0AC-210126159CA3 - 51ceb7c51ec70f2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "2072">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "863DF59D-877A-49F7-AF38-AB7A2D0DAF31"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "MockHttpClient"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "863DF59D-877A-49F7-AF38-AB7A2D0DAF31 - afc914ab270f6374"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.sigIn(email: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1712">
+               </Location>
+               <Location
+                  uuid = "863DF59D-877A-49F7-AF38-AB7A2D0DAF31 - afc914ab270f607c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.sigIn(email: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "2892">
+               </Location>
+               <Location
+                  uuid = "863DF59D-877A-49F7-AF38-AB7A2D0DAF31 - 6133bdffa1139e44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.getFavoritesByUser(idUser: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;Company_Travel.FavoriteModel&gt;, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C7031C0-BF41-496C-BABF-13CC98B66E6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "MockHttpClient"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "8C7031C0-BF41-496C-BABF-13CC98B66E6E - afc914ab270f634b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.sigIn(email: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "1360">
+               </Location>
+               <Location
+                  uuid = "8C7031C0-BF41-496C-BABF-13CC98B66E6E - afc914ab270f6053"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.sigIn(email: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "2520">
+               </Location>
+               <Location
+                  uuid = "8C7031C0-BF41-496C-BABF-13CC98B66E6E - afc914ab270f6336"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.sigIn(email: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1704">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C7004FF-C823-4FD7-8349-6F8F3D1F0178"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "updateUser(name:photoUrl:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6C7004FF-C823-4FD7-8349-6F8F3D1F0178 - 51ceb7c51ec70952"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "1136">
+               </Location>
+               <Location
+                  uuid = "6C7004FF-C823-4FD7-8349-6F8F3D1F0178 - 51ceb7c51ec709ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "664">
+               </Location>
+               <Location
+                  uuid = "6C7004FF-C823-4FD7-8349-6F8F3D1F0178 - 51ceb7c51ec709ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "728">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7853C026-7121-4D14-A932-D33CB00628A3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "updateUser(name:photoUrl:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7853C026-7121-4D14-A932-D33CB00628A3 - 51ceb7c51ec709ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "7853C026-7121-4D14-A932-D33CB00628A3 - b0c8f006cb4e3886"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Company_Travel.UserModel) -&gt; Swift.Bool in Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "7853C026-7121-4D14-A932-D33CB00628A3 - 51ceb7c51ec70a04"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "7853C026-7121-4D14-A932-D33CB00628A3 - b0c8f006cb4e3b7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Company_Travel.UserModel) -&gt; Swift.Bool in Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "7853C026-7121-4D14-A932-D33CB00628A3 - 51ceb7c51ec70a04"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "540">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA30A6F0-5232-4EF6-9816-B78926830770"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "MockHttpClient"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "AA30A6F0-5232-4EF6-9816-B78926830770 - 51ceb7c51ec70890"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "1436">
+               </Location>
+               <Location
+                  uuid = "AA30A6F0-5232-4EF6-9816-B78926830770 - 51ceb7c51ec7093d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "728">
+               </Location>
+               <Location
+                  uuid = "AA30A6F0-5232-4EF6-9816-B78926830770 - 51ceb7c51ec7093d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "776">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70E61008-437B-4D9C-9BF0-E7206CCF31DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockServices/Mockable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "updateFileManager(filename:model:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "70E61008-437B-4D9C-9BF0-E7206CCF31DA - 1ea7fcddf4322e92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.Mockable.updateFileManager&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(filename: Swift.String, model: &#x3c4;_1_0) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockServices/Mockable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "2936">
+               </Location>
+               <Location
+                  uuid = "70E61008-437B-4D9C-9BF0-E7206CCF31DA - 1ea7fcddf43228e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.Mockable.updateFileManager&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(filename: Swift.String, model: &#x3c4;_1_0) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockServices/Mockable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "2156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C955B8C4-D39B-4A7B-9FFA-2D4D9165C82C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockServices/Mockable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "updateFileManager(filename:model:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68422028-4491-4BDE-8F16-9EF15AC99DB0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "updateUser(name:photoUrl:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "68422028-4491-4BDE-8F16-9EF15AC99DB0 - 51ceb7c51ec709de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "1388">
+               </Location>
+               <Location
+                  uuid = "68422028-4491-4BDE-8F16-9EF15AC99DB0 - 51ceb7c51ec70a7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "716">
+               </Location>
+               <Location
+                  uuid = "68422028-4491-4BDE-8F16-9EF15AC99DB0 - 51ceb7c51ec70a7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "572">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6E9EE7A-C016-4B0D-9FCC-7B5E69ECE024"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "updateUser(name:photoUrl:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E6E9EE7A-C016-4B0D-9FCC-7B5E69ECE024 - 51ceb7c51ec70998"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "492">
+               </Location>
+               <Location
+                  uuid = "E6E9EE7A-C016-4B0D-9FCC-7B5E69ECE024 - 51ceb7c51ec70a25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "E6E9EE7A-C016-4B0D-9FCC-7B5E69ECE024 - 51ceb7c51ec70a25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.MockHttpClient.updateUser(name: Swift.String, photoUrl: Foundation.URL, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/UiTesting/MockService/MockHttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "716">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "568A7EBD-C3C5-4E3C-975A-DD9AD9F41CA9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "testUpdateUserName()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CCEECF2B-8DCC-4497-B37F-CD148AB22882"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "setUpWithError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA38D77F-C912-47AB-A5C0-AA650ED3C18B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "testUpdateUserName()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AA38D77F-C912-47AB-A5C0-AA650ED3C18B - 687e0da106777027"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.ProfileScreen_UiTests.testUpdateUserName() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "2064">
+               </Location>
+               <Location
+                  uuid = "AA38D77F-C912-47AB-A5C0-AA650ED3C18B - 687e0da106777040"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.ProfileScreen_UiTests.testUpdateUserName() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "2204">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F782896A-D7EF-422F-8848-638ADF0981AF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "testUpdateUserName()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F782896A-D7EF-422F-8848-638ADF0981AF - 687e0da1067770a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.ProfileScreen_UiTests.testUpdateUserName() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "2480">
+               </Location>
+               <Location
+                  uuid = "F782896A-D7EF-422F-8848-638ADF0981AF - 687e0da106777061"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.ProfileScreen_UiTests.testUpdateUserName() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "2348">
+               </Location>
+               <Location
+                  uuid = "F782896A-D7EF-422F-8848-638ADF0981AF - 687e0da106777082"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.ProfileScreen_UiTests.testUpdateUserName() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "2372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9A363F9-797F-4459-9F2A-63BFDAA875DA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Services/HttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "getUserLoged(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7CAB5F7-B374-45BD-94B2-2C8EF0A64F5F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/UiTesting/MockService/MockHttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "getUserLoged(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C04ABB8-B0EE-48B0-BEB6-D8E14AB3F4D5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingProfileScreen/ProfileScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "testUpdateUserName()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CAA258F1-67BE-4D37-BFE6-F11E47095CFF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA4D4050-0884-4075-80AE-22DE138AAFF2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "LogInScreen_UiTests"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "17742A41-388A-4F94-BB62-7178C2F1D3F8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "testErrorMessageIfEmailWrong()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "17742A41-388A-4F94-BB62-7178C2F1D3F8 - 6a94d41d32eb92e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.testIfNavigateForSigInWhenPressButton() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "940">
+               </Location>
+               <Location
+                  uuid = "17742A41-388A-4F94-BB62-7178C2F1D3F8 - b6dc10163e9a1af4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.testErrorMessageIfEmailWrong() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E55F4792-B4BD-4574-978A-7CEDB16ACD73"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "setUpWithError()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E55F4792-B4BD-4574-978A-7CEDB16ACD73 - c312cb505dc05731"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.setUpWithError() throws -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "1064">
+               </Location>
+               <Location
+                  uuid = "E55F4792-B4BD-4574-978A-7CEDB16ACD73 - c312cb505dc05731"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.setUpWithError() throws -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "1612">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6849CB7E-9329-49C0-A6B0-F96E62D8E695"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "LogInScreen_UiTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6849CB7E-9329-49C0-A6B0-F96E62D8E695 - 90106e8bf4719761"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; Company_Travel_UITests.LogInScreen_UiTests"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "6849CB7E-9329-49C0-A6B0-F96E62D8E695 - a0c54c380d71bb0a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; Company_Travel_UITests.LogInScreen_UiTests"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "6849CB7E-9329-49C0-A6B0-F96E62D8E695 - f4a0f4444b8288ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.__allocating_init(selector: ObjectiveC.Selector) -&gt; Company_Travel_UITests.LogInScreen_UiTests"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "6849CB7E-9329-49C0-A6B0-F96E62D8E695 - c0f31b37d4a1ad2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.init(selector: ObjectiveC.Selector) -&gt; Company_Travel_UITests.LogInScreen_UiTests"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "6849CB7E-9329-49C0-A6B0-F96E62D8E695 - 596ef9806b23adc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.__allocating_init() -&gt; Company_Travel_UITests.LogInScreen_UiTests"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "6849CB7E-9329-49C0-A6B0-F96E62D8E695 - 4cd80648535f2f19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.init() -&gt; Company_Travel_UITests.LogInScreen_UiTests"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "6849CB7E-9329-49C0-A6B0-F96E62D8E695 - 292c7813692c68c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.__deallocating_deinit"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D765D75C-B669-4A9A-8D4D-7F994493F969"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "tearDownWithError()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D765D75C-B669-4A9A-8D4D-7F994493F969 - c312cb505dc05818"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.setUpWithError() throws -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "2048">
+               </Location>
+               <Location
+                  uuid = "D765D75C-B669-4A9A-8D4D-7F994493F969 - 239159a7782fa9da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.tearDownWithError() throws -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D0D146F-D225-4057-B764-3E7E0BE80A51"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "setUpWithError()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4D0D146F-D225-4057-B764-3E7E0BE80A51 - c312cb505dc05877"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.setUpWithError() throws -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1652">
+               </Location>
+               <Location
+                  uuid = "4D0D146F-D225-4057-B764-3E7E0BE80A51 - c312cb505dc058d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.setUpWithError() throws -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1812">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A144BEB8-0D5E-44DC-9319-104144F2CFA2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "testSucessLogiInIfPasswordAndEmailIsCorrect()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A144BEB8-0D5E-44DC-9319-104144F2CFA2 - ae20acf4821f3d9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.testSucessLogiInIfPasswordAndEmailIsCorrect() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1240">
+               </Location>
+               <Location
+                  uuid = "A144BEB8-0D5E-44DC-9319-104144F2CFA2 - ae20acf4821f3d9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.testSucessLogiInIfPasswordAndEmailIsCorrect() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1732">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C2C38C3-A54F-4BAD-AA68-8CD83D0A5183"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "testSucessLogiInIfPasswordAndEmailIsCorrect()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A75BE482-9716-4FB6-BA77-C20A9960259F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "testSucessLogiInIfPasswordAndEmailIsCorrect()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A75BE482-9716-4FB6-BA77-C20A9960259F - ae20acf4821f3d5a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.testSucessLogiInIfPasswordAndEmailIsCorrect() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "A75BE482-9716-4FB6-BA77-C20A9960259F - ae20acf4821f3d39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.LogInScreen_UiTests.testSucessLogiInIfPasswordAndEmailIsCorrect() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingLogInScreen/LogInScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "712">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "813D25DE-FA3E-41BE-9889-19E488694994"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel UITests/UiTests/UiTestingHomeScreen/HomeScreen_UiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "testRenderCorrectNameAndImageUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "813D25DE-FA3E-41BE-9889-19E488694994 - 9c52eae8cabe07d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.HomeScreen_UiTests.testRenderCorrectNameAndImageUser() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingHomeScreen/HomeScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "592">
+               </Location>
+               <Location
+                  uuid = "813D25DE-FA3E-41BE-9889-19E488694994 - 9c52eae8cabe07b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel_UITests.HomeScreen_UiTests.testRenderCorrectNameAndImageUser() -&gt; ()"
+                  moduleName = "Company Travel UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel%20UITests/UiTests/UiTestingHomeScreen/HomeScreen_UiTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "464">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

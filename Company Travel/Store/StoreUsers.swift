@@ -10,6 +10,7 @@ import Foundation
 
 class StoreUsers: ObservableObject {
   @Published var user: UserModel?
+  var isLoading = false
   let httpClient: HttpClientProtocol
 
   init(httpClient: HttpClientProtocol) {
@@ -17,16 +18,8 @@ class StoreUsers: ObservableObject {
   }
 
   func getUserLoged(completion: @escaping (UserModel?) -> Void) {
-    Auth.auth().addStateDidChangeListener { _, user in
-      if let user = user {
-        let userModel = UserModel(
-          uid: user.uid,
-          displayName: user.displayName,
-          photoUrl: user.photoURL,
-          email: user.email
-        )
-        completion(userModel)
-      }
+    httpClient.getUserLoged { user in
+      completion(user)
     }
   }
 
@@ -37,6 +30,7 @@ class StoreUsers: ObservableObject {
     data: Data?,
     completion: @escaping (UserModel?) -> Void
   ) {
+    isLoading = true
     httpClient.createUser(email: email, password: password, name: name, data: data) { result in
 
       switch result {
@@ -44,12 +38,14 @@ class StoreUsers: ObservableObject {
 
         DispatchQueue.main.async {
           self.user = user
+          self.isLoading = false
           completion(user)
         }
 
       case let .failure(error):
         print(error)
         DispatchQueue.main.async {
+          self.isLoading = false
           completion(nil)
         }
       }
@@ -81,7 +77,7 @@ class StoreUsers: ObservableObject {
     data: Data? = nil,
     name: String? = nil
   ) {
-    getUserLoged { currentUser in
+    httpClient.getUserLoged { currentUser in
       self.httpClient.converterDataFromUrlRequest(data: data, reference: currentUser!.uid) { result in
         switch result {
         case let .success(url):

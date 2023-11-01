@@ -85,6 +85,7 @@ struct ProfileScreen: View {
             .frame(width: 100, height: 100)
             .background(Color.black.opacity(0.2))
             .clipShape(Circle())
+
         } else {
           AsyncImage(
             url: enviromentUser.user
@@ -99,8 +100,10 @@ struct ProfileScreen: View {
                 .clipShape(Circle())
             }
           }
+          .accessibilityLabel(enviromentUser.user.photoUrl!.absoluteString)
         }
       }
+      .accessibilityIdentifier("ButtonAvatar")
       Spacer(minLength: 100)
       GeometryReader { geo in
         VStack(alignment: .leading, spacing: 10) {

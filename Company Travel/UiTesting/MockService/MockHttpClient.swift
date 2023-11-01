@@ -25,19 +25,15 @@ class MockHttpClient: HttpClientProtocol, Mockable {
     data: Data?,
     completion: @escaping (Result<UserModel, HttpError>) -> Void
   ) {
-    let users = loadJson(filename: "User", type: [UserModel].self)
-
-    if users.contains(where: { $0.email == email }) {
-      return completion(.failure(.badResponse))
+    let users = loadFileManager(filename: "User.json", type: [UserModel].self)
+    let findUser = users.first { $0.email == email }
+    let userModel = UserModel(uid: "fsfsfsfsl343skfsm", displayName: name, email: email)
+    if findUser != nil {
+      completion(.failure(.errorCreateUser))
+    } else {
+      writeFileManager(filename: "User.json", model: userModel)
+      completion(.success(userModel))
     }
-    let userModel = UserModel(
-      uid: "32434FbE3",
-      displayName: name,
-      photoUrl: URL(string: "https://github.com/kenjimaeda54.png")!,
-      email: email
-    )
-
-    completion(.success(userModel))
   }
 
   func sigIn(
@@ -45,7 +41,7 @@ class MockHttpClient: HttpClientProtocol, Mockable {
     password: String,
     completion: @escaping (Result<UserModel, HttpError>) -> Void
   ) {
-    let users = loadJson(filename: "User", type: [UserModel].self)
+    let users = loadFileManager(filename: "User.json", type: [UserModel].self)
     let findUser = users.first { $0.email == email }
 
     if findUser != nil && password == "Abacate54@" {
@@ -53,6 +49,12 @@ class MockHttpClient: HttpClientProtocol, Mockable {
     }
 
     completion(.failure(.badResponse))
+  }
+
+  func getUserLoged(completion: @escaping (UserModel?) -> Void) {
+    let users = loadFileManager(filename: "User.json", type: [UserModel].self)
+    let findUser = users.first { $0.uid == "3434342JAJApEDRO" }
+    completion(findUser)
   }
 
   func getFavoritesByUser(idUser: String, completion: @escaping (Result<[FavoriteModel], HttpError>) -> Void) {
@@ -76,10 +78,26 @@ class MockHttpClient: HttpClientProtocol, Mockable {
     reference: String,
     completion: @escaping (Result<URL, HttpError>) -> Void
   ) {
-    print("converter")
+    completion(.failure(.badURL))
   }
 
+  // user precisa estar fora do bundle local pra conseguir atualizar
+  // depois tentar isso
+  // https://stackoverflow.com/questions/58154610/read-and-update-into-json-file-in-main-app-bundle
+  // acima eu troco o local
+  // como usar o filemanager
+  // https://www.swiftyplace.com/blog/file-manager-in-swift-reading-writing-and-deleting-files-and-directories
   func updateUser(name: String, photoUrl: URL, password: String?) {
-    print("update")
+    let users = loadFileManager(filename: "User.json", type: [UserModel].self)
+    var updateUser = users.filter { $0.uid != "3434342JAJApEDRO" }
+    let newUser = UserModel(
+      uid: "3434342JAJApEDRO",
+      displayName: name,
+      photoUrl: URL(string: "https://github.com/kenjimaeda54.png"),
+      email: "kenji@gmail.com"
+    )
+    updateUser.append(newUser)
+
+    updateFileManager(filename: "User.json", model: updateUser)
   }
 }

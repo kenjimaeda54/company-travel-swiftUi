@@ -10,6 +10,8 @@
 		8107E3A22AE6062C0030C9A6 /* FavoriteDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107E3A12AE6062C0030C9A6 /* FavoriteDestination.swift */; };
 		8109BF172AB64227000D38C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8109BF162AB64227000D38C2 /* GoogleService-Info.plist */; };
 		811804EF2AB52CA2000BFA5C /* StoreUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811804EE2AB52CA2000BFA5C /* StoreUsers.swift */; };
+		812C87CE2AF08F45004DE655 /* BuyTravelScreen_UiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812C87CD2AF08F45004DE655 /* BuyTravelScreen_UiTests.swift */; };
+		812C87D32AF0963C004DE655 /* ProfileScreen_UiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812C87D22AF0963C004DE655 /* ProfileScreen_UiTests.swift */; };
 		812E8D4A2AAE3DBE0043648D /* Company_TravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E8D492AAE3DBE0043648D /* Company_TravelApp.swift */; };
 		812E8D4E2AAE3DBF0043648D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812E8D4D2AAE3DBF0043648D /* Assets.xcassets */; };
 		812E8D512AAE3DBF0043648D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812E8D502AAE3DBF0043648D /* Preview Assets.xcassets */; };
@@ -136,6 +138,8 @@
 		8109BF162AB64227000D38C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8109BF1A2AB64C7A000D38C2 /* TextFieldSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSecurity.swift; sourceTree = "<group>"; };
 		811804EE2AB52CA2000BFA5C /* StoreUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreUsers.swift; sourceTree = "<group>"; };
+		812C87CD2AF08F45004DE655 /* BuyTravelScreen_UiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTravelScreen_UiTests.swift; sourceTree = "<group>"; };
+		812C87D22AF0963C004DE655 /* ProfileScreen_UiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen_UiTests.swift; sourceTree = "<group>"; };
 		812E8D462AAE3DBE0043648D /* Company Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Company Travel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		812E8D492AAE3DBE0043648D /* Company_TravelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company_TravelApp.swift; sourceTree = "<group>"; };
 		812E8D4B2AAE3DBE0043648D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -268,6 +272,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		812C87CC2AF08EAB004DE655 /* UiTestingBuyTravelScreen */ = {
+			isa = PBXGroup;
+			children = (
+				812C87CD2AF08F45004DE655 /* BuyTravelScreen_UiTests.swift */,
+			);
+			path = UiTestingBuyTravelScreen;
+			sourceTree = "<group>";
+		};
+		812C87CF2AF095C7004DE655 /* UiTestingProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				812C87D22AF0963C004DE655 /* ProfileScreen_UiTests.swift */,
+			);
+			path = UiTestingProfileScreen;
+			sourceTree = "<group>";
+		};
 		812E8D3D2AAE3DBE0043648D = {
 			isa = PBXGroup;
 			children = (
@@ -354,10 +374,12 @@
 		819430C62ABBB18C00E245FC /* UiTests */ = {
 			isa = PBXGroup;
 			children = (
+				812C87CF2AF095C7004DE655 /* UiTestingProfileScreen */,
+				819430C92ABBB1E500E245FC /* UiTestingHomeScreen */,
 				81572E7D2AD6240D0032845B /* UiTestingDetailsDestinationScreen */,
 				814C2C342AC3B794004D0D46 /* UiTestingLogInScreen */,
 				81D70B9C2ABDA8A900C69190 /* UiTestingSigInScreeen */,
-				819430C92ABBB1E500E245FC /* UiTestingHomeScreen */,
+				812C87CC2AF08EAB004DE655 /* UiTestingBuyTravelScreen */,
 			);
 			path = UiTests;
 			sourceTree = "<group>";
@@ -864,6 +886,8 @@
 				814B5EC72ABC6D7000242017 /* HomeScreen_UiTests.swift in Sources */,
 				81572E7F2AD624530032845B /* DetailsDestinationScreen_UiTests.swift in Sources */,
 				814C2C332AC3B779004D0D46 /* LogInScreen_UiTests.swift in Sources */,
+				812C87D32AF0963C004DE655 /* ProfileScreen_UiTests.swift in Sources */,
+				812C87CE2AF08F45004DE655 /* BuyTravelScreen_UiTests.swift in Sources */,
 				81D70B9E2ABDA8E800C69190 /* SigInScreen_UiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
