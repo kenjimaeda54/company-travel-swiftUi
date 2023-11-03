@@ -52,6 +52,7 @@ struct HomeScreen: View {
               NavigationLink {
                 DetailsDestinationScreen(destination: destination)
                   .navigationBarBackButtonHidden(true)
+                  .environmentObject(stateUser) // precisa passar via link
               } label: {
                 RowDestination(destination: destination) {
                   Image(systemName: "heart.fill")

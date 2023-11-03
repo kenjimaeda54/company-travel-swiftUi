@@ -19,14 +19,39 @@ struct DetailsDestinationScreen: View {
   @State private var showAlert = false
   @State private var isPresented = true
   @State private var interactive = false
+  @State private var isFavorite = false
   @Environment(\.dismiss) var dismiss
   @Environment(\.isPresented) var presentation
   @State private var isNavigate = false
   @State private var tabSelected: TabSelected = .overview
-  @StateObject private var storePointsIntereset = StorePoints(httpCLient: HttpClientFactory.create())
+  @EnvironmentObject var enviromentUser: EnvironmentUser
+  @StateObject private var storePointsIntereset = StorePoints(
+    httpCLient: HttpClientFactory.create()
+  )
+  @ObservedObject private var storeFavorite = StoreFavorites(httpClient: HttpClientFactory.create())
 
   func handleBack() {
     dismiss()
+  }
+
+  func handleAddFavorite() {
+    do {
+      let favoriteDictionary = [
+        "id": UUID().uuidString,
+        "idDestination": destination.id,
+        "idUser": enviromentUser.user.uid
+      ]
+
+      let favorite = try FavoriteModel(dictionary: favoriteDictionary)
+
+      storeFavorite
+        .addFavorite(favorite: favorite)
+
+      storeFavorite.favorites.append(favorite)
+
+    } catch {
+      print(error.localizedDescription)
+    }
   }
 
   var body: some View {
@@ -93,14 +118,20 @@ struct DetailsDestinationScreen: View {
                   )
                   .position(x: 25, y: metrics.size.height * 0.08)
                   .onTapGesture {}
-                  ButtonCommonWithIcon(foregroundColor: ColorsApp.white, iconSytem: "heart", action: {})
-                    .frame(width: 15, height: 10)
-                    .padding(.all, 7)
-                    .background(
-                      .ultraThinMaterial,
-                      in: Circle()
-                    )
-                    .position(x: metrics.size.width - 25, y: metrics.size.height * 0.08)
+
+                  if
+                    !isFavorite
+                  {
+                    ButtonCommonWithIcon(foregroundColor: ColorsApp.white, iconSytem: "heart", action: {})
+                      .frame(width: 15, height: 10)
+                      .padding(.all, 7)
+                      .background(
+                        .ultraThinMaterial,
+                        in: Circle()
+                      )
+                      .position(x: metrics.size.width - 25, y: metrics.size.height * 0.08)
+                  }
+
                   Button(action: { isPresented.toggle() }) {
                     Text("Abrir detalhes")
                       .font(.custom(FontsApp.openLight, size: 19))
@@ -242,18 +273,27 @@ struct DetailsDestinationScreen: View {
     }
     .safeAreaInset(edge: .top, alignment: .leading) {
       if tabSelected == TabSelected.overview {
-        HeaderStack(actionFavorite: {})
+        HeaderStack(
+          actionFavorite: { handleAddFavorite() },
+          showHeart: !isFavorite
+        )
       }
     }
     .navigationDestination(isPresented: $isNavigate) {
       BuyTravelScreeen(destination: destination.title)
         .navigationBarBackButtonHidden(true)
     }
+    .onAppear {
+      storeFavorite.getFavoritesByUser(userId: enviromentUser.user.uid)
+    }
+    .onReceive(storeFavorite.$favorites) { favorites in
+      isFavorite = favorites.contains { $0.idDestination == destination.id }
+    }
   }
 }
 
 #Preview {
-  DetailsDestinationScreen(destination: destinationMock[1])
+  DetailsDestinationScreen(destination: destinationMock[1]).environmentObject(EnvironmentUser())
 }
 
 struct TextOverviewOrPoints: View {

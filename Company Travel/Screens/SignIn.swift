@@ -185,23 +185,27 @@ struct SigIn: View {
         .formStyle(.columns)
         Spacer()
         ButtonCommon(action: {
-          isLoading.toggle()
-          storeUser
-            .createUser(
-              email: user.email,
-              password: user.password,
-              name: user.name,
-              data: imageForFirebase
-            ) { user in
+          isLoading = true
 
-              if user != nil {
-                isPresented = true
-                isLoading.toggle()
-              } else {
-                validateFieldEmail = ValidateTextField(feedBackWrong: "Ops! Este email ja foi registrado")
-                isLoading.toggle()
+          // se comecar a chamar a funcao varias vezes isso e uma alterantia elegante
+          if storeUser.isLoading != .loading {
+            storeUser
+              .createUser(
+                email: user.email,
+                password: user.password,
+                name: user.name,
+                data: imageForFirebase
+              ) { user in
+                if user != nil {
+                  isPresented = true
+                  isLoading = false
+
+                } else {
+                  validateFieldEmail = ValidateTextField(feedBackWrong: "Ops! Este email ja foi registrado")
+                  isLoading = false
+                }
               }
-            }
+          }
 
         }, title: "Cadastrar", isLoading: isLoading)
           .disabled(isDisabledButton || isLoading)

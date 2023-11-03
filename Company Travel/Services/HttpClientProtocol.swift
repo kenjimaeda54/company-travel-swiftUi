@@ -14,7 +14,7 @@ enum HttpError: Error {
 }
 
 enum StateLoading {
-  case loading, failure, sucess
+  case loading, failure, sucess, waiting
 }
 
 protocol HttpClientProtocol {

@@ -68,7 +68,7 @@ class HttpClient: HttpClientProtocol {
   }
 
   func getUserLoged(completion: @escaping (UserModel?) -> Void) {
-    Auth.auth().addStateDidChangeListener { _, user in
+    auth.addStateDidChangeListener { _, user in
       if let user = user {
         let userModel = UserModel(
           uid: user.uid,
@@ -117,38 +117,26 @@ class HttpClient: HttpClientProtocol {
     completion: @escaping (Result<UserModel, HttpError>) -> Void
   ) {
     auth.createUser(withEmail: email, password: password) { authResult, error in
-      if let error = error {
-        print(error.localizedDescription)
-        completion(.failure(.badResponse))
+      guard let user = authResult?.user, error == nil else {
+        print(error?.localizedDescription)
+        return completion(.failure(.badURL))
       }
 
-      if let user = authResult?.user {
-        self.sigIn(email: email, password: password) { result in
+      self.converterDataFromUrlRequest(data: data, reference: user.uid) { result in
 
-          switch result {
-          case .failure:
-            completion(.failure(.badResponse))
+        switch result {
+        case let .success(url):
+          let userModel = UserModel(
+            uid: user.uid,
+            displayName: name,
+            photoUrl: url,
+            email: user.email
+          )
+          self.updateUser(name: name, photoUrl: url)
+          return completion(.success(userModel))
 
-          case .success:
-            self.converterDataFromUrlRequest(data: data, reference: user.uid) { result in
-
-              switch result {
-              case let .success(url):
-                self.updateUser(name: name, photoUrl: url)
-
-                let userModel = UserModel(
-                  uid: user.uid,
-                  displayName: name,
-                  photoUrl: url,
-                  email: email
-                )
-                completion(.success(userModel))
-
-              case let .failure(error):
-                completion(.failure(error))
-              }
-            }
-          }
+        case let .failure(error):
+          print(error)
         }
       }
     }
@@ -184,20 +172,18 @@ class HttpClient: HttpClientProtocol {
   func sigIn(email: String, password: String, completion: @escaping (Result<UserModel, HttpError>) -> Void) {
     auth.signIn(withEmail: email, password: password) { authResult, error in
 
-      if let error = error as NSError? {
-        print(error.code)
-        return completion(.failure(.errorEmailorPasswordWrong))
+      guard let user = authResult?.user, error == nil else {
+        print(error?.localizedDescription)
+        return completion(.failure(.badResponse))
       }
 
-      if let user = authResult?.user {
-        let userModel = UserModel(
-          uid: user.uid,
-          displayName: user.displayName,
-          photoUrl: user.photoURL,
-          email: user.email
-        )
-        completion(.success(userModel))
-      }
+      let userModel = UserModel(
+        uid: user.uid,
+        displayName: user.displayName,
+        photoUrl: user.photoURL,
+        email: user.email
+      )
+      completion(.success(userModel))
 
       // uso de .some e where
       //			case let .some(error as NSError)

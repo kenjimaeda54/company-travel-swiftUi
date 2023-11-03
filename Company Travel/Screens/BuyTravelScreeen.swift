@@ -10,6 +10,7 @@ import SwiftUI
 struct BuyTravelScreeen: View {
   var destination: String
   @State private var isNavigate = false
+  @StateObject private var enviromentUser = EnvironmentUser()
   @StateObject var store = StoreUsers(httpClient: HttpClientFactory.create()) // store e stateobject
 
   var body: some View {
@@ -44,6 +45,14 @@ struct BuyTravelScreeen: View {
       .navigationDestination(isPresented: $isNavigate) {
         RootView(user: store.user)
           .navigationBarBackButtonHidden(true)
+          .environmentObject(enviromentUser)
+      }
+      .onAppear {
+        store.getUserLoged { user in
+          if user != nil {
+            enviromentUser.user = user!
+          }
+        }
       }
     }
   }

@@ -10,7 +10,7 @@ import Foundation
 
 class StoreUsers: ObservableObject {
   @Published var user: UserModel?
-  var isLoading = false
+  @Published var isLoading = StateLoading.waiting
   let httpClient: HttpClientProtocol
 
   init(httpClient: HttpClientProtocol) {
@@ -20,6 +20,7 @@ class StoreUsers: ObservableObject {
   func getUserLoged(completion: @escaping (UserModel?) -> Void) {
     httpClient.getUserLoged { user in
       completion(user)
+      self.user = user
     }
   }
 
@@ -30,7 +31,7 @@ class StoreUsers: ObservableObject {
     data: Data?,
     completion: @escaping (UserModel?) -> Void
   ) {
-    isLoading = true
+    isLoading = StateLoading.loading
     httpClient.createUser(email: email, password: password, name: name, data: data) { result in
 
       switch result {
@@ -38,14 +39,14 @@ class StoreUsers: ObservableObject {
 
         DispatchQueue.main.async {
           self.user = user
-          self.isLoading = false
+          self.isLoading = .sucess
           completion(user)
         }
 
       case let .failure(error):
         print(error)
         DispatchQueue.main.async {
-          self.isLoading = false
+          self.isLoading = .failure
           completion(nil)
         }
       }
