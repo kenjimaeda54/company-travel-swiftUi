@@ -99,4 +99,8 @@ class StoreUsers: ObservableObject {
       }
     }
   }
+
+  func signOut() {
+    httpClient.signOut()
+  }
 }

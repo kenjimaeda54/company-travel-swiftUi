@@ -15,6 +15,12 @@ struct HomeScreen: View {
   @StateObject private var storeUser = StoreUsers(httpClient: HttpClientFactory.create())
   @ObservedObject var storeFavorite = StoreFavorites(httpClient: HttpClientFactory.create())
   @EnvironmentObject var stateUser: EnvironmentUser
+  @State private var isPresentedLogin = false
+
+  func handleSignOut() {
+    storeUser.signOut()
+    isPresentedLogin = true
+  }
 
   var body: some View {
     ScrollView(showsIndicators: false) {
@@ -29,13 +35,24 @@ struct HomeScreen: View {
               .foregroundColor(ColorsApp.black)
           }
           Spacer()
-          AsyncImage(url: stateUser.user.photoUrl ?? URL(string: "https://github.com/kenjimaeda54.png")) { phase in
-            if let image = phase.image {
-              image
-                .resizable()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
-                .accessibilityIdentifier("teste")
+          HStack(alignment: .bottom) {
+            AsyncImage(url: stateUser.user.photoUrl ?? URL(string: "https://github.com/kenjimaeda54.png")) { phase in
+              if let image = phase.image {
+                image
+                  .resizable()
+                  .frame(width: 50, height: 50)
+                  .clipShape(Circle())
+                  .accessibilityIdentifier("teste")
+              }
+            }
+            Button(action: { handleSignOut() }) {
+              Image(systemName: "power")
+                .font(.system(size: 15))
+                .foregroundColor(ColorsApp.red)
+            }
+            .navigationDestination(isPresented: $isPresentedLogin) {
+              RootView()
+                .navigationBarBackButtonHidden()
             }
           }
         }

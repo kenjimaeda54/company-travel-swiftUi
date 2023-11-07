@@ -61,6 +61,10 @@ class MockHttpClient: HttpClientProtocol, Mockable {
     completion(.failure(.badResponse))
   }
 
+  func signOut() {
+    print("remove user")
+  }
+
   func addFavorite(favorite: FavoriteModel) {}
 
   func removeFavorite(documentId: String) {}

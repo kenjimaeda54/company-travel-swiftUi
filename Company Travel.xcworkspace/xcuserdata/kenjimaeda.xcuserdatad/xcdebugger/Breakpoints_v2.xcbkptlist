@@ -563,8 +563,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "fetchDestination(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -579,8 +579,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "fetchDestination(completion:)"
             landmarkType = "7">
             <Locations>
@@ -627,10 +627,10 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "fetchDestination(completion:)"
-            landmarkType = "7">
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "HttpClient"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "D5B304CB-62D8-421B-A148-95190765AFC8 - 16eea7740c349910"
@@ -675,10 +675,10 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "HttpClient"
-            landmarkType = "3">
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "createUser(email:password:name:data:completion:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "FD46B23E-8F45-49DE-BECE-B900A5F2F0C4 - 16eea7740c349a7f"
@@ -738,10 +738,10 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "fetchDestination(completion:)"
-            landmarkType = "7">
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "HttpClient"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "1CCB5742-B80E-4986-BB28-0B638B9DCC64 - 16eea7740c349a7f"
@@ -786,8 +786,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "HttpClient"
             landmarkType = "3">
          </BreakpointContent>
@@ -802,8 +802,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "sigIn(email:password:completion:)"
             landmarkType = "7">
             <Locations>
@@ -850,8 +850,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "sigIn(email:password:completion:)"
             landmarkType = "7">
             <Locations>
@@ -914,10 +914,10 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
-            landmarkName = "HttpClient"
-            landmarkType = "3">
+            startingLineNumber = "218"
+            endingLineNumber = "218"
+            landmarkName = "updateUser(name:photoUrl:password:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "0AA1E19D-80FA-417B-82FF-1650457A6869 - d0310f7a3abb3f"
@@ -962,10 +962,10 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "HttpClient"
-            landmarkType = "3">
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "updateUser(name:photoUrl:password:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "53276D33-93A6-412B-BAEE-B02504331942 - d0310f7a3abb3f"
@@ -1042,8 +1042,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
             landmarkName = "getFavoritesByUser(idUser:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1105,8 +1105,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
             landmarkName = "getFavoritesByUser(idUser:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1169,8 +1169,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "237"
-            endingLineNumber = "237"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
             landmarkName = "getFavoritesByUser(idUser:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1232,8 +1232,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "238"
-            endingLineNumber = "238"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
             landmarkName = "getFavoritesByUser(idUser:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1248,8 +1248,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
             landmarkName = "getFavoritesByUser(idUser:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1341,8 +1341,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
             landmarkName = "getFavoritesByUser(idUser:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1357,8 +1357,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "sigIn(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1373,8 +1373,8 @@
             filePath = "Company Travel/Screens/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "HomeScreen"
             landmarkType = "14">
             <Locations>
@@ -1622,8 +1622,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
             landmarkName = "getFavoritesByUser(idUser:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1716,9 +1716,9 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
-            landmarkName = "sigIn(email:password:completion:)"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
+            landmarkName = "signOut()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -2060,8 +2060,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "272"
-            endingLineNumber = "272"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
             landmarkName = "removeFavorite(documentId:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2076,8 +2076,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "284"
-            endingLineNumber = "284"
+            startingLineNumber = "294"
+            endingLineNumber = "294"
             landmarkName = "getPointsInterest(geocode:completion:)"
             landmarkType = "7">
             <Locations>
@@ -2217,8 +2217,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "263"
-            endingLineNumber = "263"
+            startingLineNumber = "273"
+            endingLineNumber = "273"
             landmarkName = "addFavorite(favorite:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2233,8 +2233,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "265"
-            endingLineNumber = "265"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
             landmarkName = "addFavorite(favorite:)"
             landmarkType = "7">
             <Locations>
@@ -2281,8 +2281,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "281"
-            endingLineNumber = "281"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "getPointsInterest(geocode:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2297,8 +2297,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "260"
-            endingLineNumber = "260"
+            startingLineNumber = "270"
+            endingLineNumber = "270"
             landmarkName = "addFavorite(favorite:)"
             landmarkType = "7">
             <Locations>
@@ -2469,8 +2469,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "259"
-            endingLineNumber = "259"
+            startingLineNumber = "269"
+            endingLineNumber = "269"
             landmarkName = "addFavorite(favorite:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2563,8 +2563,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "createUser(email:password:name:data:completion:)"
             landmarkType = "7">
             <Locations>
@@ -2731,8 +2731,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "getUserLoged(completion:)"
             landmarkType = "7">
             <Locations>
@@ -2779,8 +2779,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "getUserLoged(completion:)"
             landmarkType = "7">
             <Locations>
@@ -2827,8 +2827,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "getUserLoged(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2907,8 +2907,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "createUser(email:password:name:data:completion:)"
             landmarkType = "7">
             <Locations>
@@ -2970,8 +2970,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "createUser(email:password:name:data:completion:)"
             landmarkType = "7">
             <Locations>
@@ -3113,8 +3113,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "converterDataFromUrlRequest(data:reference:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3225,8 +3225,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "sigIn(email:password:completion:)"
             landmarkType = "7">
             <Locations>
@@ -3273,8 +3273,8 @@
             filePath = "Company Travel/Services/HttpClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "sigIn(email:password:completion:)"
             landmarkType = "7">
             <Locations>

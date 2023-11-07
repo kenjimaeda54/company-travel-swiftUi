@@ -206,6 +206,14 @@ class HttpClient: HttpClientProtocol {
     }
   }
 
+  func signOut() {
+    do {
+      try auth.signOut()
+    } catch let signOutError as NSError {
+      print(signOutError.localizedDescription)
+    }
+  }
+
   // verificar se esta entrando em email e password
   func updateUser(name: String, photoUrl: URL, password: String? = nil) {
     let changeRequest = auth.currentUser?.createProfileChangeRequest()

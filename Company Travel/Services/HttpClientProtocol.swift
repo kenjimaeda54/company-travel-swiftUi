@@ -39,6 +39,8 @@ protocol HttpClientProtocol {
 
   func getUserLoged(completion: @escaping (UserModel?) -> Void)
 
+  func signOut() -> Void
+
   func getPointsInterest(
     geocode: PointsGeoCode,
     completion: @escaping (Result<PointsInterestModel, HttpError>) -> Void
