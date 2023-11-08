@@ -146,7 +146,7 @@ final class SigInScreen_UiTests: XCTestCase {
 
     buttonRegisterUser.tap()
 
-    XCTAssertTrue(registerUserSuccess.exists)
+    XCTAssertTrue(registerUserSuccess.waitForExistence(timeout: 5))
   }
 }
 

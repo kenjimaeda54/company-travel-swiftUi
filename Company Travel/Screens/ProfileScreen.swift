@@ -53,9 +53,6 @@ struct ProfileScreen: View {
       data: imageFirebase,
       name: displayName.count > 3 ? displayName : nil
     )
-    fiedlFocus = Optional.none
-    isLoading = false
-    showMessageUpdateUser = true
   }
 
   func handleToogleCamera() {
@@ -181,6 +178,13 @@ struct ProfileScreen: View {
         .accessibilityIdentifier("ImagePickerLibrary")
     }
     .environmentObject(enviromentUser)
+    .onReceive(storeUser.$isLoading) { loading in
+      if loading == .failure || loading == .sucess {
+        fiedlFocus = Optional.none
+        isLoading = false
+        showMessageUpdateUser = true
+      }
+    }
     .toast(isPresenting: $showMessageUpdateUser, duration: 2, alert: {
       AlertToast(
         displayMode: .banner(.pop),

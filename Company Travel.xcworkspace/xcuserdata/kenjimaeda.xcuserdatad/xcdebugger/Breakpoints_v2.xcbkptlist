@@ -892,7 +892,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2FE18407-1401-46BF-BC6D-3B392866B25C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Store/StoreUsers.swift"
@@ -1014,22 +1014,6 @@
             endingLineNumber = "57"
             landmarkName = "imageForFirebase"
             landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "46A19D96-AAFF-4E47-8A9B-747FC2FEAF77"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Company Travel/Store/StoreUsers.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "createUser(email:password:name:data:completion:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2070,7 +2054,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5A61AC75-1F0F-4B60-B892-A6DC4E9F18DC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Services/HttpClient.swift"
@@ -2155,6 +2139,21 @@
                   startingLineNumber = "285"
                   endingLineNumber = "285"
                   offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "5A61AC75-1F0F-4B60-B892-A6DC4E9F18DC - 81d4e087dcb15a59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.HttpClient.getPointsInterest(geocode: Company_Travel.PointsGeoCode, completion: (Swift.Result&lt;Company_Travel.PointsInterestModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Services/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "295"
+                  endingLineNumber = "295"
+                  offsetFromSymbolStart = "772">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2557,7 +2556,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C2FFE15F-1571-4B60-8C6D-2F9BC8605EBA"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Services/HttpClient.swift"
@@ -2718,6 +2717,21 @@
                   endingLineNumber = "119"
                   offsetFromSymbolStart = "348">
                </Location>
+               <Location
+                  uuid = "C2FFE15F-1571-4B60-8C6D-2F9BC8605EBA - 16eea7740c349b01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Company_Travel.HttpClient.createUser(email: Swift.String, password: Swift.String, name: Swift.String, data: Swift.Optional&lt;Foundation.Data&gt;, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Services/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "972">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -2837,7 +2851,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0BCC6F99-0382-4401-AF26-BB2A395E48E0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Store/StoreUsers.swift"
@@ -2847,13 +2861,45 @@
             endingLineNumber = "35"
             landmarkName = "createUser(email:password:name:data:completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0BCC6F99-0382-4401-AF26-BB2A395E48E0 - ab44bdce1a9a5812"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.StoreUsers.createUser(email: Swift.String, password: Swift.String, name: Swift.String, data: Swift.Optional&lt;Foundation.Data&gt;, completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "0BCC6F99-0382-4401-AF26-BB2A395E48E0 - 62e913b5eaadd903"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; () in Company_Travel.StoreUsers.createUser(email: Swift.String, password: Swift.String, name: Swift.String, data: Swift.Optional&lt;Foundation.Data&gt;, completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "432">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D792A676-1429-4D99-BB3D-6A55DABE5BAC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Store/StoreUsers.swift"
@@ -2869,7 +2915,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9AF6B8F4-D119-4132-A328-3325974E9272"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Company Travel/Store/StoreUsers.swift"
@@ -3026,54 +3072,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ADD2D2C3-940F-4325-A09B-0856F0561212"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Company Travel/Store/StoreUsers.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "updateUser(password:data:name:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "ADD2D2C3-940F-4325-A09B-0856F0561212 - d4278c8ab8455152"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "552">
-               </Location>
-               <Location
-                  uuid = "ADD2D2C3-940F-4325-A09B-0856F0561212 - d4278c8ab8455152"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
-                  moduleName = "Company Travel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "588">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E66B1A4A-B9C0-4B92-9418-E895A436454E"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -3084,22 +3082,6 @@
             startingLineNumber = "30"
             endingLineNumber = "30"
             landmarkName = "getFavoritesByUser(userId:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C08015BB-F0CE-41DC-8F1A-8E3FAC8B3B4B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Company Travel/Store/StoreUsers.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "updateUser(password:data:name:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3452,6 +3434,884 @@
             endingLineNumber = "43"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3121900-0320-454C-BF31-83EAC2E3135D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F3121900-0320-454C-BF31-83EAC2E3135D - fa9ea11cf402f34c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "F3121900-0320-454C-BF31-83EAC2E3135D - eaa00981f668d9f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "F3121900-0320-454C-BF31-83EAC2E3135D - eaa00981f668d9f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "504">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CAFBF02-4536-4E94-A848-4CF053255DAE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5CAFBF02-4536-4E94-A848-4CF053255DAE - eaa00981f668d915"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "5CAFBF02-4536-4E94-A848-4CF053255DAE - d4278c8ab8455173"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "644">
+               </Location>
+               <Location
+                  uuid = "5CAFBF02-4536-4E94-A848-4CF053255DAE - d4278c8ab84550ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "540">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CAD74FA-8367-4ABC-A55E-68594E160809"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "logIn(email:password:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4CAD74FA-8367-4ABC-A55E-68594E160809 - 95452d2ee832ffd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; () in Company_Travel.StoreUsers.logIn(email: Swift.String, password: Swift.String, completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "4CAD74FA-8367-4ABC-A55E-68594E160809 - ffd2a0a442832225"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; () in Company_Travel.StoreUsers.logIn(email: Swift.String, password: Swift.String, completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1AEDAFB-38F0-410F-9358-49B54E965213"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "logIn(email:password:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A1AEDAFB-38F0-410F-9358-49B54E965213 - 8fab35c6e33a20fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.StoreUsers.logIn(email: Swift.String, password: Swift.String, completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "A1AEDAFB-38F0-410F-9358-49B54E965213 - 95452d2ee832ff7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; () in Company_Travel.StoreUsers.logIn(email: Swift.String, password: Swift.String, completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "432">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D67EE3FA-0122-49DB-82BF-FD5A2FDCD81C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "logIn(email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "326DF813-8065-4C3F-9CD5-501F468B5BF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "logIn(email:password:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "326DF813-8065-4C3F-9CD5-501F468B5BF5 - 95452d2ee832ff99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; () in Company_Travel.StoreUsers.logIn(email: Swift.String, password: Swift.String, completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "456">
+               </Location>
+               <Location
+                  uuid = "326DF813-8065-4C3F-9CD5-501F468B5BF5 - 95452d2ee832ff99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; () in Company_Travel.StoreUsers.logIn(email: Swift.String, password: Swift.String, completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "484">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC77978A-6D40-4EAF-8791-EDD27927E762"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "logIn(email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8EAB695-0DF8-425A-A347-3FB20DB0363E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "logIn(email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A1BA63F-0C50-4F26-B0E6-289E691FD763"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "logIn(email:password:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0A1BA63F-0C50-4F26-B0E6-289E691FD763 - 95452d2ee832fcf0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; () in Company_Travel.StoreUsers.logIn(email: Swift.String, password: Swift.String, completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "1204">
+               </Location>
+               <Location
+                  uuid = "0A1BA63F-0C50-4F26-B0E6-289E691FD763 - b87b7e7ac7db1f03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; () in Company_Travel.StoreUsers.logIn(email: Swift.String, password: Swift.String, completion: (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35D430BC-89A6-457C-9525-76BC2D0FB58B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "logIn(email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9EE01722-DF05-4627-BDE9-0530701D0B81"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9EE01722-DF05-4627-BDE9-0530701D0B81 - d4278c8ab84550ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "744">
+               </Location>
+               <Location
+                  uuid = "9EE01722-DF05-4627-BDE9-0530701D0B81 - d4278c8ab8455029"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "704">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5FCC7BE-2EAC-4614-9D85-411063EC0909"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B5FCC7BE-2EAC-4614-9D85-411063EC0909 - d4278c8ab84550ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "820">
+               </Location>
+               <Location
+                  uuid = "B5FCC7BE-2EAC-4614-9D85-411063EC0909 - d4278c8ab8455384"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "1220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C09EB81B-790C-49C8-B878-BB9399213ACC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C09EB81B-790C-49C8-B878-BB9399213ACC - d4278c8ab8455029"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "1340">
+               </Location>
+               <Location
+                  uuid = "C09EB81B-790C-49C8-B878-BB9399213ACC - d4278c8ab8455384"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "1220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78DE59E0-64D8-4591-9C27-51767BB7AECE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "78DE59E0-64D8-4591-9C27-51767BB7AECE - d4278c8ab8455029"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "1340">
+               </Location>
+               <Location
+                  uuid = "78DE59E0-64D8-4591-9C27-51767BB7AECE - d4278c8ab8455384"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "1220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85B1AA56-CFF1-4695-A540-D1553D239D40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "85B1AA56-CFF1-4695-A540-D1553D239D40 - d4278c8ab8455363"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "1672">
+               </Location>
+               <Location
+                  uuid = "85B1AA56-CFF1-4695-A540-D1553D239D40 - d4278c8ab845525b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "2212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D5CD0DD3-29C8-4E73-92A6-CF3B25CCE7B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "updateUser(password:data:name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D5CD0DD3-29C8-4E73-92A6-CF3B25CCE7B2 - d4278c8ab8455384"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "1596">
+               </Location>
+               <Location
+                  uuid = "D5CD0DD3-29C8-4E73-92A6-CF3B25CCE7B2 - d4278c8ab845525b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Company_Travel.HttpError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Company_Travel.UserModel&gt;) -&gt; () in Company_Travel.StoreUsers.updateUser(password: Swift.Optional&lt;Swift.String&gt;, data: Swift.Optional&lt;Foundation.Data&gt;, name: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Store/StoreUsers.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "2212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B238D64-93D5-4276-937C-D04E3C530085"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Services/HttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "sigIn(email:password:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6B238D64-93D5-4276-937C-D04E3C530085 - 6650761af5673516"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Company_Travel.HttpClient.sigIn(email: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Services/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "6B238D64-93D5-4276-937C-D04E3C530085 - d0310f7a3aa71f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Company_Travel.HttpClient.sigIn(email: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Services/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "368">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F585EA48-CCC8-400F-9CBD-314C500FE644"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Services/HttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "sigIn(email:password:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F585EA48-CCC8-400F-9CBD-314C500FE644 - d0310f7a3aa75d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Company_Travel.HttpClient.sigIn(email: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Services/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  uuid = "F585EA48-CCC8-400F-9CBD-314C500FE644 - d0310f7a3aa75d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Company_Travel.HttpClient.sigIn(email: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Services/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "580">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "591F2253-FB70-44D3-89A2-7FD245F6D418"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Services/HttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "sigIn(email:password:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "591F2253-FB70-44D3-89A2-7FD245F6D418 - d0310f7a3aa75d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Company_Travel.HttpClient.sigIn(email: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Services/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  uuid = "591F2253-FB70-44D3-89A2-7FD245F6D418 - d0310f7a3aa75d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Company_Travel.HttpClient.sigIn(email: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Company_Travel.UserModel, Company_Travel.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Company Travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kenjimaeda/Documents/projects_IOS/Company%20Travel/Company%20Travel/Services/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "580">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D7FDF3B-25FA-43E6-8AD0-116672D647C4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Services/HttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "sigIn(email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "088CD028-76A7-4A0D-BE45-0E0A02C4BF88"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Services/HttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "sigIn(email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7282BD5-3B1B-471C-8B4D-42AA5721D97A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Services/HttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "sigIn(email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC80B736-4F73-4716-97AA-0502BE63ADC2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Company Travel/Store/StoreUsers.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "logIn(email:password:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

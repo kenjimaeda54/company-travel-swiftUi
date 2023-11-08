@@ -57,7 +57,7 @@ final class HomeScreen_UiTests: XCTestCase {
   }
 
   func testRenderCorrectNameAndImageUser() {
-    let nameText = app.staticTexts["Ola Carlos, "]
+    let nameText = app.staticTexts["Ola Maeda, "]
     let predicateImageAvatar = NSPredicate(format: "identifier == 'https://github.com/kenjimaeda54.png'")
     let image = app.descendants(matching: .any).matching(predicateImageAvatar).firstMatch
 

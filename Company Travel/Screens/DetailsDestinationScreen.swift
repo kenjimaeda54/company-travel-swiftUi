@@ -122,14 +122,18 @@ struct DetailsDestinationScreen: View {
                   if
                     !isFavorite
                   {
-                    ButtonCommonWithIcon(foregroundColor: ColorsApp.white, iconSytem: "heart", action: {})
-                      .frame(width: 15, height: 10)
-                      .padding(.all, 7)
-                      .background(
-                        .ultraThinMaterial,
-                        in: Circle()
-                      )
-                      .position(x: metrics.size.width - 25, y: metrics.size.height * 0.08)
+                    ButtonCommonWithIcon(
+                      foregroundColor: ColorsApp.white,
+                      iconSytem: "heart",
+                      action: { handleAddFavorite() }
+                    )
+                    .frame(width: 15, height: 10)
+                    .padding(.all, 7)
+                    .background(
+                      .ultraThinMaterial,
+                      in: Circle()
+                    )
+                    .position(x: metrics.size.width - 25, y: metrics.size.height * 0.08)
                   }
 
                   Button(action: { isPresented.toggle() }) {

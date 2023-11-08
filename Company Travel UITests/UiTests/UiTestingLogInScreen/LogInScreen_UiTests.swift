@@ -83,7 +83,7 @@ final class LogInScreen_UiTests: XCTestCase {
 
   func testSucessLogiInIfPasswordAndEmailIsCorrect() {
     let textNameHomeScreen = app
-      .staticTexts["Ola Carlos, "] // nome vai depender do usuario salvo file
+      .staticTexts["Ola Maeda, "] // nome vai depender do usuario salvo file
     // namager
     let buttonRegister = app.buttons["Entrar"]
 

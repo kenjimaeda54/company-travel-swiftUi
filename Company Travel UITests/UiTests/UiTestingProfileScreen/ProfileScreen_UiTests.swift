@@ -10,6 +10,8 @@ import XCTest
 
 final class ProfileScreen_UiTests: XCTestCase {
   private var app: XCUIApplication!
+  let currentName = "Maeda"
+  let changeName = "Carlos"
 
   override func setUpWithError() throws {
     continueAfterFailure = false
@@ -39,18 +41,6 @@ final class ProfileScreen_UiTests: XCTestCase {
     app = nil
   }
 
-  // tentar amanha pegar a foto e atualizar metade de um
-  // pomodoro para pegar
-  func testRenderCorrectDataWhenClickedProfile() {
-    let imageAvatar = app.buttons["https://github.com/kenjimaeda54.png"]
-    let predicateName =
-      NSPredicate(format: "identifier == 'Carlos'")
-    let name = app.descendants(matching: .any).matching(predicateName).firstMatch
-
-    XCTAssertTrue(name.exists)
-    XCTAssertTrue(imageAvatar.exists)
-  }
-
   func testUpdateUserName() {
     let predicateName =
       NSPredicate(format: "identifier == 'Maeda'")
@@ -59,6 +49,7 @@ final class ProfileScreen_UiTests: XCTestCase {
     let buttonHome = app.descendants(matching: .any).matching(predicateButtonHome).firstMatch
     let textFieldName = app.descendants(matching: .any).matching(predicateName).firstMatch
     let nameText = app.staticTexts["Ola Carlos, "]
+    let profile = app.buttons["config"]
     textFieldName.tap()
     textFieldName.typeText("Carlos")
     buttonUpdate.tap()

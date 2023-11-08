@@ -79,6 +79,11 @@ class StoreUsers: ObservableObject {
     name: String? = nil
   ) {
     httpClient.getUserLoged { currentUser in
+
+      if currentUser?.displayName == nil || currentUser?.photoUrl == nil {
+        return
+      }
+
       self.httpClient.converterDataFromUrlRequest(data: data, reference: currentUser!.uid) { result in
         switch result {
         case let .success(url):
@@ -89,12 +94,16 @@ class StoreUsers: ObservableObject {
             password: password
           )
 
+          self.isLoading = .sucess
+
         case .failure:
           self.httpClient.updateUser(
             name: (name ?? currentUser!.displayName)!,
             photoUrl: currentUser!.photoUrl!,
             password: password
           )
+
+          self.isLoading = .sucess
         }
       }
     }

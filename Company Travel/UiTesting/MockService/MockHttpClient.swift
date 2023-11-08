@@ -6,6 +6,7 @@
 //
 
 import FirebaseAuth
+import FirebaseStorage
 import Foundation
 
 // para verificar se o pacote esta no target que preciso no caso o FirebaseAuth tem que esta no
@@ -27,12 +28,36 @@ class MockHttpClient: HttpClientProtocol, Mockable {
   ) {
     let users = loadFileManager(filename: "User.json", type: [UserModel].self)
     let findUser = users.first { $0.email == email }
-    let userModel = UserModel(uid: "fsfsfsfsl343skfsm", displayName: name, email: email)
     if findUser != nil {
       completion(.failure(.errorCreateUser))
     } else {
-      writeFileManager(filename: "User.json", model: userModel)
-      completion(.success(userModel))
+      let userId = UUID().uuidString
+
+      let storage = Storage.storage()
+      let storageRef = storage.reference()
+      let photoUserRef = storageRef.child("images/\(userId).jpg")
+      if let uploadPhoto = data {
+        photoUserRef.putData(uploadPhoto, metadata: nil) { _, error in
+
+          if error != nil {
+            print(error)
+            return completion(.failure(.badResponse))
+          }
+
+          photoUserRef.downloadURL { url, _ in
+            if let url = url {
+              var usersJson = self.loadFileManager(filename: "User.json", type: [UserModel].self)
+              let userModel = UserModel(uid: userId, displayName: name, photoUrl: url, email: email)
+              usersJson.append(userModel)
+              self.writeFileManager(filename: "User.json", model: usersJson)
+
+              return completion(.success(userModel))
+            }
+
+            return completion(.failure(.badURL))
+          }
+        }
+      }
     }
   }
 
