@@ -1,7 +1,7 @@
 # Travel
 Marktplace de viagem, usuário pode visualizar descrição, pontos de interesses da viagem, preço por pessoa, inclusive comprar e retirar nas lojas credenciadas, outra finalidade é possibilidade usuário de editar seu perfil
 
-## Motivacao
+## Motivação
 - Uma maneira de testar a tela com usuário no envirometObject é realizar as etapas navegando ate a tela de destino
 - No setUpWithError estou sempre navegando até tela home assim não me preocupo com os dados do usuário, pois  persisto via enviromentObject
 
