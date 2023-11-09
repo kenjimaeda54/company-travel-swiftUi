@@ -245,6 +245,10 @@ func converterDataFromUrlRequest(
 
 ```
 
+## Link da publicação
+- [Linkedin](https://www.linkedin.com/posts/kenjimaeda1233_firebase-swiftui-ios-activity-7128336421202870272-N21t?utm_source=share&utm_medium=member_desktop)
+
+
 
 
 
