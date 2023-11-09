@@ -1,4 +1,4 @@
-# company-travel-swiftUi
+# Travel
 Marktplace de viagem, usuário pode visualizar descrição, pontos de interesses da viagem, preço por pessoa, inclusive comprar e retirar nas lojas credenciadas, outra finalidade é possibilidade usuário de editar seu perfil
 
 ## Motivacao
